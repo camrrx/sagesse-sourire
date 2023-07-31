@@ -1,3 +1,21 @@
 .home-container {
-	background-color: green;
+	display: flex;
+	flex-direction: column;
+	border-width: 50px 20px 50px 20px;
+
+	.navbar-svg-container {
+		height: 30vh;
+		.wavy {
+			width: 100%;
+			left: 0;
+			top: 0;
+			position: absolute;
+			opacity: 0.7;
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
 }

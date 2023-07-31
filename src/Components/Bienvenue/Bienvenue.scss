@@ -1,0 +1,17 @@
+.welcome-container {
+	h1 {
+		color: #00cba9;
+	}
+	.button-contact {
+		background-color: #00cba9;
+		padding: 10px;
+		border: none;
+		color: white;
+		border-radius: 30px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #ade9df;
+		}
+	}
+}
