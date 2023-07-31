@@ -1,7 +1,7 @@
 import "./Navbar.scss";
 import { menuItems } from "../../assets/menuItems";
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Menu } from "@headlessui/react";
 
 const Navbar = () => {
