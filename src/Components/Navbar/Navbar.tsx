@@ -3,12 +3,34 @@ import { menuItems } from "../../assets/menuItems";
 import { Link } from "react-router-dom";
 import { Menu } from "@headlessui/react";
 import logo from "../../assets/logo-sagesse.png";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const windowHeight = window.innerHeight;
+			const scrollY = window.scrollY;
+
+			if (scrollY >= windowHeight / 2) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
 		<div>
 			<nav>
-				<div className="navbar">
+				<div className={`navbar ${scrolled ? "scrolled" : ""}`}>
 					<div className="logo-container">
 						<img src={logo} className="logo" />
 						<h1>Cabinet sagesse & sourire</h1>

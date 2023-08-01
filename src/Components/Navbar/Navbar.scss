@@ -5,7 +5,10 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 1.5rem;
-
+	&.scrolled {
+		background-color: #23c8ad; /* Changer la couleur de fond lorsque l'utilisateur a fait défiler la moitié de l'écran */
+		transition: background-color 0.6s ease;
+	}
 	.logo-container {
 		display: flex;
 		justify-content: center;
