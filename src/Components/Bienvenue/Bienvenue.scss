@@ -1,32 +1,41 @@
-.welcome-container {
-	z-index: 1000;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	h1 {
-		color: white;
-		opacity: 0.8;
-		font-size: 4vw;
-		letter-spacing: 5px;
-	}
-	p {
-		color: white;
-		opacity: 0.8;
-		font-size: 1.5vw;
-	}
-	.button-contact {
-		font-size: 1.5vw;
-		background-color: transparent;
-		padding: 10px;
-		border: solid 2px white;
-		color: white;
-		border-radius: 30px;
-		cursor: pointer;
+@import '../../themes.scss';
 
-		&:hover {
-			background-color: #ffffff;
-			color: #19d9b9;
-		}
-	}
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+	width: 50vw;
+	margin-top: 20vh;
+	margin-left: 100px;
+
+    h1 {
+        color: var(--white);
+        opacity: 0.8;
+        font-size: 4vw;
+        letter-spacing: 5px;
+		padding: 0;
+		margin: 0;
+    }
+
+    p {
+        color: var(--white);
+        opacity: 0.8;
+        font-size: 1.3rem;
+		margin-bottom: 3rem;
+    }
+
+    .button-contact {
+        font-size: 1rem;
+        background-color: transparent;
+		padding: 1rem;
+        border: solid 2px var(--white);
+        color: var(--white);
+        border-radius: 30px;
+		transition: 0.4s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--white);
+            color: var(--primary-1);
+        }
+    }
 }
