@@ -20,9 +20,12 @@ const Navbar = () => {
 				<ul className="navbar">
 					{menuItems.map((item, index) => (
 						<li key={index} className="navbar-item">
-							<Menu>
-								<Menu.Button className="navbar-link">{item.title}</Menu.Button>
-								{item.submenu && (
+							{item.submenu ? (
+								<Menu>
+									<Menu.Button className="navbar-link">
+										{item.title}
+									</Menu.Button>
+
 									<Menu.Items className="submenu">
 										{item.submenu.map((subItem, subIndex) => (
 											<Menu.Item key={subIndex}>
@@ -38,8 +41,12 @@ const Navbar = () => {
 											</Menu.Item>
 										))}
 									</Menu.Items>
-								)}
-							</Menu>
+								</Menu>
+							) : (
+								<Link to={item.url} className="navbar-link">
+									{item.title}
+								</Link>
+							)}
 						</li>
 					))}
 				</ul>

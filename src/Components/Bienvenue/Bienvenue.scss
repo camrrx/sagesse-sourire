@@ -1,17 +1,32 @@
 .welcome-container {
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	h1 {
-		color: #00cba9;
+		color: white;
+		opacity: 0.8;
+		font-size: 4vw;
+		letter-spacing: 5px;
+	}
+	p {
+		color: white;
+		opacity: 0.8;
+		font-size: 1.5vw;
 	}
 	.button-contact {
-		background-color: #00cba9;
+		font-size: 1.5vw;
+		background-color: transparent;
 		padding: 10px;
-		border: none;
+		border: solid 2px white;
 		color: white;
 		border-radius: 30px;
 		cursor: pointer;
 
 		&:hover {
-			background-color: #ade9df;
+			background-color: #ffffff;
+			color: #19d9b9;
 		}
 	}
 }
