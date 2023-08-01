@@ -1,3 +1,5 @@
+import questionnairecovid from "./questionnairecovid.pdf";
+
 export const ActualitesData = [
 	{
 		id: 1,
@@ -5,7 +7,7 @@ export const ActualitesData = [
 		subtitle: "Covid 19",
 		description:
 			"Le Patient vient seul et doit être à l'heure. NI en AVANCE NI en RETARD. Port d’un masque OBLIGATOIRE. Le questionnaire ci-dessous doit être rempli et signé.",
-		document: "Questionnaire",
+		document: { title: "Questionnaire", actions: { questionnairecovid } },
 	},
 
 	{
@@ -14,7 +16,7 @@ export const ActualitesData = [
 		subtitle: "",
 		description:
 			"Depuis janvier 2020, le 100% santé est mis en place et permet un meilleur remboursement grâce au respect du contrat responsable. Pour en savoir plus, consultez notre page dédiée Honoraires.",
-		document: "Honoraires",
+		document: { title: "Honoraires", actions: "/sagesse-sourire/honoraires" },
 	},
 
 	{
@@ -23,7 +25,10 @@ export const ActualitesData = [
 		subtitle: "",
 		description:
 			"Chaque dimanche et jours fériés, de 9h à 12h, un praticien est de garde dans le département. Veuillez trouver le tableau des gardes ici Praticiens de Garde.",
-		document: "Praticiens de garde",
+		document: {
+			title: "Praticiens de garde",
+			actions: "http://www.cdocd44.fr/",
+		},
 	},
 
 	{
@@ -32,7 +37,7 @@ export const ActualitesData = [
 		subtitle: "",
 		description:
 			"Il y a du nouveau dans la prise de rendez-vous ! Vous pouvez désormais prendre vos rendez-vous avec les Docteurs MERLET et CHOTARD via Doctolib.",
-		document: "",
+		document: { title: "", actions: "" },
 	},
 
 	{
@@ -41,6 +46,6 @@ export const ActualitesData = [
 		subtitle: "",
 		description:
 			"Découvrez notre nouveau contenu : Sédation et Anesthésie. Nous y présentons l'utilisation du MEOPA et de L'anesthésie ostéocentrale .",
-		document: "MEOPA",
+		document: { title: "MEOPA", actions: "/sagesse-sourire/meopa" },
 	},
 ];

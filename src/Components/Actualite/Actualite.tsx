@@ -1,20 +1,38 @@
 import "./Actualite.scss";
 import { ActualitesData } from "../../assets/ActualiteData";
 
-export type actualite = {
+export interface ActualiteItem {
 	id: number;
 	title: string;
 	subtitle: string;
 	description: string;
-	document: string;
-};
+	document: {
+		title: string;
+		actions: string | { questionnairecovid: string };
+	};
+}
 
 const Actualite = () => {
+	const handleDocumentClick = (
+		actions: string | { questionnairecovid: string }
+	) => {
+		if (!actions) return;
+
+		if (typeof actions === "string") {
+			window.location.href = actions;
+		} else if (actions.questionnairecovid) {
+			const link = document.createElement("a");
+			link.href = actions.questionnairecovid;
+			link.download = "questionnairecovid.pdf";
+			link.click();
+		}
+	};
+
 	return (
 		<div className="actualite-container">
 			<h2 className="actualite-title">ACTUALITES</h2>
 			<div className="actualite-cards">
-				{ActualitesData.map((actu: actualite) => (
+				{ActualitesData.map((actu: ActualiteItem) => (
 					<div className="card">
 						<div className="card__image"></div>
 						<div className="card__content">
@@ -25,8 +43,12 @@ const Actualite = () => {
 								""
 							)}
 							<div className="card__describe">{actu.description}</div>
-							{actu.document ? (
-								<div className="card__document">{actu.document}</div>
+							{actu.document.title.length > 1 ? (
+								<div
+									className="card__document"
+									onClick={() => handleDocumentClick(actu.document.actions)}>
+									{actu.document.title}
+								</div>
 							) : (
 								<div></div>
 							)}
