@@ -1,0 +1,36 @@
+@import "../../themes.scss";
+
+.presentation-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.titre {
+		width: 50vw;
+		.presentation-texte {
+			display: flex;
+		}
+		.presentation-titre {
+			display: flex;
+		}
+	}
+	.presentation-sagesse {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.titre1 {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			padding: 20px;
+		}
+		.imgdentiste {
+			border-radius: 15px;
+		}
+		.description1 {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			padding: 20px;
+		}
+	}
+}

@@ -1,30 +1,29 @@
 @mixin gap($gap-value) {
-    gap: $gap-value;
+	gap: $gap-value;
 }
 
 @mixin margin-r($margin-value) {
-    margin-right: $margin-value;
+	margin-right: $margin-value;
 }
 
 @mixin margin-l($margin-value) {
-    margin-left: $margin-value;
+	margin-left: $margin-value;
 }
 
 @for $i from 1 through 10 {
-    .gap-#{$i} {
-        @include gap($i * 10px); 
-    }
-    .margin-r-#{$i} {
-        @include margin-r($i * 10px); 
-    }
-    .margin-l-#{$i} {
-        @include margin-l($i * 10px); 
-    }
+	.gap-#{$i} {
+		@include gap($i * 10px);
+	}
+	.margin-r-#{$i} {
+		@include margin-r($i * 10px);
+	}
+	.margin-l-#{$i} {
+		@include margin-l($i * 10px);
+	}
 }
 
-
 .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
