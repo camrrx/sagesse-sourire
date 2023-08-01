@@ -1,4 +1,4 @@
-export const ActualiteData = [
+export const ActualitesData = [
 	{
 		id: 1,
 		title: "Recommandations avant votre Rendez-vous",

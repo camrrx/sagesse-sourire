@@ -1,3 +1,123 @@
 .actualite-container {
-	margin-top: 100px;
+	.actualite-title {
+		color: #09836e;
+		font-size: 2.5vw;
+		letter-spacing: 5px;
+	}
+	.scroll-1::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	.scroll-1::-webkit-scrollbar-thumb {
+		border-radius: 20px;
+		background: #888;
+	}
+
+	.actualite-cards * {
+		color: #fff;
+	}
+
+	.actualite-cards {
+		display: flex;
+		overflow-x: scroll;
+		padding: 24px;
+		width: 80vw;
+		scroll-snap-type: x mandatory;
+		scroll-padding-top: 40px;
+		border-radius: 8px;
+		gap: 20px;
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			flex: 0 0 40%;
+			overflow: hidden;
+			border-radius: 8px;
+			background-color: #cbcbcb;
+			scroll-snap-align: start;
+
+			.card__image {
+				height: 20vh;
+			}
+
+			&:nth-child(1) .card__image {
+				background: linear-gradient(
+					90deg,
+					rgba(199, 246, 255, 1) 0%,
+					rgba(150, 224, 214, 1) 36%,
+					rgba(71, 251, 205, 1) 55%,
+					rgba(88, 219, 159, 0.9164259453781513) 100%
+				);
+			}
+
+			&:nth-child(2) .card__image {
+				background: linear-gradient(
+					90deg,
+					rgba(86, 171, 187, 1) 0%,
+					rgba(73, 170, 157, 1) 36%,
+					rgba(55, 144, 121, 1) 55%,
+					rgba(4, 99, 56, 0.9164259453781513) 100%
+				);
+			}
+
+			&:nth-child(3) .card__image {
+				background: linear-gradient(
+					90deg,
+					rgba(156, 232, 246, 1) 0%,
+					rgba(86, 176, 164, 1) 36%,
+					rgba(83, 191, 163, 1) 55%,
+					rgba(33, 121, 128, 0.9164259453781513) 100%
+				);
+			}
+			&:nth-child(4) .card__image {
+				background: linear-gradient(
+					180deg,
+					rgba(128, 186, 197, 1) 0%,
+					rgba(150, 224, 214, 1) 36%,
+					rgba(113, 215, 189, 1) 55%,
+					rgba(88, 219, 159, 0.9164259453781513) 100%
+				);
+			}
+			&:nth-child(5) .card__image {
+				background: linear-gradient(
+					90deg,
+					rgba(184, 255, 247, 1) 0%,
+					rgba(146, 246, 233, 1) 36%,
+					rgba(86, 240, 200, 1) 55%,
+					rgba(100, 217, 166, 0.9164259453781513) 100%
+				);
+			}
+
+			.card__content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				gap: 10px;
+				padding: 20px;
+				.card__title {
+					font-size: 2.5vw;
+					color: #fff;
+					text-transform: capitalize;
+				}
+				.card__describe {
+					color: #fff;
+					font-size: 16px;
+				}
+				.card__document {
+					display: flex;
+					width: fit-content;
+					padding: 10px;
+					border-radius: 20px;
+					background-color: #09836e;
+					border: none;
+					cursor: pointer;
+					&:hover {
+						background-color: #80d4c6;
+					}
+				}
+			}
+		}
+	}
 }
