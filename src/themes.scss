@@ -1,20 +1,23 @@
     // Default theme
-:root {
-    --primary-1: #007bff;
-    --secondary-1: #6c757d;
-  }
-  
-  // Dark theme
-  .dark-theme {
-    --primary-1: #28a745;
-    --secondary-1: #ffc107;
-  }
-  
-  // Light theme
-  .light-theme {
-    --white: white;
-    --primary-1: #54b2a3;
-    --primary-2: #37796e;
-    --secondary-1: #253260;
-    --hover-1: #a3cfc8;
-  }
+    :root {
+        --primary-1: #007bff;
+        --secondary-1: #6c757d;
+    }
+
+    // Dark theme
+    .dark-theme {
+        --white: rgb(43, 43, 43);
+        --primary-1: #54b2a3;
+        --primary-2: #37796e;
+        --secondary-1: #253260;
+        --hover-1: #a3cfc8;
+    }
+
+    // Light theme
+    .light-theme {
+        --white: white;
+        --primary-1: #54b2a3;
+        --primary-2: #37796e;
+        --secondary-1: #253260;
+        --hover-1: #a3cfc8;
+    }

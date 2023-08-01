@@ -30,7 +30,6 @@ const Navbar = () => {
                   <Menu.Button className="navbar-link">
                     {item.title}
                   </Menu.Button>
-
                   <Menu.Items className="submenu">
                     {item.submenu.map((subItem, subIndex) => (
                       <Menu.Item key={subIndex}>
