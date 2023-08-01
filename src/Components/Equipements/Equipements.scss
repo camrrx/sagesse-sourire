@@ -1,10 +1,14 @@
 .equipements-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	overflow-x: scroll;
 	gap: 30px;
 	margin: 20px 60px 20px 60px;
-
+	.equipements-title {
+		color: #09836e;
+		font-size: 2.5vw;
+		letter-spacing: 5px;
+	}
 	.equipement-item {
 		display: flex;
 		flex-direction: column;

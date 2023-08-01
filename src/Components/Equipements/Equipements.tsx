@@ -4,6 +4,8 @@ import { EquipementsData } from "../../assets/EquipementsData";
 const Equipements = () => {
 	return (
 		<div className="equipements-container">
+			<h2 className="equipements-title">NOS EQUIPEMENTS</h2>
+
 			{EquipementsData.map((equipement, index) => (
 				<div key={index} className="equipement-item">
 					<div className="circle">{equipement.number}</div>
