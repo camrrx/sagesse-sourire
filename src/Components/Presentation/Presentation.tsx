@@ -1,5 +1,8 @@
 import "./Presentation.scss";
 import dentiste from "../../assets/dentiste.jpeg";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+
 const Presentation = () => {
 	return (
 		<div className="presentation-container">
@@ -30,6 +33,11 @@ const Presentation = () => {
 						avantages et les inconvénients éventuels des traitements réalisés et
 						sur leurs coûts.
 					</h6>
+					<Link to="/equipe">
+						<div className="button-equipe">
+							L'équipe <FaArrowRight />
+						</div>
+					</Link>
 				</div>
 			</div>
 		</div>
