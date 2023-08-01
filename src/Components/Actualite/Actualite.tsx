@@ -19,11 +19,16 @@ const Actualite = () => {
 						<div className="card__image"></div>
 						<div className="card__content">
 							<div className="card__title">{actu.title}</div>
+							{actu.subtitle ? (
+								<div className="card__subtitle">{actu.subtitle}</div>
+							) : (
+								""
+							)}
 							<div className="card__describe">{actu.description}</div>
 							{actu.document ? (
 								<div className="card__document">{actu.document}</div>
 							) : (
-								""
+								<div></div>
 							)}
 						</div>
 					</div>
