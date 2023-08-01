@@ -1,0 +1,36 @@
+.equipements-container {
+	display: flex;
+	justify-content: space-between;
+	overflow-x: scroll;
+	gap: 30px;
+	margin: 20px 60px 20px 60px;
+
+	.equipement-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.circle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #09836e;
+			color: #fff;
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+
+		.equipement-name {
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+
+		.description {
+			font-size: 1rem;
+			text-align: center;
+		}
+	}
+}
