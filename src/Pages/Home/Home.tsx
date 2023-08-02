@@ -11,18 +11,18 @@ const Home = () => {
 			<div className="navbar">
 				<Navbar />
 			</div>
-			<div className="bienvenue">
+			<div className="bienvenue" id="bienvenue">
 				<Bienvenue></Bienvenue>
 			</div>
-			<div className="presentation">
+			<div className="presentation" id="presentation">
 				<Presentation></Presentation>
 			</div>
 			<div className="separation"></div>
-			<div className="actualite">
+			<div className="actualite" id="actualites">
 				<Actualite></Actualite>
 			</div>
 			<div className="separation"></div>
-			<div className="equipements">
+			<div className="equipements" id="equipements">
 				<Equipements></Equipements>
 			</div>
 		</div>

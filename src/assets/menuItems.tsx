@@ -4,28 +4,28 @@ export const menuItems = [
 		url: "/bienvenue",
 		submenu: [
 			{
-				title: "Bienvenue",
-				url: "/bienvenue/",
+				title: "Presentation",
+				url: "#presentation",
 			},
 			{
 				title: "Actualités",
-				url: "/bienvenue/actualites",
+				url: "#actualites",
 			},
 			{
 				title: "Equipements",
-				url: "/bienvenue/equipements",
+				url: "#equipements",
 			},
 			{
 				title: "Venir chez nous",
-				url: "/bienvenue/venircheznous",
+				url: "#venircheznous",
 			},
 			{
 				title: "Horaires",
-				url: "/bienvenue/horaire",
+				url: "#horaire",
 			},
 			{
 				title: "Nous contacter",
-				url: "/bienvenue/nouscontacter",
+				url: "#nouscontacter",
 			},
 		],
 	},
@@ -35,27 +35,27 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Notre équipe",
-				url: "/leCabinet/equipes",
+				url: "#equipes",
 			},
 			{
 				title: "Accueil",
-				url: "/leCabinet/accueil",
+				url: "#accueil",
 			},
 			{
 				title: "Les dentistes",
-				url: "/leCabinet/dentistes",
+				url: "#dentistes",
 			},
 			{
 				title: "Les assistantes",
-				url: "/leCabinet/assistantes",
+				url: "#assistantes",
 			},
 			{
 				title: "Les prothésistes",
-				url: "/leCabinet/prothesistes",
+				url: "#prothesistes",
 			},
 			{
 				title: "Les correspondants",
-				url: "/leCabinet/correspondants",
+				url: "#correspondants",
 			},
 		],
 	},
@@ -65,23 +65,23 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Les implants dentaires",
-				url: "/traitements/implantsDentaires",
+				url: "#implantsDentaires",
 			},
 			{
 				title: "L'orthodontie",
-				url: "/traitements/orthodontie",
+				url: "#orthodontie",
 			},
 			{
 				title: "La dentisterie ésthétique",
-				url: "/traitements/dentisterieEsthetique",
+				url: "#dentisterieEsthetique",
 			},
 			{
 				title: "Parodontie et soins",
-				url: "/traitements/parodontie",
+				url: "#parodontie",
 			},
 			{
 				title: "Gestion de la douleur",
-				url: "/traitements/gestionDouleur",
+				url: "#gestionDouleur",
 			},
 		],
 	},

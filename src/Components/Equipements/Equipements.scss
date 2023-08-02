@@ -4,37 +4,87 @@
 	justify-content: space-between;
 	gap: 30px;
 	margin: 20px 60px 20px 60px;
+
 	.equipements-title {
 		color: #09836e;
 		font-size: 2.5vw;
 		letter-spacing: 5px;
 	}
-	.equipement-item {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		.circle {
+	.equipements-items {
+		overflow-y: scroll;
+		height: 60vh;
+		padding-top: 20px;
+		// &::before {
+		// 	content: "";
+		// 	position: absolute;
+		// 	top: -20px;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 40px;
+		// 	background-image: linear-gradient(transparent, rgba(0, 128, 0, 0.4));
+		// 	pointer-events: none;
+		// }
+
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	bottom: -20px;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 40px;
+		// 	background-image: linear-gradient(rgba(0, 128, 0, 0.4), transparent);
+		// 	pointer-events: none;
+		// }
+		.equipement-item {
 			display: flex;
+			flex-direction: column;
 			align-items: center;
-			justify-content: center;
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			background-color: #09836e;
-			color: #fff;
-			font-size: 1.5rem;
-			font-weight: bold;
-		}
 
-		.equipement-name {
-			font-size: 1.2rem;
-			font-weight: bold;
-			margin-top: 10px;
-		}
+			.circle {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: #09836e;
+				color: #fff;
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
 
-		.description {
-			font-size: 1rem;
-			text-align: center;
+			.equipement-name {
+				font-size: 1.2rem;
+				font-weight: bold;
+				margin-top: 10px;
+			}
+
+			.description {
+				font-size: 1rem;
+				text-align: center;
+			}
 		}
 	}
+}
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #aee1d7;
+	border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #86d0c1;
+	border-radius: 20px;
 }
