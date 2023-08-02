@@ -1,5 +1,4 @@
 import "./Home.scss";
-import Navbar from "../../Components/Navbar/Navbar";
 import Bienvenue from "../../Components/HomeComponents/Bienvenue/Bienvenue";
 import Actualite from "../../Components/HomeComponents/Actualite/Actualite";
 import Presentation from "../../Components/HomeComponents/Presentation/Presentation";
@@ -10,9 +9,6 @@ import Horaire from "../../Components/HomeComponents/Horaire/Horaire";
 const Home = () => {
 	return (
 		<div className="home-container light-theme">
-			<div className="navbar">
-				<Navbar />
-			</div>
 			<div className="bienvenue" id="bienvenue">
 				<Bienvenue></Bienvenue>
 			</div>

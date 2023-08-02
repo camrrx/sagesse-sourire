@@ -1,31 +1,31 @@
 export const menuItems = [
 	{
 		title: "Bienvenue",
-		url: "/bienvenue",
+		url: "/home",
 		submenu: [
 			{
 				title: "Presentation",
-				url: "#presentation",
+				url: "/sagesse-sourire/home#presentation",
 			},
 			{
 				title: "Actualités",
-				url: "#actualites",
+				url: "/sagesse-sourire/home#actualites",
 			},
 			{
 				title: "Equipements",
-				url: "#equipements",
+				url: "/sagesse-sourire/home#equipements",
 			},
 			{
 				title: "Venir chez nous",
-				url: "#venircheznous",
+				url: "/sagesse-sourire/home#venircheznous",
 			},
 			{
 				title: "Horaires",
-				url: "#horaire",
+				url: "/sagesse-sourire/home#horaire",
 			},
 			{
 				title: "Nous contacter",
-				url: "#nouscontacter",
+				url: "/sagesse-sourire/home#nouscontacter",
 			},
 		],
 	},
@@ -35,27 +35,27 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Notre équipe",
-				url: "#equipes",
+				url: "/sagesse-sourire/leCabinet#equipes",
 			},
 			{
 				title: "Accueil",
-				url: "#accueil",
+				url: "/sagesse-sourire/leCabinet#accueil",
 			},
 			{
 				title: "Les dentistes",
-				url: "#dentistes",
+				url: "/sagesse-sourire/leCabinet#dentistes",
 			},
 			{
 				title: "Les assistantes",
-				url: "#assistantes",
+				url: "/sagesse-sourire/leCabinet#assistantes",
 			},
 			{
 				title: "Les prothésistes",
-				url: "#prothesistes",
+				url: "/sagesse-sourire/leCabinet#prothesistes",
 			},
 			{
 				title: "Les correspondants",
-				url: "#correspondants",
+				url: "/sagesse-sourire/leCabinet#correspondants",
 			},
 		],
 	},
@@ -65,23 +65,23 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Les implants dentaires",
-				url: "#implantsDentaires",
+				url: "/sagesse-sourire/traitements#implantsDentaires",
 			},
 			{
 				title: "L'orthodontie",
-				url: "#orthodontie",
+				url: "/sagesse-sourire/traitements#orthodontie",
 			},
 			{
 				title: "La dentisterie ésthétique",
-				url: "#dentisterieEsthetique",
+				url: "/sagesse-sourire/traitements#dentisterieEsthetique",
 			},
 			{
 				title: "Parodontie et soins",
-				url: "#parodontie",
+				url: "/sagesse-sourire/traitements#parodontie",
 			},
 			{
 				title: "Gestion de la douleur",
-				url: "#gestionDouleur",
+				url: "/sagesse-sourire/traitements#gestionDouleur",
 			},
 		],
 	},

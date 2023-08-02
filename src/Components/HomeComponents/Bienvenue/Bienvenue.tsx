@@ -3,7 +3,7 @@ import "./Bienvenue.scss";
 
 const Bienvenue = () => {
 	return (
-		<div className="welcome-container" equipements>
+		<div className="welcome-container">
 			<h1>BIENVENUE</h1>
 			<p>
 				La technologie disponible et les techniques de soins actuelles
