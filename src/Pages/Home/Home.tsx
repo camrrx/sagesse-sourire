@@ -1,9 +1,11 @@
 import "./Home.scss";
 import Navbar from "../../Components/Navbar/Navbar";
-import Bienvenue from "../../Components/Bienvenue/Bienvenue";
-import Actualite from "../../Components/Actualite/Actualite";
-import Presentation from "../../Components/Presentation/Presentation";
-import Equipements from "../../Components/Equipements/Equipements";
+import Bienvenue from "../../Components/HomeComponents/Bienvenue/Bienvenue";
+import Actualite from "../../Components/HomeComponents/Actualite/Actualite";
+import Presentation from "../../Components/HomeComponents/Presentation/Presentation";
+import Equipements from "../../Components/HomeComponents/Equipements/Equipements";
+import VenirChezNous from "../../Components/HomeComponents/VenirChezNous/VenirChezNous";
+import Horaire from "../../Components/HomeComponents/Horaire/Horaire";
 
 const Home = () => {
 	return (
@@ -24,6 +26,14 @@ const Home = () => {
 			<div className="separation"></div>
 			<div className="equipements" id="equipements">
 				<Equipements></Equipements>
+			</div>
+			<div className="venircheznous-horaire">
+				<div id="venircheznous">
+					<VenirChezNous></VenirChezNous>
+				</div>
+				<div id="horaire">
+					<Horaire></Horaire>
+				</div>
 			</div>
 		</div>
 	);

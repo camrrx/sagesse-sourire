@@ -1,0 +1,83 @@
+@import "../../../themes.scss";
+
+.venircheznous-container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	.venircheznous-title {
+		color: #09836e;
+		font-size: 2.5vw;
+		letter-spacing: 5px;
+		margin-top: 20px;
+	}
+	.box-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 80%;
+		margin: 10px;
+		background-color: white;
+		border-top: solid 10px var(--primary-1);
+		padding: 10px;
+		gap: 10px;
+		border-radius: 10px;
+
+		.name {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			.imgbat {
+				height: 60px;
+			}
+		}
+
+		.phonenumber {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			width: 70%;
+		}
+
+		.adresse {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			width: 70%;
+		}
+
+		.busstop {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			.stop {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+			}
+		}
+
+		.button-syrendre {
+			display: flex;
+			width: fit-content;
+			align-items: center;
+			padding: 10px;
+			gap: 10px;
+			border-radius: 15px;
+			background-color: var(--primary-1);
+			color: white;
+			cursor: pointer;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.icon {
+		color: var(--primary-1);
+	}
+}
+.lighter-font {
+	font-weight: lighter;
+}

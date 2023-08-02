@@ -1,5 +1,5 @@
 import "./Presentation.scss";
-import dentiste from "../../assets/dentiste.jpeg";
+import dentiste from "../../../assets/dentiste.jpeg";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 

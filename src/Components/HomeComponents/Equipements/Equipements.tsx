@@ -1,5 +1,5 @@
 import "./Equipements.scss";
-import { EquipementsData } from "../../assets/EquipementsData";
+import { EquipementsData } from "../../../assets/EquipementsData";
 
 const Equipements = () => {
 	return (

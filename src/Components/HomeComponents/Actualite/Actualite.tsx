@@ -1,5 +1,5 @@
 import "./Actualite.scss";
-import { ActualitesData } from "../../assets/ActualiteData";
+import { ActualitesData } from "../../../assets/ActualiteData";
 
 export interface ActualiteItem {
 	id: number;
