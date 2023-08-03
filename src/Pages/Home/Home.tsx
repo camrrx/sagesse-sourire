@@ -15,11 +15,9 @@ const Home = () => {
 			<div className="presentation" id="presentation">
 				<Presentation></Presentation>
 			</div>
-			<div className="separation"></div>
 			<div className="actualite" id="actualites">
 				<Actualite></Actualite>
 			</div>
-			<div className="separation"></div>
 			<div className="equipements" id="equipements">
 				<Equipements></Equipements>
 			</div>

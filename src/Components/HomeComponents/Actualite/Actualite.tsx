@@ -33,10 +33,8 @@ const Actualite = () => {
 			<div className="actualite-cards">
 				{ActualitesData.map((actu: ActualiteItem) => (
 					<div className="card">
-						<div className="card__image"></div>
+						<div className="card__image">{actu.title}</div>
 						<div className="card__content">
-							<div className="card__title">{actu.title}</div>
-
 							<div className="card__describe">{actu.description}</div>
 							{actu.document.title.length > 1 ? (
 								<div
