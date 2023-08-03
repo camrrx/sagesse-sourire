@@ -12,6 +12,12 @@
 		background-image: url(../../assets/topimg.png);
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		@media (max-width: 500px) {
+			min-height: 5vh;
+			background-attachment: scroll; /* Pour rétablir le comportement de l'image en défilement sur les petits écrans */
+		}
 	}
 
 	.presentation {
@@ -46,6 +52,9 @@
 			rgba(86, 240, 200, 0.4) 55%,
 			rgba(100, 217, 166, 4) 100%
 		);
+		@media (max-width: 500px) {
+			flex-direction: column;
+		}
 	}
 }
 

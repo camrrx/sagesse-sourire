@@ -7,6 +7,9 @@
 
 	.titre {
 		width: 50vw;
+		@media (max-width: 500px) {
+			width: 90vw;
+		}
 		.presentation-texte {
 			display: flex;
 		}
@@ -18,11 +21,18 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@media (max-width: 500px) {
+			flex-direction: column;
+		}
 		.titre1 {
 			display: flex;
 			flex-direction: column;
 			gap: 15px;
 			padding: 20px;
+			@media (max-width: 500px) {
+				justify-content: center;
+				align-items: center;
+			}
 		}
 		.imgdentiste {
 			border-radius: 15px;

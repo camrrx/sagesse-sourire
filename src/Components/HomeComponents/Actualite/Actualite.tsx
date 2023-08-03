@@ -4,7 +4,6 @@ import { ActualitesData } from "../../../assets/ActualiteData";
 export interface ActualiteItem {
 	id: number;
 	title: string;
-	subtitle: string;
 	description: string;
 	document: {
 		title: string;
@@ -37,11 +36,7 @@ const Actualite = () => {
 						<div className="card__image"></div>
 						<div className="card__content">
 							<div className="card__title">{actu.title}</div>
-							{actu.subtitle ? (
-								<div className="card__subtitle">{actu.subtitle}</div>
-							) : (
-								""
-							)}
+
 							<div className="card__describe">{actu.description}</div>
 							{actu.document.title.length > 1 ? (
 								<div

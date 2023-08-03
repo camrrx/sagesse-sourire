@@ -9,6 +9,9 @@
 	&.scrolled {
 		background-color: #23c8ad;
 	}
+	@media (max-width: 500px) {
+		justify-content: start;
+	}
 	.logo-container {
 		display: flex;
 		justify-content: center;
@@ -20,80 +23,86 @@
 		.logo {
 			height: 50px;
 		}
-	}
-}
-
-.navbar-item {
-	padding: 5px 6px 5px 6px;
-	border-radius: 6px;
-	transition: 0.4s;
-	cursor: pointer;
-	margin: 0;
-
-	&:hover {
-		background-color: var(--hover-1);
-
-		.navbar-link {
-			color: var(--primary-2);
+		.title-dentiste {
+			@media (max-width: 500px) {
+				display: none;
+			}
 		}
 	}
-	.navbar-link {
-		cursor: pointer;
-		background: none;
-		border: none;
+	.navbar-container {
 		display: flex;
-		color: var(--white);
-		text-decoration: none;
-		font-size: 1.1em;
+		flex-direction: row;
+		gap: 5vw;
+		.navbar-item {
+			padding: 5px 6px 5px 6px;
+			border-radius: 6px;
+			transition: 0.4s;
+			cursor: pointer;
+			margin: 0;
+
+			&:hover {
+				background-color: var(--hover-1);
+
+				.navbar-link {
+					color: var(--primary-2);
+				}
+			}
+			.navbar-link {
+				cursor: pointer;
+				background: none;
+				border: none;
+				display: flex;
+				color: var(--white);
+				text-decoration: none;
+				font-size: 1.1em;
+			}
+
+			.submenu {
+				position: absolute;
+				transform: translateY(10%);
+				background-color: var(--white);
+				padding: 3px;
+				margin: 0;
+				border-radius: 6px;
+				transform: translateY(10px);
+			}
+		}
+
+		.navbar-item:hover .submenu {
+			display: block;
+		}
+
+		.submenu-item {
+			display: block;
+		}
+
+		.submenu-link {
+			transition: 0.2s;
+			display: block;
+			padding: 0.5rem 1rem;
+			color: var(--primary-1);
+			text-decoration: none;
+
+			&:hover {
+				color: var(--white);
+				border-radius: 6px;
+				background-color: var(--primary-1);
+			}
+		}
 	}
 
-	.submenu {
-		position: absolute;
-		transform: translateY(10%);
-		background-color: var(--white);
-		padding: 3px;
-		margin: 0;
-		border-radius: 6px;
-		transform: translateY(10px);
-	}
-}
+	.navbar-toggle {
+		display: none;
 
-.navbar-item:hover .submenu {
-	display: block;
-}
-
-.submenu-item {
-	display: block;
-}
-
-.submenu-link {
-	transition: 0.2s;
-	display: block;
-	padding: 0.5rem 1rem;
-	color: var(--primary-1);
-	text-decoration: none;
-
-	&:hover {
-		color: var(--white);
-	}
-}
-
-.submenu-link:hover {
-	border-radius: 6px;
-	background-color: var(--primary-1);
-}
-
-.navbar-toggle {
-	display: none;
-
-	@media (max-width: 500px) {
-		z-index: 1000000;
-		display: block;
-		background-color: #555;
-		color: var(--white);
-		border: none;
-		padding: 0.5rem 1rem;
-		margin-bottom: 1rem;
-		cursor: pointer;
+		@media (max-width: 500px) {
+			z-index: 1000000;
+			display: block;
+			background-color: #555;
+			color: var(--white);
+			border: none;
+			padding: 0.5rem 1rem;
+			margin-bottom: 1rem;
+			cursor: pointer;
+		}
 	}
 }

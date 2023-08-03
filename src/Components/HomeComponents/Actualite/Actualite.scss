@@ -1,7 +1,7 @@
 .actualite-container {
 	.actualite-title {
 		color: #09836e;
-		font-size: 2.5vw;
+		font-size: 2.5em;
 		letter-spacing: 5px;
 	}
 	.scroll-1::-webkit-scrollbar {
@@ -34,9 +34,12 @@
 			flex: 0 0 40%;
 			overflow: hidden;
 			border-radius: 8px;
-			background-color: #cbcbcb;
+			background-color: #f9f9f9;
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 			scroll-snap-align: start;
-
+			@media (max-width: 500px) {
+				flex: 0 0 100%;
+			}
 			.card__image {
 				height: 30vh;
 			}
@@ -98,17 +101,15 @@
 				gap: 10px;
 				padding: 20px;
 				.card__title {
-					font-size: 2.5vw;
-					color: #fff;
-					text-transform: capitalize;
+					font-size: 2.5em;
+					color: #468e71;
 				}
 				.card__subtitle {
-					font-size: 2vw;
+					font-size: 2em;
 					color: #468e71;
-					text-transform: capitalize;
 				}
 				.card__describe {
-					color: #fff;
+					color: #468e71;
 					font-size: 16px;
 				}
 				.card__document {

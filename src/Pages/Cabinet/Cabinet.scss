@@ -1,0 +1,16 @@
+@import "../../themes.scss";
+@import "../../utils.scss";
+
+.lecabinet-container {
+	display: flex;
+	flex-direction: column;
+	gap: 5vh;
+
+	.top {
+		width: 100%;
+		min-height: 80vh;
+		background-image: url(../../assets/cabinetimg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

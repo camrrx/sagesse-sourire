@@ -1,22 +1,15 @@
-@import "../../../themes.scss";
-
-.welcome-container {
+.notrecabinet-container {
 	display: flex;
 	flex-direction: column;
 	width: 50vw;
 	margin-top: 20vh;
 	margin-left: 100px;
 
-	@media (max-width: 500px) {
-		width: 80vw;
-		margin: 10vh 10vh 10vh 10vw;
-	}
-
 	h1 {
 		color: var(--white);
 		opacity: 0.8;
-		font-size: 5vw;
-		letter-spacing: 2vw;
+		font-size: 4vw;
+		letter-spacing: 5px;
 		padding: 0;
 		margin: 0;
 	}
@@ -28,7 +21,7 @@
 		margin-bottom: 3rem;
 	}
 
-	.button-contact {
+	.button-equipe {
 		font-size: 1rem;
 		background-color: transparent;
 		padding: 1rem;

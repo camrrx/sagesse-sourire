@@ -13,7 +13,7 @@ const Navbar = () => {
 			const windowHeight = window.innerHeight;
 			const scrollY = window.scrollY;
 
-			if (scrollY >= windowHeight / 2) {
+			if (scrollY >= windowHeight / 8) {
 				setScrolled(true);
 			} else {
 				setScrolled(false);
@@ -28,44 +28,46 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="navbar light-theme">
 			<nav>
 				<div className={`navbar ${scrolled ? "scrolled" : ""}`}>
 					<div className="logo-container">
 						<img src={logo} className="logo" />
-						<h1>Cabinet sagesse & sourire</h1>
+						<h1 className="title-dentiste">Cabinet sagesse & sourire</h1>
 					</div>
-					{menuItems.map((item, index) => (
-						<div key={index} className="navbar-item">
-							{item.submenu ? (
-								<Menu>
-									<Menu.Button className="navbar-link">
+					<div className="navbar-container">
+						{menuItems.map((item, index) => (
+							<div key={index} className="navbar-item">
+								{item.submenu ? (
+									<Menu>
+										<Menu.Button className="navbar-link">
+											{item.title}
+										</Menu.Button>
+										<Menu.Items className="submenu">
+											{item.submenu.map((subItem, subIndex) => (
+												<Menu.Item key={subIndex}>
+													{({ active }) => (
+														<a
+															key={subIndex}
+															href={subItem.url}
+															className={`submenu-link ${
+																active ? "active" : ""
+															}`}>
+															{subItem.title}
+														</a>
+													)}
+												</Menu.Item>
+											))}
+										</Menu.Items>
+									</Menu>
+								) : (
+									<Link to={item.url} className="navbar-link">
 										{item.title}
-									</Menu.Button>
-									<Menu.Items className="submenu">
-										{item.submenu.map((subItem, subIndex) => (
-											<Menu.Item key={subIndex}>
-												{({ active }) => (
-													<a
-														key={subIndex}
-														href={subItem.url}
-														className={`submenu-link ${
-															active ? "active" : ""
-														}`}>
-														{subItem.title}
-													</a>
-												)}
-											</Menu.Item>
-										))}
-									</Menu.Items>
-								</Menu>
-							) : (
-								<Link to={item.url} className="navbar-link">
-									{item.title}
-								</Link>
-							)}
-						</div>
-					))}
+									</Link>
+								)}
+							</div>
+						))}
+					</div>
 				</div>
 			</nav>
 		</div>
