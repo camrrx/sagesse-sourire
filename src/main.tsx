@@ -3,12 +3,14 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/MenuComponents/Navbar/Navbar";
+import Sidebar from "./Components/MenuComponents/Sidebar/Sidebar";
+const isMobile = window.matchMedia("(max-width: 500px)").matches;
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<Navbar />
+			{isMobile ? <Sidebar /> : <Navbar />}
 			<App />
 		</BrowserRouter>
 	</React.StrictMode>

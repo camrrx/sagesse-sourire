@@ -1,0 +1,102 @@
+@import "../../../themes.scss";
+
+.sidebar-closed {
+	position: fixed;
+	justify-content: space-between;
+	.toggle-icon {
+		position: fixed;
+		height: 40px;
+
+		left: 0;
+		padding: 20px;
+		color: #ffffff;
+	}
+	.logo {
+		position: fixed;
+		height: 40px;
+		right: 0;
+		padding: 20px;
+		color: #ffffff;
+	}
+	&.scrolled {
+		background-color: #23c8ad;
+	}
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+	background-color: var(--primary-1);
+	padding: 20px;
+	width: 250px;
+	transition: transform 0.3s ease;
+	transform: translateX(-100%);
+
+	&.open {
+		transform: translateX(0);
+		transition: transform 0.3s ease;
+	}
+	.logo-container {
+		display: flex;
+		gap: 1rem;
+		margin-left: 1rem;
+		margin-right: 3rem;
+
+		.logo {
+			height: 50px;
+		}
+		.title-dentiste {
+			font-size: 1.5em;
+		}
+	}
+	.menu-items {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 40px;
+		gap: 25px;
+
+		.menu-item {
+			display: flex;
+			flex-direction: column;
+			text-decoration: none;
+
+			.menu-title {
+				text-decoration: none;
+				color: white;
+				font-size: 1.5rem;
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+
+				&:hover {
+					background-color: rgba(170, 173, 172, 0.2);
+				}
+			}
+
+			.submenu-items {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				padding-left: 20px;
+				margin-top: 20px;
+				text-decoration: none;
+
+				.submenu-item {
+					text-decoration: none;
+					color: #ffffff; // Bleu transparent pour les sous-menus
+					font-size: 1.2rem;
+					cursor: pointer;
+					transition: background-color 0.3s ease;
+
+					&:hover {
+						background-color: rgba(152, 158, 156, 0.2);
+					}
+				}
+			}
+		}
+	}
+}
