@@ -2,11 +2,33 @@ import "./Presentation.scss";
 import dentiste from "../../../assets/dentiste.jpeg";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 const Presentation = () => {
+	const [showPresentation, setShowPresentation] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const presentationSection = document.getElementById("presentation");
+			if (presentationSection) {
+				const sectionTop = presentationSection.getBoundingClientRect().top;
+				if (sectionTop <= window.innerHeight * 0.7) {
+					setShowPresentation(true);
+					window.removeEventListener("scroll", handleScroll);
+				}
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
-		<div className="presentation-container">
-			<div className="titre">
+		<div className="presentation-container ">
+			<div className={`titre ${showPresentation ? "show" : "noshow"}`}>
 				<h4 className="presentation-texte">
 					Au service de votre bien-être et de votre santé.
 				</h4>
@@ -15,12 +37,15 @@ const Presentation = () => {
 				</h2>
 			</div>
 			<div className="presentation-sagesse">
-				<div className="titre1">
+				<div className={`titre1 ${showPresentation ? "show" : "noshow"}`}>
 					<h5>A chateaubriant depuis</h5>
 					<h2>1903</h2>
 				</div>
-				<img src={dentiste} className="imgdentiste" />
-				<div className="description1">
+				<img
+					src={dentiste}
+					className={`imgdentiste ${showPresentation ? "show" : "noshow"}`}
+				/>
+				<div className={`description1 ${showPresentation ? "show" : "noshow"}`}>
 					<h5>
 						Notre équipe médicale s’est regroupée autour de compétences
 						professionnelles et humaines qui permettent une prise en charge et

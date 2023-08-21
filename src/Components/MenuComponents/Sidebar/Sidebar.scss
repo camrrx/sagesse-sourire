@@ -2,24 +2,29 @@
 
 .sidebar-closed {
 	position: fixed;
+	display: flex;
 	justify-content: space-between;
-	.toggle-icon {
-		position: fixed;
-		height: 40px;
+	width: 100%;
+	background-color: none;
+	padding: 10px;
+	transition: background-color 0.6s ease;
 
-		left: 0;
-		padding: 20px;
-		color: #ffffff;
-	}
-	.logo {
-		position: fixed;
-		height: 40px;
-		right: 0;
-		padding: 20px;
-		color: #ffffff;
-	}
 	&.scrolled {
-		background-color: #23c8ad;
+		background-color: var(--primary-1);
+	}
+
+	.toggle-icon {
+		height: 40px;
+		margin: 10px 0 0 10px;
+		color: #ffffff;
+		font-size: 24px;
+		cursor: pointer;
+	}
+
+	.logo {
+		margin: 10px 25px 0 0px;
+		height: 40px;
+		color: #ffffff;
 	}
 }
 
@@ -43,9 +48,6 @@
 	.logo-container {
 		display: flex;
 		gap: 1rem;
-		margin-left: 1rem;
-		margin-right: 3rem;
-
 		.logo {
 			height: 50px;
 		}
@@ -87,8 +89,9 @@
 
 				.submenu-item {
 					text-decoration: none;
-					color: #ffffff; // Bleu transparent pour les sous-menus
+					color: #ffffff;
 					font-size: 1.2rem;
+					font-weight: 100;
 					cursor: pointer;
 					transition: background-color 0.3s ease;
 

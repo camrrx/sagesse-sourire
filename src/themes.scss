@@ -1,23 +1,28 @@
-    // Default theme
-    :root {
-        --primary-1: #007bff;
-        --secondary-1: #6c757d;
-    }
+// Default theme
+:root {
+	--primary-1: #007bff;
+	--secondary-1: #6c757d;
+}
 
-    // Dark theme
-    .dark-theme {
-        --white: rgb(43, 43, 43);
-        --primary-1: #54b2a3;
-        --primary-2: #37796e;
-        --secondary-1: #253260;
-        --hover-1: #a3cfc8;
-    }
+// Dark theme
+.dark-theme {
+	--white: rgb(43, 43, 43);
+	--primary-1: #54b2a2;
+	--primary-2: #37796e;
+	--secondary-1: #253260;
+	--hover-1: #a3cfc8;
+}
 
-    // Light theme
-    .light-theme {
-        --white: white;
-        --primary-1: #54b2a3;
-        --primary-2: #37796e;
-        --secondary-1: #253260;
-        --hover-1: #a3cfc8;
-    }
+// Light theme
+.light-theme {
+	--white: white;
+	--primary-1: #547db2;
+	--primary-2: #2566ac;
+	--secondary-1: #253260;
+	--hover-1: #bccfe9;
+	--primary-linear: linear-gradient(
+		90deg,
+		rgba(84, 125, 178, 1) 28%,
+		rgba(140, 183, 239, 1) 100%
+	);
+}

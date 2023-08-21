@@ -7,7 +7,7 @@
 	gap: 1.5rem;
 	transition: background-color 0.6s ease;
 	&.scrolled {
-		background-color: #23c8ad;
+		background-color: var(--primary-1);
 	}
 	@media (max-width: 500px) {
 		justify-content: start;
@@ -97,7 +97,7 @@
 		@media (max-width: 500px) {
 			z-index: 1000000;
 			display: block;
-			background-color: #555;
+			background-color: #d5d5d5;
 			color: var(--white);
 			border: none;
 			padding: 0.5rem 1rem;

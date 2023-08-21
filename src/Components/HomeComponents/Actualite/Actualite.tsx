@@ -1,8 +1,15 @@
+import React, { useState, useRef } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Actualite.scss";
 import { ActualitesData } from "../../../assets/ActualiteData";
+import virus from "../../../assets/actu/virus.jpeg";
+import calendar from "../../../assets/actu/calendar.jpeg";
+import refund from "../../../assets/actu/refund.jpeg";
+import medical from "../../../assets/actu/medical.jpeg";
 
 export interface ActualiteItem {
 	id: number;
+	img?: string;
 	title: string;
 	description: string;
 	document: {
@@ -11,7 +18,36 @@ export interface ActualiteItem {
 	};
 }
 
-const Actualite = () => {
+const Actualite: React.FC = () => {
+	const [scrollPosition, setScrollPosition] = useState(0);
+	const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+	const handleNextClick = () => {
+		if (scrollContainerRef.current) {
+			const newScrollPosition = scrollPosition + 600;
+			if (newScrollPosition <= scrollContainerRef.current.scrollWidth) {
+				setScrollPosition(newScrollPosition);
+				scrollContainerRef.current.scrollTo({
+					left: newScrollPosition,
+					behavior: "smooth",
+				});
+			}
+		}
+	};
+
+	const handlePrevClick = () => {
+		if (scrollContainerRef.current) {
+			const newScrollPosition = scrollPosition - 600;
+			if (newScrollPosition >= -250) {
+				setScrollPosition(newScrollPosition);
+				scrollContainerRef.current.scrollTo({
+					left: newScrollPosition,
+					behavior: "smooth",
+				});
+			}
+		}
+	};
+
 	const handleDocumentClick = (
 		actions: string | { questionnairecovid: string }
 	) => {
@@ -28,26 +64,53 @@ const Actualite = () => {
 	};
 
 	return (
-		<div className="actualite-container">
+		<div className="actualite-page">
 			<h2 className="actualite-title">ACTUALITES</h2>
-			<div className="actualite-cards">
-				{ActualitesData.map((actu: ActualiteItem) => (
-					<div className="card">
-						<div className="card__image">{actu.title}</div>
-						<div className="card__content">
-							<div className="card__describe">{actu.description}</div>
-							{actu.document.title.length > 1 ? (
+			<div className="actualite-container">
+				<button className="pagination-button" onClick={handlePrevClick}>
+					<FaChevronLeft />
+				</button>
+				<div
+					className="actu-cards-container"
+					ref={scrollContainerRef}
+					onScroll={() => {
+						setScrollPosition(scrollContainerRef.current?.scrollLeft || 0);
+					}}>
+					{ActualitesData.map((actu: ActualiteItem) => (
+						<div className={`card`} key={actu.id}>
+							<div className="card__image">
 								<div
-									className="card__document"
-									onClick={() => handleDocumentClick(actu.document.actions)}>
-									{actu.document.title}
-								</div>
-							) : (
-								<div></div>
-							)}
+									className="card__image-background"
+									style={{
+										backgroundImage: `url(${
+											actu.img === "virus"
+												? virus
+												: actu.img === "refund"
+												? refund
+												: actu.img === "calendar"
+												? calendar
+												: medical
+										})`,
+									}}
+								/>
+								<div className="card__title">{actu.title}</div>
+							</div>
+							<div className="card__content">
+								<div className="card__describe">{actu.description}</div>
+								{actu.document.title.length > 1 ? (
+									<div
+										className="card__document"
+										onClick={() => handleDocumentClick(actu.document.actions)}>
+										{actu.document.title}
+									</div>
+								) : null}
+							</div>
 						</div>
-					</div>
-				))}
+					))}
+				</div>
+				<button className="pagination-button" onClick={handleNextClick}>
+					<FaChevronRight />
+				</button>
 			</div>
 		</div>
 	);

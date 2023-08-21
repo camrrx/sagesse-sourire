@@ -45,6 +45,7 @@ const Sidebar = () => {
 		window.addEventListener("scroll", handleScroll);
 		document.addEventListener("mousedown", handleClickOutside);
 
+		console.log(scrolled);
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 			document.removeEventListener("mousedown", handleClickOutside);
@@ -53,10 +54,12 @@ const Sidebar = () => {
 
 	return (
 		<div>
-			<div className={`sidebar-closed ${scrolled ? "scrolled" : ""}`}>
+			<div
+				className={`sidebar-closed ${scrolled ? "scrolled" : ""} light-theme`}>
 				<FaBars className="toggle-icon" onClick={toggleSidebar} />
 				<img src={logo} className="logo" />
 			</div>
+
 			<div
 				className={`sidebar ${isOpen ? "open" : ""} light-theme`}
 				ref={sidebarRef}>
