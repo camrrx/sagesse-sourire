@@ -2,61 +2,71 @@
 @import "../../utils.scss";
 
 .home-container {
-	display: flex;
-	flex-direction: column;
-	gap: 5vh;
-	overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
-	.bienvenue {
-		width: 100%;
-		height: 100vh;
-		background-image: url(../../assets/topimg.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
-		@media (max-width: 500px) {
-			min-height: 5vh;
-			background-attachment: scroll; /* Pour rétablir le comportement de l'image en défilement sur les petits écrans */
+    .bienvenue {
+        width: 100%;
+        height: 100vh;
+        background: rgb(175, 200, 203);
+        background: linear-gradient(135deg, rgba(175, 200, 203, 1) 50%, rgba(130, 140, 141, 1) 100%);
+		.lines {
+			position: absolute;
+			width: 100vw;
+			height: 100%;
+			opacity: 0.04;
+            z-index: 1;
 		}
-	}
 
-	.presentation {
-		display: flex;
-		justify-content: start;
-		padding-left: 8vw;
-	}
+        .dentist {
+            position: absolute;
+            max-width: 40vw;
+            max-height: 90vh;
+            right: 10vw;
+            bottom: 0;
+            z-index: 2;
+        }
+        @media (max-width: 500px) {
+            min-height: 5vh;
+            background-attachment: scroll;
+            /* Pour rétablir le comportement de l'image en défilement sur les petits écrans */
+        }
+    }
 
-	.actualite {
-		display: flex;
-		justify-content: center;
-		height: 100vh;
-		align-items: center;
-		background: linear-gradient(
-			90deg,
-			rgba(84, 125, 178, 1) 28%,
-			rgba(140, 183, 239, 1) 100%
-		);
-	}
+    .presentation {
+        display: flex;
+        justify-content: start;
+        padding-left: 8vw;
+    }
 
-	.venircheznous-horaire {
-		display: flex;
-		justify-content: space-between;
-		background-image: linear-gradient(
-			90deg,
-			rgba(184, 255, 247, 0.4) 0%,
-			rgba(146, 246, 233, 0.4) 36%,
-			rgba(86, 240, 200, 0.4) 55%,
-			rgba(100, 217, 166, 4) 100%
-		);
-		@media (max-width: 500px) {
-			flex-direction: column;
-		}
-	}
+    .actualite {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        background: linear-gradient(90deg,
+                rgba(84, 125, 178, 1) 28%,
+                rgba(140, 183, 239, 1) 100%);
+    }
+
+    .venircheznous-horaire {
+        display: flex;
+        justify-content: space-between;
+        background-image: linear-gradient(90deg,
+                rgba(184, 255, 247, 0.4) 0%,
+                rgba(146, 246, 233, 0.4) 36%,
+                rgba(86, 240, 200, 0.4) 55%,
+                rgba(100, 217, 166, 4) 100%);
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
+    }
 }
 
 h1 {
-	color: var(--white);
-	padding: 0;
-	margin: 0;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
 }

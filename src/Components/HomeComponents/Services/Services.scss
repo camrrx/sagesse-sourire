@@ -1,0 +1,81 @@
+@import "../../../themes.scss";
+
+.services-container {
+    width: 100%;
+    height: 70vh;
+    background: rgb(235,235,235);
+    background: linear-gradient(180deg, rgba(235,235,235,1) 39%, rgba(255,255,255,1) 100%);    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-wrapper {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        gap: 3rem;
+
+        .title {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                font-size: 1.7rem;
+                color: var(--primary-1);
+            }
+
+            h1 {
+                color: var(--secondary-1);
+            }
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 1rem;
+
+            .card {
+                transition: 0.2s;
+                border-radius: 8px;
+                padding: 2rem;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                border: 1px solid var(--grey-1);
+
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 70px;
+                    width: 70px;
+                    background-color: var(--grey-1);
+                    border-radius: 50%;
+                    img {
+                    }
+                }
+
+                h1 {
+                    color: var(--secondary-1);
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    color: var(--white-1);
+                }
+
+                &:hover {
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+            }
+        }
+    }
+}

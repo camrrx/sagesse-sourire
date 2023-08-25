@@ -1,6 +1,6 @@
 // Default theme
 :root {
-	--primary-1: #007bff;
+	--primary-1: #6cb22e;
 	--secondary-1: #6c757d;
 }
 
@@ -10,19 +10,23 @@
 	--primary-1: #54b2a2;
 	--primary-2: #37796e;
 	--secondary-1: #253260;
-	--hover-1: #a3cfc8;
+	--hover-1: rgba(255, 255, 255, 0.109);
+	--grey-1: #ebebeb;
+
 }
 
 // Light theme
-.light-theme {
+.grey-theme {
 	--white: white;
-	--primary-1: #547db2;
-	--primary-2: #2566ac;
+	--primary-1: #91a7ab;
+	--primary-2: #b3c6ca;
 	--secondary-1: #253260;
-	--hover-1: #bccfe9;
+	--hover-1: rgba(255, 255, 255, 0.109);
+	--hover-2: rgba(255, 255, 255, 0.178);
+	--grey-1: #ebebeb;
 	--primary-linear: linear-gradient(
 		90deg,
-		rgba(84, 125, 178, 1) 28%,
-		rgba(140, 183, 239, 1) 100%
+		#326e90,
+		rgb(43, 52, 65) 100%
 	);
 }

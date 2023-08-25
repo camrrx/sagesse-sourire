@@ -4,74 +4,95 @@ import { Menu } from "@headlessui/react";
 import logo from "../../../assets/logo-sagesse.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../../ThemeContext";
 
 const Navbar = () => {
-	const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const {theme, toggleTheme} = useTheme();
 
-	useEffect(() => {
-		const handleScroll = () => {
-			const windowHeight = window.innerHeight;
-			const scrollY = window.scrollY;
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const scrollY = window.scrollY;
 
-			if (scrollY >= windowHeight / 8) {
-				setScrolled(true);
-			} else {
-				setScrolled(false);
-			}
-		};
+      if (scrollY >= windowHeight / 8) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-		window.addEventListener("scroll", handleScroll);
 
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
-
-	return (
-		<div className="navbar light-theme">
-			<nav>
-				<div className={`navbar ${scrolled ? "scrolled" : ""}`}>
-					<div className="logo-container">
-						<img src={logo} className="logo" />
-						<h1 className="title-dentiste">Cabinet sagesse & sourire</h1>
-					</div>
-					<div className="navbar-container">
-						{menuItems.map((item, index) => (
-							<div key={index} className="navbar-item">
-								{item.submenu ? (
-									<Menu>
-										<Menu.Button className="navbar-link">
-											{item.title}
-										</Menu.Button>
-										<Menu.Items className="submenu">
-											{item.submenu.map((subItem, subIndex) => (
-												<Menu.Item key={subIndex}>
-													{({ active }) => (
-														<a
-															key={subIndex}
-															href={subItem.url}
-															className={`submenu-link ${
-																active ? "active" : ""
-															}`}>
-															{subItem.title}
-														</a>
-													)}
-												</Menu.Item>
-											))}
-										</Menu.Items>
-									</Menu>
-								) : (
-									<Link to={item.url} className="navbar-link">
-										{item.title}
-									</Link>
-								)}
-							</div>
-						))}
-					</div>
-				</div>
-			</nav>
-		</div>
-	);
+  return (
+    <div className={`navbar ${theme}`}>
+      <nav>
+        <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
+          <div className="logo-container">
+            <div className="logo">
+              <img src={logo} />
+            </div>
+            <div className="title-dentiste">
+              <h1>Cabinet</h1>
+              <p>Sagesse & Sourire</p>
+            </div>
+          </div>
+          <div className="navbar-container">
+            {menuItems.map((item, index) => (
+              <div key={index} className="navbar-item">
+                {item.submenu ? (
+                  <Menu>
+                    <Menu.Button className="navbar-link">
+                      {item.title}
+                    </Menu.Button>
+                    <Menu.Items className="submenu">
+                      {item.submenu.map((subItem, subIndex) => (
+                        <Menu.Item key={subIndex}>
+                          {({ active }) => (
+                            <a
+                              key={subIndex}
+                              href={subItem.url}
+                              className={`submenu-link ${
+                                active ? "active" : ""
+                              }`}
+                            >
+                              {subItem.title}
+                            </a>
+                          )}
+                        </Menu.Item>
+                      ))}
+                    </Menu.Items>
+                  </Menu>
+                ) : (
+                  <Link to={item.url} className="navbar-link">
+                    {item.title}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="right-container">
+            <Menu>
+              <button className="button-contact button-2">Prendre RDV</button>
+              <Menu.Button className="color-button">
+                <div className="inside"></div>
+              </Menu.Button>
+              <Menu.Items className="colorpicker">
+                <h1>Themes</h1>
+                <button onClick={() => toggleTheme('grey-theme')}>Gris/vert</button>
+                <button onClick={() => toggleTheme('blue-theme')}>Bleu</button>
+                <button onClick={() => toggleTheme('dark-theme')}>sombre</button>
+              </Menu.Items>
+            </Menu>
+          </div>
+        </div>
+      </nav>
+    </div>
+  );
 };
 
 export default Navbar;
