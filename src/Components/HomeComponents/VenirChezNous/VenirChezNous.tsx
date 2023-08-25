@@ -6,6 +6,7 @@ import {
 	BsCompassFill,
 } from "react-icons/bs";
 import { FaMapPin, FaArrowRight } from "react-icons/fa";
+import MapComponent from "../../Maps/maps";
 const VenirChezNous = () => {
 	const busStop = [
 		"Bus - Mairie",
@@ -67,6 +68,7 @@ const VenirChezNous = () => {
 					S'y rendre <FaArrowRight />
 				</div>
 			</div>
+			<MapComponent></MapComponent>
 		</div>
 	);
 };
