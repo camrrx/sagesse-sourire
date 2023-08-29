@@ -1,50 +1,31 @@
 .card-container {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
-	height: 250px;
-	width: 30vw;
-	box-shadow: rgba(109, 109, 110, 0.2) 0px 7px 29px 0px;
-	margin: 20px;
-	border-radius: 10px;
-
-	.card-perso-pict {
-		position: fixed;
-		top: 50%;
-		left: 50%;
+	gap: 15px;
+	height: 400px;
+	width: 400px;
+	.card-perso-image {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
 	}
-	.card-bg {
-		height: 50%;
-		border-radius: 10px 10px 0 0;
-
-		background: var(--primary-linear);
-	}
-
-	.card-perso-info {
+	.card-perso-function-container {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
-		height: 50%;
-		gap: 20px;
-		.card-perso-name {
-		}
-		.card-perso-function-container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 5px;
-			.card-perso-function {
-				padding: 10px;
-				box-shadow: rgba(109, 109, 110, 0.2) 0px 7px 29px 0px;
-				background: var(--primary-linear);
-
-				color: white;
-				border-radius: 20px;
-				cursor: pointer;
-				&:hover {
-					background: white;
-					color: var(--primary-1);
-				}
+		gap: 5px;
+		.card-perso-function {
+			padding: 10px;
+			box-shadow: rgba(109, 109, 110, 0.2) 0px 7px 29px 0px;
+			background: var(--primary-1);
+			color: white;
+			border-radius: 10px;
+			cursor: pointer;
+			&:hover {
+				background: white;
+				color: var(--primary-1);
 			}
 		}
 	}

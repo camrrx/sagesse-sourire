@@ -1,15 +1,15 @@
-.accueil-container {
+.dentistes-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 90vh;
-	.accueil-title {
+	.dentistes-title {
 		margin: 15px;
 	}
-	.accueil-description {
-		margin: 15px;
+	.dentistes-description {
+		margin-left: 15px;
 	}
-	.accueil-perso-container {
+	.dentistes-perso-container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

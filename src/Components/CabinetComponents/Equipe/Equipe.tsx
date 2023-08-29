@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Equipe = () => {
 	return (
-		<div className="notrecabinet-container">
-			<h1>LE CABINET</h1>
+		<div className="notrecabinet-container grey-theme">
+			<h1 className="title">LE CABINET</h1>
 			<p>
 				Notre cabinet soigne des patients de la région depuis 1903 Notre équipe
 				médicale s’est regroupée autour de compétences professionnelles et

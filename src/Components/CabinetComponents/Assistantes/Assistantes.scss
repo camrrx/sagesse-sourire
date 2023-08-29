@@ -1,15 +1,15 @@
-.accueil-container {
+.assistantes-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 90vh;
-	.accueil-title {
+	.assistantes-title {
 		margin: 15px;
 	}
-	.accueil-description {
-		margin: 15px;
+	.assistantes-description {
+		margin-left: 15px;
 	}
-	.accueil-perso-container {
+	.assistantes-perso-container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

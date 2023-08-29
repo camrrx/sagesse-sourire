@@ -12,7 +12,6 @@
 	--secondary-1: #253260;
 	--hover-1: rgba(255, 255, 255, 0.109);
 	--grey-1: #ebebeb;
-
 }
 
 // Light theme
@@ -22,11 +21,7 @@
 	--primary-2: #b3c6ca;
 	--secondary-1: #253260;
 	--hover-1: rgba(255, 255, 255, 0.109);
-	--hover-2: rgba(255, 255, 255, 0.178);
+	--hover-2: rgb(167, 194, 194);
 	--grey-1: #ebebeb;
-	--primary-linear: linear-gradient(
-		90deg,
-		#326e90,
-		rgb(43, 52, 65) 100%
-	);
+	--primary-linear: linear-gradient(90deg, #326e90, rgb(43, 52, 65) 100%);
 }
