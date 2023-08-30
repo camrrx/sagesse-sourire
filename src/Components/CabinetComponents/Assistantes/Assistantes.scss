@@ -2,8 +2,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 90vh;
+	align-items: center;
+	height: 100vh;
+	transform: translateX(200%);
+	transition: transform 0.8s ease;
 	.assistantes-title {
+		color: var(--secondary-1);
 		margin: 15px;
 	}
 	.assistantes-description {
@@ -12,7 +16,12 @@
 	.assistantes-perso-container {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		margin: 15px;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		width: 100vw;
+	}
+	&.show {
+		transform: translateX(0);
 	}
 }

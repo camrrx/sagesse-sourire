@@ -12,7 +12,11 @@
 		justify-content: center;
 		align-items: center;
 		padding: 30px;
-
+		transform: translateX(-200%);
+		transition: transform 0.8s ease;
+		&.show {
+			transform: translateX(0);
+		}
 		.title {
 			color: var(--secondary-1);
 		}
@@ -65,9 +69,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transform: translateX(200%);
+		transition: transform 0.8s ease;
 		.dent-img {
 			width: 400px;
 			height: 400px;
+		}
+		&.show {
+			transform: translateX(0);
 		}
 	}
 }

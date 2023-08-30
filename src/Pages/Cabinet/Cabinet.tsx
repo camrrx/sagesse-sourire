@@ -7,21 +7,21 @@ import "./Cabinet.scss";
 
 const Cabinet = () => {
 	return (
-		<div className="lecabinet-container light-theme">
-			<div className="top" id="top">
-				<Equipe></Equipe>
+		<div className="lecabinet-container grey-theme">
+			<div className="top" id="equipes">
+				<Equipe />
 			</div>
-			<div className="equipe" id="equipe">
-				<Accueil></Accueil>
+			<div className="accueil" id="accueil">
+				<Accueil />
 			</div>
-			<div className="equipe" id="equipe">
-				<Dentistes></Dentistes>
+			<div id="dentistes">
+				<Dentistes />
 			</div>
-			<div className="equipe" id="equipe">
-				<Assistantes></Assistantes>
+			<div id="assistantes">
+				<Assistantes />
 			</div>
-			<div className="equipe" id="equipe">
-				<Prothesistes></Prothesistes>
+			<div id="prothesistes">
+				<Prothesistes />
 			</div>
 		</div>
 	);

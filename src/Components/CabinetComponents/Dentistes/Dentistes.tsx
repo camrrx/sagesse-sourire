@@ -1,10 +1,33 @@
 import "./Dentistes.scss";
 import { employes_dentistes } from "../../../assets/employes";
 import DentistesSlider from "./dentistesSlider";
+import {
+	handleScrollForSection,
+	addScrollListener,
+	removeScrollListener,
+} from "../../../utils/scrollUtils";
+import { useState, useEffect } from "react";
 
 const Dentistes = () => {
+	const [showSection, setShowSection] = useState(false);
+
+	useEffect(() => {
+		const handleScroll: EventListener = () => {
+			handleScrollForSection("dentistes", setShowSection);
+		};
+
+		addScrollListener(handleScroll);
+
+		return () => {
+			removeScrollListener(handleScroll);
+		};
+	}, []);
+
 	return (
-		<div className="dentistes-container grey-theme">
+		<div
+			className={`dentistes-container grey-theme ${
+				showSection ? "show" : "noshow"
+			}`}>
 			<h1 className="dentistes-title">LES DENTISTES</h1>
 			<h5 className="dentistes-description">
 				Tous les dentistes du cabinet travail en équipe et s’impliquent dans la

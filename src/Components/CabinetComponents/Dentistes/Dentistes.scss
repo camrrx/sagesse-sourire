@@ -5,13 +5,17 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 90vh;
-
+	height: 100vh;
+	transform: translateX(-200%);
+	transition: transform 0.8s ease;
 	.dentistes-title {
 		color: var(--secondary-1);
 		margin: 15px;
 	}
 	.dentistes-description {
 		margin-left: 15px;
+	}
+	&.show {
+		transform: translateX(0);
 	}
 }

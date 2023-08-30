@@ -1,7 +1,7 @@
 export const menuItems = [
 	{
 		title: "Bienvenue",
-		url: "/home",
+		url: "",
 		submenu: [
 			{
 				title: "Presentation",
@@ -31,7 +31,7 @@ export const menuItems = [
 	},
 	{
 		title: "Le cabinet",
-		url: "/leCabinet",
+		url: "",
 		submenu: [
 			{
 				title: "Notre équipe",

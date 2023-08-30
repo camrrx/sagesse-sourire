@@ -3,11 +3,33 @@ import dent from "../../../assets/dent_dentiste.png";
 import technologie from "../../../assets/technologie.png";
 import communication from "../../../assets/communication.png";
 import materiaux from "../../../assets/materiaux.png";
+import {
+	handleScrollForSection,
+	addScrollListener,
+	removeScrollListener,
+} from "../../../utils/scrollUtils";
+import { useState, useEffect } from "react";
 
 const Prothesistes = () => {
+	const [showSection, setShowSection] = useState(false);
+
+	useEffect(() => {
+		const handleScroll: EventListener = () => {
+			handleScrollForSection("prothesistes", setShowSection);
+		};
+
+		addScrollListener(handleScroll);
+
+		return () => {
+			removeScrollListener(handleScroll);
+		};
+	}, []);
 	return (
 		<div className="prothesistes-container grey-theme">
-			<div className="prothesistes-text">
+			<div
+				className={`prothesistes-text grey-theme ${
+					showSection ? "show" : "noshow"
+				}`}>
 				<h1 className="title">LES PROTHESISTES,</h1>
 				<p className="description1">
 					Nous travaillons avec un laboratoire de prothèses proche de notre
@@ -44,7 +66,10 @@ const Prothesistes = () => {
 					</div>
 				</div>
 			</div>
-			<div className="prothesistes-dent">
+			<div
+				className={`prothesistes-dent grey-theme ${
+					showSection ? "show" : "noshow"
+				}`}>
 				<img className="dent-img" src={dent}></img>
 			</div>
 		</div>

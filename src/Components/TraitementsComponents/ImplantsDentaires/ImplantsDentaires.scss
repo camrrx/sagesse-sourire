@@ -1,0 +1,15 @@
+@import "../../../themes.scss";
+@import "../../../utils.scss";
+
+.ImplantsDentaires-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: var(--primary-1);
+	.implant-container {
+		.implant-img {
+			height: 200px;
+		}
+	}
+}

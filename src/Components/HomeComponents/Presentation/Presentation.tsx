@@ -3,26 +3,24 @@ import dentiste from "../../../assets/dentiste.jpeg";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import {
+	handleScrollForSection,
+	addScrollListener,
+	removeScrollListener,
+} from "../../../utils/scrollUtils";
 
 const Presentation = () => {
 	const [showPresentation, setShowPresentation] = useState(false);
 
 	useEffect(() => {
-		const handleScroll = () => {
-			const presentationSection = document.getElementById("presentation");
-			if (presentationSection) {
-				const sectionTop = presentationSection.getBoundingClientRect().top;
-				if (sectionTop <= window.innerHeight * 0.7) {
-					setShowPresentation(true);
-					window.removeEventListener("scroll", handleScroll);
-				}
-			}
+		const handleScroll: EventListener = () => {
+			handleScrollForSection("presentation", setShowPresentation);
 		};
 
-		window.addEventListener("scroll", handleScroll);
+		addScrollListener(handleScroll);
 
 		return () => {
-			window.removeEventListener("scroll", handleScroll);
+			removeScrollListener(handleScroll);
 		};
 	}, []);
 
