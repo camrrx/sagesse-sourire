@@ -9,6 +9,13 @@
 		height: 200px;
 		width: 200px;
 		border-radius: 50%;
+		box-shadow: rgba(109, 109, 110, 0.2) 0px 7px 29px 0px;
+		cursor: pointer;
+		padding: 5px;
+		&:hover {
+			transform: scale(1.1);
+			border: none;
+		}
 	}
 	.card-perso-function-container {
 		display: flex;
@@ -16,16 +23,16 @@
 		justify-content: center;
 		align-items: center;
 		gap: 5px;
+		flex-direction: column;
 		.card-perso-function {
 			padding: 10px;
 			box-shadow: rgba(109, 109, 110, 0.2) 0px 7px 29px 0px;
-			background: var(--primary-1);
-			color: white;
+			background: var(--white);
+			color: var(--primary-1);
 			border-radius: 10px;
 			cursor: pointer;
 			&:hover {
-				background: white;
-				color: var(--primary-1);
+				transform: scale(1.03);
 			}
 		}
 	}

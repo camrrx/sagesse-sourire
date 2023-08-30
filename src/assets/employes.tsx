@@ -12,7 +12,7 @@ export const employes_accueils = [
 	{
 		name: "Régine",
 		functions: ["Accueil Téléphonique", "Secrétariat"],
-		photo: "regine.jpeg",
+		photo: "regine.png",
 	},
 ];
 
@@ -26,13 +26,13 @@ export const employes_dentistes = [
 			"Prothèse Esthétique",
 			"Désinclusions",
 		],
-		photo: "thierry.jpg",
+		photo: "thierry.png",
 	},
 	{
 		name: "Dr Eric Merlet",
 		title: "Chargé des départements Orthodontie et Blanchiment Dentaire",
 		functions: ["Orthodontie", "Blanchiment Dentaire", "Parodontologie"],
-		photo: "eric.jpg",
+		photo: "eric.png",
 	},
 	{
 		name: "	Dr Laurent Avenard",
@@ -43,7 +43,7 @@ export const employes_dentistes = [
 			"Prothèse Esthétique",
 			"Facettes LUMINEERS",
 		],
-		photo: "laurent.jpg",
+		photo: "laurent.png",
 	},
 	{
 		name: "	Dr Karine Chotard",
@@ -54,7 +54,7 @@ export const employes_dentistes = [
 			"Prothèse Esthétique",
 			"Orthodontie",
 		],
-		photo: "servane.jpeg",
+		photo: "karine.png",
 	},
 	{
 		name: "	Dr Eve Lelièvre",
@@ -66,7 +66,7 @@ export const employes_dentistes = [
 			"Prothèse Esthétique",
 			"Onlay Esthétique",
 		],
-		photo: "eve.jpeg",
+		photo: "eve.png",
 	},
 ];
 
@@ -75,7 +75,7 @@ export const employes_assistantes = [
 		name: "Servane",
 		title: "Assistante Dentaire Qualifiée du Dr Karine Chotard",
 		functions: ["Responsable des achats"],
-		photo: "regine.jpeg",
+		photo: "regine.png",
 	},
 	{
 		name: "Valérie",
@@ -87,13 +87,13 @@ export const employes_assistantes = [
 		name: "Patricia",
 		title: "Assistante Dentaire Qualifiée du Dr Thierry Lelièvre",
 		functions: ["Aide opératoire en Implantologie"],
-		photo: "karine.jpeg",
+		photo: "karine.png",
 	},
 	{
 		name: "Carina",
 		title: "Assistante dentaire Qualifiée du Dr Eric Merlet",
 		functions: ["Aide opératoire en Orthodontie"],
-		photo: "eve.jpeg",
+		photo: "eve.png",
 	},
 	{
 		name: "Mélina",

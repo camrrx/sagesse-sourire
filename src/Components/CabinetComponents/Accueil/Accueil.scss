@@ -3,12 +3,19 @@
 	flex-direction: column;
 	justify-content: center;
 	height: 90vh;
-	.accueil-title {
-		margin: 15px;
+	.accueil-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		.accueil-title {
+			margin: 15px;
+		}
+		.accueil-description {
+			margin: 15px;
+		}
 	}
-	.accueil-description {
-		margin: 15px;
-	}
+
 	.accueil-perso-container {
 		display: flex;
 		align-items: center;

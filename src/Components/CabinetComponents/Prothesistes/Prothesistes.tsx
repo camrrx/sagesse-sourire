@@ -1,0 +1,54 @@
+import "./Prothesistes.scss";
+import dent from "../../../assets/dent_dentiste.png";
+import technologie from "../../../assets/technologie.png";
+import communication from "../../../assets/communication.png";
+import materiaux from "../../../assets/materiaux.png";
+
+const Prothesistes = () => {
+	return (
+		<div className="prothesistes-container grey-theme">
+			<div className="prothesistes-text">
+				<h1 className="title">LES PROTHESISTES,</h1>
+				<p className="description1">
+					Nous travaillons avec un laboratoire de prothèses proche de notre
+					cabinet dentaire.
+				</p>
+				<h2>Laboratoire Surel de Moisdon la Rivière</h2>
+				<div className="prothesistes-cards">
+					<div className="card">
+						<img className="icon" src={technologie} alt="" />
+						<h1>Exigence</h1>
+						<p>
+							Ils partagent nos exigences et font appel aux avancées
+							technologiques les plus récentes et les plus éprouvées.
+						</p>
+					</div>
+					<div className="card">
+						<img className="icon" src={materiaux} alt="" />
+						<h1>Compétence</h1>
+						<p>
+							Ils utilisent les compétences de professionnels reconnus et de
+							matériaux certifiés pour la sécurité de nos patients. La
+							traçabilité des prothèses réalisées est assurée par tous et
+							disponible pour tous nos patients.
+						</p>
+					</div>
+					<div className="card">
+						<img className="icon" src={communication} alt="" />
+						<h1>Synérgie</h1>
+						<p>
+							Les travaux complexes sont réalisés en synergie, il est souvent
+							utile que le prothésiste voit en bouche ce que l'on veut réaliser,
+							et notre proximité rend cela possible.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className="prothesistes-dent">
+				<img className="dent-img" src={dent}></img>
+			</div>
+		</div>
+	);
+};
+
+export default Prothesistes;

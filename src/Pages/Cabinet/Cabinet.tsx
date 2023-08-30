@@ -2,6 +2,7 @@ import Accueil from "../../Components/CabinetComponents/Accueil/Accueil";
 import Assistantes from "../../Components/CabinetComponents/Assistantes/Assistantes";
 import Dentistes from "../../Components/CabinetComponents/Dentistes/Dentistes";
 import Equipe from "../../Components/CabinetComponents/Equipe/Equipe";
+import Prothesistes from "../../Components/CabinetComponents/Prothesistes/Prothesistes";
 import "./Cabinet.scss";
 
 const Cabinet = () => {
@@ -18,6 +19,9 @@ const Cabinet = () => {
 			</div>
 			<div className="equipe" id="equipe">
 				<Assistantes></Assistantes>
+			</div>
+			<div className="equipe" id="equipe">
+				<Prothesistes></Prothesistes>
 			</div>
 		</div>
 	);

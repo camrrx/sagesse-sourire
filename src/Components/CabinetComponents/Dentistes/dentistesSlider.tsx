@@ -1,0 +1,82 @@
+import React, { useState, useEffect } from "react";
+import "./dentistesSlider.scss";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
+interface Dentiste {
+	name: string;
+	title: string;
+	functions: string[];
+	photo: string;
+}
+
+interface DentistesSliderProps {
+	dentistes: Dentiste[];
+}
+
+const DentistesSlider = ({ dentistes }: DentistesSliderProps) => {
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const [currentDentiste, setCurrenDentiste] = useState<Dentiste>(
+		dentistes[currentIndex]
+	);
+
+	useEffect(() => {
+		setCurrenDentiste(dentistes[currentIndex]);
+	}, [currentIndex]);
+
+	const goToPrevious = () => {
+		if (currentIndex === 0) {
+			setCurrentIndex(dentistes.length - 1);
+		} else {
+			setCurrentIndex(currentIndex - 1);
+		}
+	};
+
+	const goToNext = () => {
+		if (currentIndex === dentistes.length - 1) {
+			setCurrentIndex(0);
+		} else {
+			setCurrentIndex(currentIndex + 1);
+		}
+	};
+
+	return (
+		<div className="slider-container grey-theme">
+			<div className="slider">
+				<div className="dentiste-page">
+					<button className="pagination-button" onClick={goToPrevious}>
+						<FaChevronLeft />
+					</button>
+					{currentDentiste ? (
+						<div className="employee">
+							<div className="info">
+								<h1 className="name">{currentDentiste.name}</h1>
+								<h1 className="title">{currentDentiste.title}</h1>
+								<div className="functions">
+									{currentDentiste.functions.map((func, index) => (
+										<div className="function" key={index}>
+											{func}
+										</div>
+									))}
+								</div>
+							</div>
+							<div className="photo">
+								<img
+									className="photo-dentiste"
+									src={`/photosEmployes/${currentDentiste.photo}`}
+									alt={currentDentiste.name}
+								/>
+							</div>
+						</div>
+					) : (
+						""
+					)}
+					<button className="pagination-button" onClick={goToNext}>
+						<FaChevronRight />
+					</button>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default DentistesSlider;

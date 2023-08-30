@@ -1,18 +1,17 @@
+@import "../../../themes.scss";
+
 .dentistes-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	height: 90vh;
+
 	.dentistes-title {
+		color: var(--secondary-1);
 		margin: 15px;
 	}
 	.dentistes-description {
 		margin-left: 15px;
-	}
-	.dentistes-perso-container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin: 15px;
 	}
 }
