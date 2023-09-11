@@ -13,7 +13,7 @@ const TraitementsTop = () => {
 					</h3>
 				</div>
 				<div className="traitement traitement-2">
-					<h2>L’Orthodontie</h2>
+					<h2> L’Orthodontie</h2>
 					<h3>
 						L’orthodontie permet de rétablir un alignement des dents et ainsi
 						d’obtenir un sourire harmonieux
