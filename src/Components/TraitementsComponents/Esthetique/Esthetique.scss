@@ -1,0 +1,33 @@
+.cosmetique-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cosmetique-container {
+	display: flex;
+	gap: 20px;
+	.cosmetique {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 40vw;
+		gap: 20px;
+
+		.cosmetique-img {
+			width: 30vw;
+			height: 30vh;
+			border-radius: 10px;
+		}
+	}
+}
+
+.blanchiment-container {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	.blanchiment-img {
+		height: 30vh;
+		width: 50vw;
+		border-radius: 10px;
+	}
+}

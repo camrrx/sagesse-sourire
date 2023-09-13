@@ -1,0 +1,37 @@
+.Orthodontie-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--white);
+	.orthodontie-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.bracket-container {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			.bracket {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.orthodontie-video {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid black;
+			height: 250px;
+			width: 40vw;
+		}
+
+		.ortho-img {
+			height: 30vh;
+			border-radius: 10px;
+		}
+	}
+}
