@@ -4,6 +4,7 @@ import soins from "../../../assets/cards/soins.png";
 import ortho from "../../../assets/cards/ortho.png";
 import implant from "../../../assets/cards/implant.png";
 import paro from "../../../assets/cards/paro.png";
+import logo from "../../../assets/logo-sagesse-noir.png"
 
 const Services = () => {
   return (
@@ -65,6 +66,11 @@ const Services = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="line-container">
+          <div className="line"></div>
+          <img src={logo} alt="" />
+          <div className="line"></div>
         </div>
       </div>
     </>

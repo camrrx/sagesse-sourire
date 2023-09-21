@@ -3,26 +3,32 @@
 .venircheznous-container {
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
 	align-items: center;
+	gap: 3rem;
+	margin-top: 4rem;
 
 	.venircheznous-title {
-		color: #09836e;
+		color: var(--secondary-1);
 		font-size: 2em;
 		letter-spacing: 5px;
 		margin-top: 20px;
 	}
+
+	.flex-container {
+		display: flex;
+	}
+
 	.box-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 80%;
+		width: 50%;
 		margin: 10px;
 		background-color: white;
-		border-top: solid 10px var(--primary-1);
-		padding: 10px;
+		padding: 1rem;
 		gap: 10px;
 		border-radius: 10px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
 		.name {
 			display: flex;

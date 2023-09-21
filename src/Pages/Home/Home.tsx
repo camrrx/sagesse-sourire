@@ -4,11 +4,11 @@ import Actualite from "../../Components/HomeComponents/Actualite/Actualite";
 import Presentation from "../../Components/HomeComponents/Presentation/Presentation";
 import Equipements from "../../Components/HomeComponents/Equipements/Equipements";
 import VenirChezNous from "../../Components/HomeComponents/VenirChezNous/VenirChezNous";
-import Horaire from "../../Components/HomeComponents/Horaire/Horaire";
 import lines from "../../assets/lines.png";
 import Services from "../../Components/HomeComponents/Services/Services";
 import dentist from "../../assets/dentist.png";
 import { useTheme } from "../../ThemeContext";
+import Footer from "../../Components/shared/Footer";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -32,14 +32,12 @@ const Home = () => {
       <div className="equipements" id="equipements">
         <Equipements></Equipements>
       </div>
-      <div className="venircheznous-horaire">
+      <div className="venircheznous">
         <div id="venircheznous">
           <VenirChezNous></VenirChezNous>
         </div>
-        <div id="horaire">
-          <Horaire></Horaire>
-        </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

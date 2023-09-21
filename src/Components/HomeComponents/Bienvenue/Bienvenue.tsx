@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./Bienvenue.scss";
 
 const Bienvenue = () => {
+
   return (
     <div className="welcome-container">
       <h1 className="title">

@@ -3,7 +3,7 @@ import { menuItems } from "../../../assets/menuItems";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import "./Sidebar.scss";
-import logo from "../../../assets/logo-sagesse.png";
+import logo from "../../../assets/logo-sagesse-blanc.png";
 
 const Sidebar = () => {
 	const [isOpen, setIsOpen] = useState(false);

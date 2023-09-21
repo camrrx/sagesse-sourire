@@ -1,7 +1,7 @@
 import "./Navbar.scss";
 import { menuItems } from "../../../assets/menuItems";
 import { Menu } from "@headlessui/react";
-import logo from "../../../assets/logo-sagesse.png";
+import logo from "../../../assets/logo-sagesse-blanc.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../../ThemeContext";
