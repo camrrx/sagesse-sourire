@@ -4,20 +4,41 @@ import Actualite from "../../Components/HomeComponents/Actualite/Actualite";
 import Presentation from "../../Components/HomeComponents/Presentation/Presentation";
 import Equipements from "../../Components/HomeComponents/Equipements/Equipements";
 import VenirChezNous from "../../Components/HomeComponents/VenirChezNous/VenirChezNous";
-import lines from "../../assets/lines.png";
 import Services from "../../Components/HomeComponents/Services/Services";
 import dentist from "../../assets/dentist.png";
 import { useTheme } from "../../ThemeContext";
 import Footer from "../../Components/shared/Footer";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const { theme } = useTheme();
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)"); 
+
+    const handleResize = (e: any) => {
+      setIsMobile(e.matches);
+    };
+    handleResize(mediaQuery); 
+    mediaQuery.addListener(handleResize); 
+    return () => {
+      mediaQuery.removeListener(handleResize); 
+    };
+  }, []);
+
   return (
     <div className={`home-container ${theme}`}>
+      {isMobile ? (
+        ""
+      ) : (
+        <div className="banniere">
+          <img src={dentist} alt="" />
+        </div>
+      )}
+
       <div className="bienvenue" id="bienvenue">
-        <img className="lines" src={lines} alt="" />
-        <img className="dentist" src={dentist} alt="" />
         <Bienvenue></Bienvenue>
       </div>
       <div className="services" id="services">

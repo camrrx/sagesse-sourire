@@ -5,19 +5,38 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    gap: 1rem;
+
+    .banniere {
+        position: absolute;
+        width: 30vw;
+        height: 80vh;
+        background-color: var(--primary-1);
+        background: linear-gradient(120deg, var(--primary-1) 50%, var(--primary-2) 100%);
+        right: 10vw;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        img {
+        }
+
+    }
 
     .bienvenue {
         width: 100%;
         height: 100vh;
-        background: rgb(175, 200, 203);
-        background: linear-gradient(135deg, rgba(175, 200, 203, 1) 50%, rgba(130, 140, 141, 1) 100%);
-		.lines {
-			position: absolute;
-			width: 100vw;
-			height: 100%;
-			opacity: 0.04;
+        background: var(--secondary-1);
+
+        // background: linear-gradient(135deg, var(--primary-1) 50%, var(--primary-2) 100%);
+        .lines {
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            opacity: 0.04;
             z-index: 1;
-		}
+        }
 
         .dentist {
             position: absolute;
@@ -27,6 +46,7 @@
             bottom: 0;
             z-index: 2;
         }
+
         @media (max-width: 500px) {
             min-height: 5vh;
             background-attachment: scroll;
@@ -38,9 +58,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgb(145,167,171);
-background: linear-gradient(354deg, var(--primary-1), rgba(255,255,255,1) 70%);
-        
+        background: var(--secondary-1);
     }
 
     .venircheznous {

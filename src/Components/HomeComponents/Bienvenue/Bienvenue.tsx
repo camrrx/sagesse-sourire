@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "./Bienvenue.scss";
 
 const Bienvenue = () => {
-
   return (
     <div className="welcome-container">
       <h1 className="title">
@@ -18,7 +17,7 @@ const Bienvenue = () => {
           <button className="button-1 button-contact">Nous contacter</button>
         </Link>
         <Link to="/nousContacter">
-          <button className="button-2 button-contact">Prendre RDV</button>
+          <button className="button-3 button-contact">Prendre RDV</button>
         </Link>
       </div>
     </div>

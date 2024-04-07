@@ -77,10 +77,9 @@ const Navbar = () => {
           </div>
           <div className="right-container">
             <Menu>
-              <button className="button-contact button-2">Prendre RDV</button>
-              <Menu.Button className="color-button">
-                <div className="inside"></div>
-              </Menu.Button>
+              <button className="button-contact button-3">Prendre RDV</button>
+              {/* <Menu.Button>
+              </Menu.Button> */}
               <Menu.Items className="colorpicker">
                 <h1>Themes</h1>
                 <button onClick={() => toggleTheme('grey-theme')}>Gris/vert</button>

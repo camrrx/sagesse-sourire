@@ -1,9 +1,32 @@
 @import "../../../themes.scss";
 
+.sticker {
+    position: absolute;
+    height: 230px;
+    width: 100px;
+    left: 12.5%;
+    margin-top: -3vh;
+    background-color: var(--primary-1);
+    background: linear-gradient(180deg, var(--primary-1) 50%, var(--primary-2) 100%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    img {
+        width: 40%;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 650px) { 
+        display: none;
+    }
+}
+
 .services-container {
     width: 100%;
-    background: rgb(235,235,235);
-    background: linear-gradient(180deg, rgba(235,235,235,1) 39%, rgba(255,255,255,1) 100%);    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +41,7 @@
         .line {
             width: 40%;
             height: 1px;
-            background-color: var(--grey-1);
+            background-color: var(--secondary-1);
         }
         img {
             height: 30px;
@@ -26,6 +49,8 @@
             opacity: 0.2;
         }
     }
+
+  
 
     .main-wrapper {
         width: 75%;
@@ -38,19 +63,38 @@
         justify-content: space-evenly;
         gap: 3rem;
 
+        @media (max-width: 650px) { 
+            margin-top: 1rem;
+        }
+
         .title {
-            width: 50%;
+            width: 100%;
             display: flex;
             justify-content: center;
+            align-items: flex-start;
             flex-direction: column;
+            line-height: 2.7rem;
+
+            @media (max-width: 650px) { 
+                align-items: center;
+                h2, h1 {
+                    padding: 0 !important;
+                }
+                h1 {
+                    font-size: 2.6rem !important;
+                }
+            }
 
             h2 {
+                padding-left: 120px;
                 font-size: 1.7rem;
-                color: var(--primary-1);
+                color: var(--button-1);
             }
 
             h1 {
-                color: var(--secondary-1);
+                padding-left: 120px;
+                color: var(--dark-text);
+                font-size: 3rem;
             }
         }
 
@@ -59,6 +103,10 @@
             justify-content: center;
             text-align: center;
             gap: 1rem;
+
+            @media (max-width: 650px) { 
+                flex-direction: column;
+            }
 
             .card {
                 transition: 0.2s;
@@ -70,7 +118,7 @@
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
-                border: 1px solid var(--grey-1);
+                border: 1px solid var(--primary-tr);
 
                 .icon {
                     display: flex;
@@ -83,12 +131,12 @@
                 }
 
                 h1 {
-                    color: var(--secondary-1);
+                    color: var(--dark-text);
                     font-size: 1.5rem;
                 }
 
                 p {
-                    color: var(--white-1);
+                    color: var(--secondary-dark-text);
                 }
 
                 &:hover {

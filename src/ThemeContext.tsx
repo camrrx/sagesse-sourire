@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext, ReactNode } from "react";
 
-type Theme = "grey-theme" | "dark-theme" | "blue-theme";
+type Theme = "grey-theme" | "dark-theme" | "blue-theme" | "new-theme";
 
 interface ThemeContextType {
   theme: Theme;
@@ -14,7 +14,7 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>("grey-theme");
+  const [theme, setTheme] = useState<Theme>("new-theme");
 
   const toggleTheme = (color: string) => {
     setTheme(color as Theme);

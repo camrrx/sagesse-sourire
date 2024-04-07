@@ -1,6 +1,30 @@
 @import "../../../themes.scss";
 @import "../../../utils.scss";
 
+
+
+.icone {
+	position: absolute;
+	width: 50px;
+}
+
+.loupe {
+	top: 40%;
+	left: 40%;
+}
+
+.brosse {
+	top: 15%;
+	left: 45%;
+}
+
+.dent-card {
+	top: 30%;
+	left: 55%;
+}
+
+
+
 .welcome-container {
 	display: flex;
 	flex-direction: column;
@@ -10,28 +34,38 @@
 	position: absolute;
 	z-index: 3;
 
+	
+
 	.buttons {
 		display: flex;
 		gap: 2rem;
 	}
 
 
-	@media (max-width: 500px) {
-		width: 80vw;
-		margin: 10vh 10vh 10vh 10vw;
+	@media (max-width: 650px) {
+		width: 85vw;
+		margin: 18vh 10vh 7.5vw 7.5vw;
+		align-items: center;
 	}
 
 .title {
-		color: var(--white);
+		color: var(--dark-text);
 		font-size: 5vw;
 		line-height: 5vw;
 		margin-bottom: 4vh;
+		@media (max-width: 650px) { 
+			font-size: 15vw;
+			line-height: 15vw;
+		}
 	}
 
 	p {
-		color: var(--white);
+		color: var(--dark-text);
 		font-size: 1.3rem;
 		margin-bottom: 3rem;
 		width: 35vw;
+		@media (max-width: 650px) {
+			width: 100%;
+		} 
 	}
 }

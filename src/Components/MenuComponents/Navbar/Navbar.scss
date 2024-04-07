@@ -10,12 +10,16 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.123);
 
     &.scrolled {
-        background-color: var(--primary-2);
+        background-color: var(--secondary-1);
         border-bottom: 1px solid rgba(255, 255, 255, 0.123);
+        box-shadow: rgba(99, 99, 99, 0.078) 0px 2px 8px 0px;}
+
+    @media (max-width: 650px) {
+        justify-content: start;
     }
 
-    @media (max-width: 500px) {
-        justify-content: start;
+    .right-container {
+        padding-right: 1rem;
     }
 
     .logo-container {
@@ -32,7 +36,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(255, 255, 255, 0.177);
+            background-color: var(--button-1);
             border-radius: 8px;
 
             img {
@@ -49,7 +53,7 @@
 
             h1,
             p {
-                color: var(--white);
+                color: var(--dark-text);
                 font-size: 1rem;
             }
 
@@ -87,14 +91,14 @@
                 border: none;
                 display: flex;
                 background: none;
-                color: var(--white);
+                color: var(--dark-text);
                 text-decoration: none;
                 font-size: 1.1em;
             }
 
             .submenu {
                 position: absolute;
-                background-color: var(--hover-2);
+                background-color: var(--white);
                 padding: 3px;
                 margin: 0;
                 border-radius: 6px;
@@ -121,7 +125,7 @@
         transition: 0.2s;
         display: block;
         padding: 0.5rem 1rem;
-        color: var(--white);
+        color: var(--dark-text);
         text-decoration: none;
 
         &:hover {
@@ -152,7 +156,7 @@
         height: 15px;
         width: 15px;
         border-radius: 50%;
-        background-color: var(--white);
+        background-color: var(--white) !important;
         cursor: pointer;
         border: none;
 

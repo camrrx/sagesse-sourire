@@ -25,7 +25,7 @@ const Accueil = () => {
 
 	return (
 		<div
-			className={`accueil-container grey-theme ${
+			className={`accueil-container ${
 				showSection ? "show" : "noshow"
 			}`}
 			id="accueil">

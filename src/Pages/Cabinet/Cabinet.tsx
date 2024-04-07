@@ -7,7 +7,7 @@ import "./Cabinet.scss";
 
 const Cabinet = () => {
 	return (
-		<div className="lecabinet-container grey-theme">
+		<div className="lecabinet-container">
 			<div className="top" id="equipes">
 				<Equipe />
 			</div>

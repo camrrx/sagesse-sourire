@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import "./Sidebar.scss";
 import logo from "../../../assets/logo-sagesse-blanc.png";
+import { useTheme } from "../../../ThemeContext";
 
 const Sidebar = () => {
+	const { theme } = useTheme();
 	const [isOpen, setIsOpen] = useState(false);
 	const [activeMenu, setActiveMenu] = useState<number | null>(null);
 	const sidebarRef = useRef<HTMLDivElement>(null);
@@ -55,13 +57,13 @@ const Sidebar = () => {
 	return (
 		<div>
 			<div
-				className={`sidebar-closed ${scrolled ? "scrolled" : ""} light-theme`}>
+				className={`sidebar-closed ${scrolled ? "scrolled" : ""} ${theme}`}>
 				<FaBars className="toggle-icon" onClick={toggleSidebar} />
 				<img src={logo} className="logo" />
 			</div>
 
 			<div
-				className={`sidebar ${isOpen ? "open" : ""} light-theme`}
+				className={`sidebar ${isOpen ? "open" : ""} ${theme}`}
 				ref={sidebarRef}>
 				<div className="logo-container">
 					<img src={logo} className="logo" />

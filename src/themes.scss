@@ -6,8 +6,8 @@
 
 // Dark theme
 .dark-theme {
-	--white: rgb(43, 43, 43);
-	--primary-1: #54b2a2;
+	--white: rgb(255, 255, 255);
+	--primary-1: #7ec1de;
 	--primary-2: #37796e;
 	--secondary-1: #253260;
 	--hover-1: rgba(255, 255, 255, 0.109);
@@ -24,4 +24,15 @@
 	--hover-2: rgba(255, 255, 255, 0.979);
 	--grey-1: #ebebeb;
 	--primary-linear: linear-gradient(90deg, #326e90, rgb(43, 52, 65) 100%);
+}
+
+.new-theme {
+	--white: white;
+	--dark-text: #0d0c21;
+	--secondary-dark-text: #0d0c219b;
+	--primary-1: #bfdce6;
+	--primary-2: #71a1b5;
+	--secondary-1: #dfeef9;
+	--button-1: #5bc7dd;
+	--primary-tr: #71a1b514;
 }

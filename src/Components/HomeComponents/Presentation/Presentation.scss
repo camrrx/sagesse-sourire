@@ -20,16 +20,40 @@
             transform: translateX(-200%);
             transition: transform 0.8s ease;
 
-            @media (max-width: 500px) {
-                width: 90vw;
+            .icones-wrapper {
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 1rem;
+
+                .icone-wrapper {
+                    border-radius: 6px;
+
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+                    img {
+                        width: 90%;
+                    }
+                }
             }
 
+
             .presentation-texte {
-                display: flex;
+                color: var(--button-1);
             }
 
             .presentation-titre {
-                display: flex;
+                color: var(--dark-texte);
+                line-height: 3rem;
+                font-size: 3rem;
+            }
+
+            @media (max-width: 500px) {
+                width: 90vw;
             }
 
             &.show {
@@ -39,7 +63,7 @@
 
         .presentation-sagesse {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             gap: 2rem;
 
@@ -50,8 +74,18 @@
             .titre1 {
                 display: flex;
                 flex-direction: column;
-                gap: 15px;
+                align-items: flex-end;
+                gap: 5px;
                 padding: 20px;
+
+                h2,
+                h5 {
+                    color: var(--dark-texte);
+                }
+
+                h2 {
+                    border-bottom: 2px solid black;
+                }
 
                 @media (max-width: 500px) {
                     justify-content: center;
@@ -84,6 +118,7 @@
             }
 
             .description1 {
+                width: 40vw;
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
@@ -91,36 +126,32 @@
                 transform: translateX(200%);
                 transition: transform 0.8s ease;
 
+                img {
+                    width: 40px;
+
+                }
+
                 &.show {
                     transform: translateX(0);
                 }
 
                 h5 {
-                    color: var(--secondary-1);
+                    color: var(--button-1);
+                    font-weight: 100;
                 }
 
                 h6 {
-                    color: var(--primary-1);
+                    color: var(--dark-texte);
                 }
 
                 .button-equipe {
-                    transition: 0.2s;
                     display: flex;
-                    width: fit-content;
-                    align-items: center;
                     justify-content: center;
-                    padding: 15px;
-                    gap: 10px;
-                    border-radius: 8px;
-                    background-color: var(--secondary-1);
-                    color: var(--white);
-                    cursor: pointer;
-
-
-                    &:hover {
-                        gap: 15px;
-                    }
+                    align-items: center;
+                    gap: 1rem;
+                    text-decoration: none;
                 }
+
             }
         }
 

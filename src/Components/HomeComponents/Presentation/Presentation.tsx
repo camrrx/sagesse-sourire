@@ -4,35 +4,51 @@ import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import {
-	handleScrollForSection,
-	addScrollListener,
-	removeScrollListener,
+  handleScrollForSection,
+  addScrollListener,
+  removeScrollListener,
 } from "../../../utils/scrollUtils";
+import dentistIcon from "../../../assets/icones/dentist.png";
+import loupe from "../../../assets/icones/loupe.png";
+import brosse from "../../../assets/icones/brosse.png";
+import cardImg from "../../../assets/icones/dentCard.png";
 
 const Presentation = () => {
   const [showPresentation, setShowPresentation] = useState(false);
 
-	useEffect(() => {
-		const handleScroll: EventListener = () => {
-			handleScrollForSection("presentation", setShowPresentation);
-		};
+  useEffect(() => {
+    const handleScroll: EventListener = () => {
+      handleScrollForSection("presentation", setShowPresentation);
+    };
 
-		addScrollListener(handleScroll);
+    addScrollListener(handleScroll);
 
-		return () => {
-			removeScrollListener(handleScroll);
-		};
-	}, []);
+    return () => {
+      removeScrollListener(handleScroll);
+    };
+  }, []);
 
   return (
     <div className="presentation-container ">
       <div className="presentation-wrapper">
         <div className={`titre ${showPresentation ? "show" : "noshow"}`}>
+          <div className="icones-wrapper">
+            <div className="icone-wrapper">
+              <img src={loupe} alt="" />
+            </div>
+            <div className="icone-wrapper">
+              <img src={brosse} alt="" />
+            </div>
+            <div className="icone-wrapper">
+              <img src={cardImg} alt="" />
+            </div>
+          </div>
           <h4 className="presentation-texte">
             Au service de votre bien-être et de votre santé.
           </h4>
           <h2 className="presentation-titre">
-            Nous sommes les garants d'une dentisterie moderne et actualisée.
+            Nous sommes les garants <br></br> d'une dentisterie moderne et
+            actualisée.
           </h2>
         </div>
         <div className="presentation-sagesse">
@@ -47,7 +63,7 @@ const Presentation = () => {
           <div
             className={`description1 ${showPresentation ? "show" : "noshow"}`}
           >
-            <img src="" alt="" />
+            <img src={dentistIcon} alt="" />
             <h5>
               Notre équipe médicale s’est regroupée autour de compétences
               professionnelles et humaines qui permettent une prise en charge et
@@ -60,11 +76,12 @@ const Presentation = () => {
               avantages et les inconvénients éventuels des traitements réalisés
               et sur leurs coûts.
             </h6>
-            <Link to="/sagesse-sourire/leCabinet#equipes">
-              <div className="button-equipe">
-                <p>L'équipe</p>
-                <FaArrowRight />
-              </div>
+            <Link
+              className="button-2 button-contact button-equipe"
+              to="/sagesse-sourire/leCabinet#equipes"
+            >
+              L'équipe
+              <FaArrowRight />
             </Link>
           </div>
         </div>

@@ -4,27 +4,22 @@ import soins from "../../../assets/cards/soins.png";
 import ortho from "../../../assets/cards/ortho.png";
 import implant from "../../../assets/cards/implant.png";
 import paro from "../../../assets/cards/paro.png";
-import logo from "../../../assets/logo-sagesse-noir.png"
+import logo from "../../../assets/logo-sagesse-noir.png";
+import iconChair from "../../../assets/icones/cabinetimg.png"
 
 const Services = () => {
   return (
     <>
+      <div className="sticker">
+        <img src={iconChair} alt="" />
+      </div>
       <div className="services-container">
         <div className="main-wrapper">
           <div className="title">
-            <h2>nos services</h2>
-            <h1>UNE CLINIQUE COMPLÈTE</h1>
+            <h2>Nos services</h2>
+            <h1>Une Clinique Complète</h1>
           </div>
           <div className="cards">
-            {/* {ServiceCards.map((card) => (
-              <div className="card">
-                <div className="icon">
-                    <img src={card.id} alt="" />
-                </div>
-                <h1>{card.title}</h1>
-                <p>{card.description}</p>
-              </div>
-            ))} */}
             <div className="card">
               <div className="icon">
                 <img src={soins} alt="" />

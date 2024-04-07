@@ -28,7 +28,7 @@ const VenirChezNous = () => {
 
   return (
     <div className="venircheznous-container light-theme">
-      <h2 className="venircheznous-title">VENIR CHEZ NOUS</h2>
+      <h2 className="venircheznous-title">Venir Chez Nous</h2>
 
       <div className="flex-container">
         <div className="box-container">
@@ -65,9 +65,9 @@ const VenirChezNous = () => {
             ))}
           </div>
 
-          <div className="button-syrendre" onClick={handleOpenGoogleMaps}>
+          <button className="button-contact button-1 button-syrendre" onClick={handleOpenGoogleMaps}>
             S'y rendre <FaArrowRight />
-          </div>
+          </button>
         </div>
       </div>
 
