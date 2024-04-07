@@ -1,21 +1,38 @@
 @import "../../../themes.scss";
 
 .dentistes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform: translateX(-200%);
+  transition: transform 0.8s ease;
+  .title {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	height: 100vh;
-	transform: translateX(-200%);
-	transition: transform 0.8s ease;
-	.dentistes-title {
-		color: var(--secondary-1);
-		margin: 15px;
+	gap: 2rem;
+    .dentistes-title {
+      color: var(--black);
+    }
+	.ligne {
+		background-color: rgba(0, 0, 0, 0.288);
+		height: 1px;
+		width: 200px;
 	}
-	.dentistes-description {
-		margin-left: 15px;
-	}
-	&.show {
-		transform: translateX(0);
-	}
+  }
+
+  .dentistes-description {
+    width: 70vw;
+  }
+
+  .dentistes-perso-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &.show {
+    transform: translateX(0);
+  }
 }

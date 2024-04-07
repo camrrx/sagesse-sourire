@@ -1,11 +1,11 @@
-import Accueil from "../../Components/CabinetComponents/Accueil/Accueil";
+// import Accueil from "../../Components/CabinetComponents/Accueil/Accueil";
 import Assistantes from "../../Components/CabinetComponents/Assistantes/Assistantes";
 import Dentistes from "../../Components/CabinetComponents/Dentistes/Dentistes";
 import Equipe from "../../Components/CabinetComponents/Equipe/Equipe";
 import Prothesistes from "../../Components/CabinetComponents/Prothesistes/Prothesistes";
 import { useTheme } from "../../ThemeContext";
 import "./Cabinet.scss";
-import cabinet from "../../assets/cabinet.webp"
+import equipeComplete from "../../assets/equipeComplet.png"
 
 const Cabinet = () => {
   const { theme } = useTheme();
@@ -14,11 +14,11 @@ const Cabinet = () => {
     <div className={`lecabinet-container ${theme}`}>
       <div className="top" id="equipes">
         <Equipe />
-		<img src={cabinet} alt="" />
+		<img src={equipeComplete} alt="" />
       </div>
-      <div className="accueil" id="accueil">
+      {/* <div className="accueil" id="accueil">
         <Accueil />
-      </div>
+      </div> */}
       <div id="dentistes">
         <Dentistes />
       </div>
