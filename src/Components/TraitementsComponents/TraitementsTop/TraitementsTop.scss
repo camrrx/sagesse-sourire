@@ -25,15 +25,15 @@
 		.traitement {
 			position: absolute;
 			width: 400px;
-			height: 150px;
 			padding: 10px;
 			cursor: pointer;
 			h3 {
 				color: var(--white);
 			}
 			&:hover {
-				background-color: var(--primary-2);
+				background-color: var(--secondary-2);
 				border-radius: 10px;
+				padding: 10px;
 			}
 		}
 		.traitement-1 {
@@ -47,7 +47,7 @@
 		}
 
 		.traitement-3 {
-			bottom: -200px;
+			bottom: -150px;
 			left: -60px;
 		}
 

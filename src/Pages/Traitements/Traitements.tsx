@@ -4,11 +4,14 @@ import ImplantsDentaires from "../../Components/TraitementsComponents/ImplantsDe
 import Orthodontie from "../../Components/TraitementsComponents/Orthodontie/Orthodontie";
 import Parodontie from "../../Components/TraitementsComponents/Parodontie/Parodontie";
 import TraitementsTop from "../../Components/TraitementsComponents/TraitementsTop/TraitementsTop";
+import { useTheme } from "../../ThemeContext";
 import "./Traitements.scss";
 
 const Traitements = () => {
+	const { theme } = useTheme();
+
 	return (
-		<div className="traitements-container grey-theme">
+		<div className={`traitements-container ${theme}`}>
 			<TraitementsTop></TraitementsTop>
 			<ImplantsDentaires></ImplantsDentaires>
 			<Orthodontie></Orthodontie>

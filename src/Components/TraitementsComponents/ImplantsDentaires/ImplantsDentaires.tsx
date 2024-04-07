@@ -1,5 +1,5 @@
 import "./ImplantsDentaires.scss";
-import implant from "../../../assets/implants.jpeg";
+import implant from "../../../assets/implant-schema.png";
 import implantUnitaire from "../../../assets/implantnitaire.jpeg";
 import secteurEdente from "../../../assets/secteuredente.jpeg";
 import edentationComplete from "../../../assets/edentationcomplete.jpeg";
@@ -11,12 +11,14 @@ import { BsFillCalendarDateFill, BsFillCameraVideoFill } from "react-icons/bs";
 
 import { Tab } from "@headlessui/react";
 import { useState } from "react";
+import { useTheme } from "../../../ThemeContext";
 
 const ImplantsDentaires = () => {
 	const [selectedIndex, setSelectedIndex] = useState(0);
+	const { theme } = useTheme();
 
 	return (
-		<div className="ImplantsDentaires-container grey-theme">
+		<div className={`ImplantsDentaires-container  ${theme}`}>
 			<h2>Les implants dentaires</h2>
 
 			<div className="implant-container">
@@ -57,33 +59,43 @@ const ImplantsDentaires = () => {
 								<div className="cards">
 									<div className="card">
 										<div className="icon-container ">
-											<h1 className="icon">1970</h1>
+											<img src={implantIcon}></img>
 										</div>
-										<h1>Les implants intra-osseux</h1>
+										<h1>Un implant, à quoi ça ressemble?</h1>
 										<h6>
-											Les implants intra-osseux intrabuccaux ont été développés
-											à partir des années 70 à partir des travaux du Professeur
-											Brånemark en Suède. Les implants se sont rapidement
-											développés dans les pays industrialisés et apparaissent
-											actuellement comme une solution thérapeutique de plus en
-											plus reconnue et employée.
+											L’implant est une vis en titane (matériau biocompatible)
+											qui s’intègre dans l’os et constitue une racine
+											artificielle. L’implant présente un filetage qui lui
+											permet d’accueillir la vis de couverture durant
+											l’ostéointégration, puis le pilier prothétique. La
+											couronne implantaire ne peut pas être directement scellée
+											sur l’implant il faut une pièce intermédiaire: le pilier
+											implantaire (faux moignon). La prothèse implantaire se
+											réalise au bout de 3 à 6 mois après la pose de l’implant.
+											Il faudra dégager l’implant de la gencive afin de réaliser
+											l’empreinte nécessaire à la confection: c’est la technique
+											en 2 temps. Si la situation avait été jugée très
+											favorable, une technique avec pose d’une bague de
+											cicatrisation apparente permet ne pas ouvrir la gencive
+											pour les empreintes prothétique: c’est la technique en 1
+											temps.
 										</h6>
 									</div>
+								</div>
+								<div className="cards">
 									<img className="implant-img" src={implant}></img>
-
 									<div className="card">
 										<div className="icon-container ">
 											<img src={implantIcon}></img>
 										</div>
 										<h1>Les implants c'est quoi?</h1>
 										<h6>
-											Les implants sont des dispositifs destinés à créer, au
-											maxillaire ou à la mandibule des ancrages stables,
-											résistant, efficaces, non iatrogènes, durables, sur
-											lesquels s’adapte une prothèse amovible ou fixée en vue de
-											redonner au patient partiellement ou complètement édenté,
-											une fonction adéquate, un confort satisfaisant et une
-											esthétique compatible avec toute fonction sociale
+											Lorsque nous perdons une dent c’est tout le fonctionnement
+											de notre bouche et de notre digestion qui risque d’être
+											mis en péril. L’implantologie offre une alternative à la
+											pose de bridges ou d’appareils dentaires (dentiers) et
+											permet de stopper la fonte osseuse engendrée par la perte
+											de dent.
 										</h6>
 									</div>
 								</div>
@@ -93,46 +105,36 @@ const ImplantsDentaires = () => {
 										<div className="icon-container">
 											<BsFillCalendarDateFill className="icon" />
 										</div>
-										<h1>Protocoles du cabinet</h1>
+										<h1>Pour qui?</h1>
 										<h6>
-											L’implantologie dentaire permet le remplacement d’une ou
-											plusieurs dents manquantes par des implants. Mais chaque
-											cas est différent, nous vous expliquerons les différentes
-											étapes pour la pose d’implants dentaires, dans votre cas.
+											L’implant est une racine artificielle qui vise à remplacer
+											une ou plusieurs dents absentes. Il permet la réalisation
+											d’une prothèse sur un ancrage stable et durable (jusqu’à
+											plusieurs dizaines d’années) sans engager les dents
+											adjacentes. Il vise à rétablir une fonction adéquate, un
+											confort satisfaisant et une esthétique compatible avec
+											toute fonction sociable.
 										</h6>
 										<h6>
-											Pour les explications et la décision préliminaire, un
-											rendez-vous suffit.
+											L’implant peut être envisagé chez presque tous patients
+											majeurs, à condition que la qualité et le volume de l’os
+											soient suffisants. L’évaluation de ces critères se fait
+											grâce à un Cone Beam. Si le volume osseux se révèle
+											insuffisant, le recours à une greffe est évoqué.
 										</h6>
 										<h6>
-											Lors du second rendez-vous, en fonction de l’importance et
-											du type de traitement, le dentiste procède aux examens
-											d'usage et planifie le traitement.
+											Il existe quelques contre-indications à la pose
+											d’implants. Un questionnaire médical et une première
+											consultation avec le chirurgien-dentiste permettent de
+											faire le point sur votre état de santé générale dans le
+											but d’éviter tous risques. Parmi les contre-indications
+											nous retrouvons le tabagisme, le diabète, la mauvaise
+											hygiène mais aussi la prise de certains anticoagulants…
 										</h6>
 										<h6>
-											Pour les cas complexes, nous réalisons des investigations
-											radiologiques poussées. Grâce au scanner, nous modélisons
-											avec précision votre dentition en trois dimensions pour
-											définir la place des implants. La maîtrise de ces
-											technologies de pointe garantit notre taux de réussite
-											très élevé
-										</h6>
-										<h6>
-											Ces cas nécéssitent un troisième rendez vous afin de
-											finaliser le plan de traitement
-										</h6>
-										<h6>
-											Vos implants seront posées en une séance sous anesthésie
-											locale,et la gencive sera suturée. Pour certains cas
-											complexes un des ORL de chateaubriant, pratiquera une
-											partie de l'intervention A ce stade, la phase de
-											cicatrisation débute et elle se déroule généralement sur
-											une période de 2 à 6 mois.Si cette cicatrisation se
-											déroule normalement, les implants sont bien intégrés dans
-											les machoires.
-										</h6>
-										<h6>
-											On pourra alors fixer de nouvelles couronnes dessus.
+											Une hygiène rigoureuse est indispensable. La pérennité des
+											implants dépendra beaucoup de l’entretien que vous leur
+											consacrerez.
 										</h6>
 									</div>
 									<div className="card">

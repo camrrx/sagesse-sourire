@@ -1,9 +1,12 @@
 import "./TraitementsTop.scss";
 import dent from "../../../assets/dent.png";
+import { useTheme } from "../../../ThemeContext";
 
 const TraitementsTop = () => {
+	const { theme } = useTheme();
+
 	return (
-		<div className="TraitementsTop-container grey-theme">
+		<div className={`TraitementsTop-container ${theme}`}>
 			<div className="traitements">
 				<div className="traitement traitement-1">
 					<h2>Les implants dentaires</h2>
