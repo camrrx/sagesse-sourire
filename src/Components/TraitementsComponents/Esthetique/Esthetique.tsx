@@ -33,14 +33,16 @@ const Esthetique = () => {
 					<Tab.Panels>
 						<Tab.Panel className="custom-tab-panel">
 							<div>
-								<div className="cosmetique-title">
-									<h2>La dentisterie a évoluée et les soins aussi.</h2>
-									<h3>Tous nos onlays et facettes sont confectionnés par</h3>
-									<h4>Laboratoire Surel de Moisdon la Rivière</h4>
+								<div className="card">
+									<div className="cosmetique-title">
+										<h2>La dentisterie a évoluée et les soins aussi.</h2>
+										<h3>Tous nos onlays et facettes sont confectionnés par</h3>
+										<h4>Laboratoire Surel de Moisdon la Rivière</h4>
+									</div>
 								</div>
 
-								<div className="cosmetique-container">
-									<div className="cosmetique">
+								<div className="cards">
+									<div className="card">
 										<h2>Les onlays</h2>
 										<img className="cosmetique-img" src={onlays}></img>
 										<h6>
@@ -54,7 +56,7 @@ const Esthetique = () => {
 											étanche de la même couleur que la dent.
 										</h6>
 									</div>
-									<div className="cosmetique">
+									<div className="card">
 										<h2>Les facettes</h2>
 										<img className="cosmetique-img" src={facette}></img>
 										<h6>
@@ -68,10 +70,10 @@ const Esthetique = () => {
 							</div>
 						</Tab.Panel>
 						<Tab.Panel className="custom-tab-panel">
-							<div className="blanchiment-container">
-								<img className="blanchiment-img" src={blanchiment}></img>
+							<div className="cards">
+								<img className="card" src={blanchiment}></img>
 
-								<h5>
+								<h6 className="card">
 									Le blanchiment dentaire est un procédé qui éclaircit l’émail
 									et de la dentine en utilisant une solution spécifique : le
 									péroxyde d’oxygène. Le principe est de casser les pigments
@@ -86,19 +88,19 @@ const Esthetique = () => {
 									expliquera tous les détails de la technique. L’avantage
 									principal réside dans la possibilité d’utiliser ces gouttières
 									ultérieurement pour redonner un coup d’éclat à vos dents.
-								</h5>
+								</h6>
 							</div>
 						</Tab.Panel>
 						<Tab.Panel className="custom-tab-panel">
 							<div>
-								<div className="cosmetique-title">
+								<div className="card">
 									<h2>La dentisterie a évoluée et les soins aussi.</h2>
 									<h3>Toutes nos prothèses sont confectionnées par</h3>
 									<h4>Laboratoire Surel de Moisdon la Rivière</h4>
 								</div>
 
-								<div className="cosmetique-container">
-									<div className="cosmetique">
+								<div className="cards">
+									<div className="card">
 										<h2>Les prothèses mobiles</h2>
 										<img className="cosmetique-img" src={prothesesMobile}></img>
 										<h6>
@@ -117,7 +119,7 @@ const Esthetique = () => {
 											verres à eau sur les tables de nuit
 										</h6>
 									</div>
-									<div className="cosmetique">
+									<div className="card">
 										<h2>Les prothèses fixes</h2>
 										<img className="cosmetique-img" src={prothese}></img>
 										<h6>
