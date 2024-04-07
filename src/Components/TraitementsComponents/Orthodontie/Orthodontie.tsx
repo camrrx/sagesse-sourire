@@ -6,12 +6,14 @@ import bracketMetal from "../../../assets/bracketmetal.jpeg";
 import bracketCeramique from "../../../assets/bracketceramique.jpeg";
 import orthoLinguale from "../../../assets/ortholinguale.jpeg";
 import invisalign from "../../../assets/invisalign.jpeg";
+import { useTheme } from "../../../ThemeContext";
 
 const Orthodontie = () => {
 	const [selectedIndex, setSelectedIndex] = useState(0);
+	const { theme } = useTheme();
 
 	return (
-		<div className="Orthodontie-container grey-theme">
+		<div className={`Orthodontie-container ${theme}`}>
 			<h2>L'Orthodontie</h2>
 			<div className="orthodontie-container">
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
