@@ -20,8 +20,6 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			border: 1px solid black;
-			height: 250px;
 			width: 400px;
 		}
 	}
@@ -44,16 +42,16 @@
 	padding: 10px 20px;
 	text-align: center;
 	cursor: pointer;
-	background-color: var(--secondary-1);
+	background-color: var(--secondary-2);
 	border: none;
 	color: var(--white);
 
 	&:hover {
-		background-color: var(--secondary-2);
+		background-color: var(--night-blue);
 	}
 
 	&.active {
-		background-color: var(--secondary-2);
+		background-color: var(--night-blue);
 		color: #fff;
 	}
 }
