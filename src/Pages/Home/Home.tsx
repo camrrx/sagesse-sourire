@@ -11,56 +11,56 @@ import Footer from "../../Components/shared/Footer";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  const { theme } = useTheme();
+	const { theme } = useTheme();
 
-  const [isMobile, setIsMobile] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)"); 
+	useEffect(() => {
+		const mediaQuery = window.matchMedia("(max-width: 768px)");
 
-    const handleResize = (e: any) => {
-      setIsMobile(e.matches);
-    };
-    handleResize(mediaQuery); 
-    mediaQuery.addListener(handleResize); 
-    return () => {
-      mediaQuery.removeListener(handleResize); 
-    };
-  }, []);
+		const handleResize = (e: any) => {
+			setIsMobile(e.matches);
+		};
+		handleResize(mediaQuery);
+		mediaQuery.addListener(handleResize);
+		return () => {
+			mediaQuery.removeListener(handleResize);
+		};
+	}, []);
 
-  return (
-    <div className={`home-container ${theme}`}>
-      {isMobile ? (
-        ""
-      ) : (
-        <div className="banniere">
-          <img src={dentist} alt="" />
-        </div>
-      )}
+	return (
+		<div className={`home-container ${theme}`}>
+			{isMobile ? (
+				""
+			) : (
+				<div className="banniere">
+					<img src={dentist} alt="" />
+				</div>
+			)}
 
-      <div className="bienvenue" id="bienvenue">
-        <Bienvenue></Bienvenue>
-      </div>
-      <div className="services" id="services">
-        <Services></Services>
-      </div>
-      <div className="presentation" id="presentation">
-        <Presentation></Presentation>
-      </div>
-      <div className="actualite" id="actualites">
-        <Actualite></Actualite>
-      </div>
-      <div className="equipements" id="equipements">
-        <Equipements></Equipements>
-      </div>
-      <div className="venircheznous">
-        <div id="venircheznous">
-          <VenirChezNous></VenirChezNous>
-        </div>
-      </div>
-      <Footer></Footer>
-    </div>
-  );
+			<div className="bienvenue" id="bienvenue">
+				<Bienvenue></Bienvenue>
+			</div>
+			<div className="services" id="services">
+				<Services></Services>
+			</div>
+			<div className="presentation" id="presentation">
+				<Presentation></Presentation>
+			</div>
+			<div className="actualite" id="actualites">
+				<Actualite></Actualite>
+			</div>
+			<div className="equipements" id="equipements">
+				<Equipements></Equipements>
+			</div>
+			<div className="venircheznous">
+				<div id="venircheznous">
+					<VenirChezNous></VenirChezNous>
+				</div>
+			</div>
+			<Footer></Footer>
+		</div>
+	);
 };
 
 export default Home;

@@ -5,7 +5,7 @@ import logo from "../../../assets/logo-sagesse-blanc.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../../ThemeContext";
-import { Dialog } from "@headlessui/react";
+import PrendreRDV from "../../shared/PrendreRDV/PrendreRDV";
 
 const Navbar = () => {
 	const [scrolled, setScrolled] = useState(false);
@@ -36,42 +36,7 @@ const Navbar = () => {
 
 	return (
 		<div className={`${theme}`}>
-			<Dialog open={showRDV} onClose={() => setRDV(false)}>
-				<Dialog.Panel className={`dialog-overlay ${theme}`}>
-					<div className="dialog-box">
-						<Dialog.Title className="dialog-title">
-							Prendre rendez-vous
-						</Dialog.Title>
-						<Dialog.Description className="dialog-description">
-							<p>Le cabinet reçoit exclusivement sur rendez-vous. </p> <br />
-							<p>
-								Pour prendre rendez-vous, vous pouvez nous contacter au
-								<strong> 02.40.81.01.28.</strong>
-							</p>
-							<br />
-							<p>
-								Le caractère urgent de votre situation sera évalué et nous nous
-								efforcerons d’y répondre le plus rapidement possible.
-								<br /> L’accueil téléphonique est ouvert le matin, du lundi au
-								samedi, de 8h à 11h30 et l’après-midi, du lundi au vendredi, de
-								14h à 18h30.
-							</p>
-							<br />
-							<p>
-								Avant votre rendez-vous veuillez remplir le questionnaire pré
-								rendez-vous et nous le remettre à votre arrivée au cabinet
-								dentaire.
-							</p>
-						</Dialog.Description>
-
-						<button
-							className="button-1 button-contact"
-							onClick={() => setRDV(false)}>
-							OK
-						</button>
-					</div>
-				</Dialog.Panel>
-			</Dialog>
+			<PrendreRDV showRDV={showRDV} setRDV={setRDV} />
 			<div className={`navbar ${theme}`}>
 				<nav>
 					<div className={`navbar ${scrolled ? "scrolled" : ""}`}>
