@@ -31,7 +31,7 @@ const Accueil = () => {
 			id="accueil">
 			<div className="accueil-text">
 				<h1 className={`accueil-title  ${showSection ? "show" : "noshow"}`}>
-					L'ACCUEIL
+					L'Accueil 
 				</h1>
 				<h5
 					className={`accueil-description  ${showSection ? "show" : "noshow"}`}>
