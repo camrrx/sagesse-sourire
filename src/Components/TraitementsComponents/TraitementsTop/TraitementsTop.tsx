@@ -3,7 +3,7 @@ import dent from "../../../assets/dent.png";
 import { useTheme } from "../../../ThemeContext";
 
 const TraitementsTop = () => {
-  const { theme } = useTheme();
+	const { theme } = useTheme();
 
 	return (
 		<div className={`TraitementsTop-container ${theme}`}>
