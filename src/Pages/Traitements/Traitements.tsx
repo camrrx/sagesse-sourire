@@ -12,12 +12,24 @@ const Traitements = () => {
 
 	return (
 		<div className={`traitements-container ${theme}`}>
-			<TraitementsTop></TraitementsTop>
-			<ImplantsDentaires></ImplantsDentaires>
-			<Orthodontie></Orthodontie>
-			<Esthetique></Esthetique>
-			<Parodontie></Parodontie>
-			<GestionDouleurs></GestionDouleurs>
+			<div id="traitement">
+				<TraitementsTop></TraitementsTop>
+			</div>
+			<div id="implantsDentaires">
+				<ImplantsDentaires></ImplantsDentaires>
+			</div>
+			<div id="orthodontie">
+				<Orthodontie></Orthodontie>
+			</div>
+			<div id="dentisterieEsthetique">
+				<Esthetique></Esthetique>
+			</div>
+			<div id="parodontie">
+				<Parodontie></Parodontie>
+			</div>
+			<div id="gestionDouleur">
+				<GestionDouleurs></GestionDouleurs>
+			</div>
 		</div>
 	);
 };
