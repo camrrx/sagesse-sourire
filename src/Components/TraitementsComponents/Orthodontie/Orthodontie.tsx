@@ -19,16 +19,16 @@ const Orthodontie = () => {
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 					<Tab.List className="custom-tab-list">
 						<Tab
-							className={`custom-tab ${selectedIndex === 0 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${selectedIndex === 0 ? "active" : ""}`}>
 							L'orthodontie traditionnelle
 						</Tab>
 
 						<Tab
-							className={`custom-tab ${selectedIndex === 1 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${selectedIndex === 1 ? "active" : ""}`}>
 							L'orthodontie Linguale
 						</Tab>
 						<Tab
-							className={`custom-tab ${selectedIndex === 2 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${selectedIndex === 2 ? "active" : ""}`}>
 							Invisalign
 						</Tab>
 					</Tab.List>

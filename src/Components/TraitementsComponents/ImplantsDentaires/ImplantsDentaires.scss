@@ -8,6 +8,7 @@
 	background-color: var(--white);
 
 	.implant-container {
+		margin-top: 2rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -30,15 +31,16 @@
 
 .custom-tab-list {
 	display: flex;
+	justify-content: center;
 	width: 90vw;
 	height: 6vh;
 	border-radius: 16px;
-	gap: 5px;
+	gap: 1rem;
+
 }
 
 .custom-tab {
-	border-radius: 6px;
-	flex: 1;
+	border-radius: 30px;
 	padding: 10px 20px;
 	text-align: center;
 	cursor: pointer;

@@ -8,7 +8,13 @@ import { useTheme } from "../../../ThemeContext";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const {theme, toggleTheme} = useTheme();
+  const { theme, toggleTheme } = useTheme();
+
+  // const [showRDV, setRDV] = useState(false);
+
+  const takeRDV = () => {
+    // setRDV(true);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +32,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
 
   return (
     <div className={`navbar ${theme}`}>
@@ -77,14 +82,20 @@ const Navbar = () => {
           </div>
           <div className="right-container">
             <Menu>
-              <button className="button-contact button-3">Prendre RDV</button>
+              <button onClick={takeRDV} className="button-contact button-3">
+                Prendre RDV
+              </button>
               {/* <Menu.Button>
               </Menu.Button> */}
               <Menu.Items className="colorpicker">
                 <h1>Themes</h1>
-                <button onClick={() => toggleTheme('grey-theme')}>Gris/vert</button>
-                <button onClick={() => toggleTheme('blue-theme')}>Bleu</button>
-                <button onClick={() => toggleTheme('dark-theme')}>sombre</button>
+                <button onClick={() => toggleTheme("grey-theme")}>
+                  Gris/vert
+                </button>
+                <button onClick={() => toggleTheme("blue-theme")}>Bleu</button>
+                <button onClick={() => toggleTheme("dark-theme")}>
+                  sombre
+                </button>
               </Menu.Items>
             </Menu>
           </div>
