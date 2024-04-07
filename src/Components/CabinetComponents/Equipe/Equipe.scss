@@ -1,36 +1,25 @@
+@import "../../../themes.scss";
+@import "../../../utils.scss";
+
 .notrecabinet-container {
 	display: flex;
 	flex-direction: column;
 	width: 50vw;
 	margin-top: 20vh;
-	margin-left: 100px;
+	margin-left: 150px;
 
 	.title {
-		color: var(--white);
+		color: var(--black);
 		font-size: 5vw;
 		line-height: 5vw;
 		margin-bottom: 4vh;
 	}
 
 	p {
-		color: var(--white);
+		color: var(--black);
 		font-size: 1.3rem;
 		margin-bottom: 3rem;
 		width: 35vw;
 	}
-	.button-equipe {
-		font-size: 1rem;
-		background-color: transparent;
-		padding: 1rem;
-		border: solid 2px var(--white);
-		color: var(--white);
-		border-radius: 30px;
-		transition: 0.4s;
-		cursor: pointer;
-
-		&:hover {
-			background-color: var(--white);
-			color: var(--primary-1);
-		}
-	}
+	
 }
