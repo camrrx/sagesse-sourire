@@ -3,12 +3,14 @@ import "./Parodontie.scss";
 import { Tab } from "@headlessui/react";
 import { useState } from "react";
 import soins from "../../../assets/dent-soin.jpeg";
+import { useTheme } from "../../../ThemeContext";
 
 const Parodontie = () => {
 	const [selectedIndex, setSelectedIndex] = useState(0);
+	const { theme } = useTheme();
 
 	return (
-		<div className="Orthodontie-container grey-theme">
+		<div className={`Orthodontie-container  ${theme}`}>
 			<h2>La parodontie et les soins</h2>
 			<div className="orthodontie-container">
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
