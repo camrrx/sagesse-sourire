@@ -1,6 +1,7 @@
 import "./ImplantsDentaires.scss";
 import implant from "../../../assets/implant-schema.png";
 import implantUnitaire from "../../../assets/implantnitaire.jpeg";
+import sinuslift from "../../../assets/sinuslift.jpeg";
 import secteurEdente from "../../../assets/secteuredente.jpeg";
 import edentationComplete from "../../../assets/edentationcomplete.jpeg";
 import greffeOsseuse from "../../../assets/greffeOsseuse.jpeg";
@@ -296,11 +297,6 @@ const ImplantsDentaires = () => {
 											dentition en trois dimensions pour définir la place des
 											implants.
 										</h6>
-									</div>
-								</div>
-
-								<div className="cards">
-									<div className="card">
 										<h6>
 											En raison de l’édentation souvent ancienne, nous sommes
 											face à une grande résorption osseuse, il n’est pas
@@ -311,18 +307,86 @@ const ImplantsDentaires = () => {
 											stabiliser la prothèse amovible.
 										</h6>
 									</div>
+								</div>
+
+								<div className="cards">
 									<div className="card">
-										<div className="icon-container">
-											<BsFillCameraVideoFill className="icon" />
+										<h1>Comment ça se passe?</h1>
+										<h6>
+											D’abord, la
+											<strong> première consultation</strong>, le praticien vous
+											reçoit et vous lui exposez votre situation. Vous devrez
+											remplir un questionnaire médical décrivant votre état de
+											santé général.
+										</h6>
+										<h6>
+											Un <strong> devis</strong> vous sera présenté à la fin de
+											cette consultation. Ce traitement n’est pas pris en charge
+											par l’Assurance Maladie, hormis la réalisation de
+											certaines prothèses sur implants. Selon votre mutuelle,
+											une prise en charge de tout ou partie des frais est
+											possible en fonction de votre contrat.
+										</h6>
+										<h6>
+											La seconde étape est la réalisation d’un
+											<strong> Cone Beam</strong>, examen d’imagerie permettant
+											l’étude de l’os au niveau du site implantaire, et d’un
+											moulage de votre bouche pour confectionner un guide (si
+											nécessaire). Au besoin, un bilan sanguin peut vous être
+											prescrit.
+										</h6>
+										<h6>
+											L’ <strong>intervention</strong> fait suite à cette étude.
+											Sa durée varie en fonction du nombre d’implants à poser.
+											Elle se déroule sous anesthésie locale et la gencive sera
+											suturée. A la suite sont prévus des rendez-vous de
+											contrôle de cicatrisation (à 1 semaine, 1 mois, 3 mois).
+											La <strong>cicatrisation</strong> se fait fil du temps:
+											entre 2 et 6 mois.
+										</h6>
+										<h6>
+											Pendant ce temps de cicatrisation, il est possible de
+											réaliser, selon les cas, une prothèse transitoire. La
+											réalisation de la <strong>prothèse</strong> définitive se
+											fait sur 2 à 3 séances.
+										</h6>
+										<h6>
+											Vient ensuite le temps de la <strong>maintenance</strong>.
+											Tout comme vos dents naturelles, vos implants auront
+											besoin d’une hygiène méticuleuse. Les brossettes et le jet
+											interdentaire seront vos alliés et un check- up régulier
+											chez votre dentiste est recommandé.
+										</h6>
+									</div>
+									<div>
+										<div className="card">
+											<div className="icon-container">
+												<BsFillCameraVideoFill className="icon" />
+											</div>
+											<h1>L'édentation complète en vidéo</h1>
+											<div className="implant-video">
+												<ReactPlayer
+													url={videoitotal}
+													controls={true}
+													width="100%"
+													height="100%"
+												/>
+											</div>
 										</div>
-										<h1>L'édentation complète en vidéo</h1>
-										<div className="implant-video">
-											<ReactPlayer
-												url={videoitotal}
-												controls={true}
-												width="100%"
-												height="100%"
-											/>
+										<div className="card">
+											<h1>Comment se prépare la pose d’implants?</h1>
+											<h6 className="thin">
+												Une étude préalable est nécessaire à la pose d’implant.
+												Le praticien fait le point avec vous sur vos attentes et
+												ce qui peut être espérer de la pose d’implants, aux
+												niveaux fonctionnels et esthétiques. Ensuite un Cone
+												Beam est réalisé, il permet au chirurgien-dentiste de
+												choisir l’implant à utiliser et de savoir une greffe est
+												nécessaire (cas où le volume osseux est insuffisant). Il
+												peut vous être prescrit des médicaments contre le
+												stress, des vitamines. Au cas par cas, le praticien
+												évalue l’état de santé du patient et ses besoins.
+											</h6>
 										</div>
 									</div>
 								</div>
@@ -439,6 +503,154 @@ const ImplantsDentaires = () => {
 											implants dans la même séance
 										</h6>
 									</div>
+								</div>
+
+								<div className="cards">
+									<div>
+										<div className="card">
+											<h1>Comment se déroule l’intervention?</h1>
+											<h6>
+												Avant la pose la réalisation d’un
+												<strong>Cone Beam</strong>
+												Cone Beam permet de préparer un plan de traitement
+												adapté. Il permet de choisir les dimensions de l’implant
+												à utiliser et, éventuellement, la confection d’un guide
+												chirurgical.
+											</h6>
+											<h6>
+												La pose d’implant se fait sous anesthésie locale. L’os
+												de la mâchoire est foré pour pouvoir y visser l’implant.
+												Une fois que celui-ci est positionner on le protège avec
+												une vis de couverture qui permet aussi la bonne
+												cicatrisation gingivale.
+											</h6>
+											<h6>
+												La technique Flapless permet de poser l’implant sans
+												faire d’incision gingivale: le forage perce la gencive
+												et l’os dans un même mouvement, il y a donc moins de
+												saignement. Cette technique est utilisée lorsque l’os à
+												un volume idéal. Lors de son exécution le praticien à
+												peu de visibilité, et il est parfois préférable
+												d’utiliser une technique dite conventionnelle, durant
+												laquelle la gencive est ouverte, permettant de mieux
+												juger la position de l’implant dans l’os.
+											</h6>
+											<h6>
+												Lors de la pose le praticien choisit entre deux options
+												de fermeture: l’enfouissement total ou l’enfouissement
+												partiel. Dans le cas d’un enfouissement total, un
+												deuxième temps chirurgical permettra de dégager la tête
+												de l’implant en amont de la confection de la prothèse.
+												L’enfouissement de l’implant n’impacte pas le temps de
+												cicatrisation post-opératoire qui est estimé entre 3 et
+												6 mois.
+											</h6>
+										</div>
+										<div className="card">
+											<h1>Est-ce que ça fait mal?</h1>
+											<h6>
+												Après l’intervention on peut avoir plusieurs réactions.
+												Evidemment, cela varie en fonction de chaque personne.
+												<br />
+												La <strong>douleur</strong> dépend principalement de
+												l’importance de l’intervention. La gêne est de très
+												faible à nulle s’il s’agit d’un implant unitaire.
+												<br /> On peut également voir survenir un{" "}
+												<strong>hématome</strong> ou un
+												<strong>œdème</strong>. <br />À la suite de l’opération
+												des conseils vous seront donnés, suivez-les sans
+												attendre que la douleur ne s’installe. Nous vous
+												accompagnerons dans la gestion de votre douleur et de
+												votre stress du début du traitement à la fin, n’hésitez
+												pas à revenir vers nous en cas de doutes.
+											</h6>
+										</div>
+										<img className="card" src={sinuslift} />
+									</div>
+
+									<div>
+										<div className="card">
+											<h1>A quoi s’attendre après la pose d’implants?</h1>
+											<h6>
+												Comme tout acte chirurgical, la pose d’implant peut
+												entrainer quelques effets indésirables en post-
+												opératoires (œdème, hématome, douleur). Ces effets sont
+												transitoires et s’estompent avec le temps. Toutefois si
+												vous êtes inquiet n’hésitez pas à contacter le cabinet
+												dentaire.
+												<br />
+												Il peut arriver que l’implant soit rejeté. Dans ce cas,
+												nous laissons l’os cicatrisé puis réévaluons la
+												possibilité de positionner un nouvel implant. <br /> Les
+												implants, comme les dents naturelles, ont besoin d’un
+												entretien quotidien. Il est recommandé d’utiliser les
+												brossettes et le jet d’eau interdentaire pour pouvoir
+												bien nettoyer les zones entre les dents et l’implant.
+												Nous vous invitons à avoir un suivi régulier chez votre
+												chirurgien-dentiste pour contrôler vos implants. <br />
+												C’est cette maintenance qui permettra de détecter
+												précocement d’éventuelles complications telles qu’une
+												perte osseuse ou de gencive autour de l’implant ou bien
+												la mobilité de l’implant.
+											</h6>
+										</div>
+										<div className="card">
+											<h2>La prothèse</h2>
+											<h6>
+												Le protocole implantaire est souvent guidé par le projet
+												prothétique. La prothèse implantaire doit être
+												esthétique et fonctionnelle. Dans certains cas des
+												guides ou des maquettes peuvent être réalisées pour
+												visualiser la position des prothèses. <br /> La prothèse
+												fixe sur implant se confectionne en 2 à 3 rendez-vous
+												(comme une couronne sur dent naturelle): d’abord les
+												empreintes puis la pose et les réglages. Concernant la
+												fixation de la prothèse sur l’implant, il existe deux
+												systèmes de fixation. La prothèse vissée, un puits à
+												travers la couronne permet «transvisser» cette dernière
+												sur l’implant. La prothèse scellée, quant à elle, se
+												colle sur le piller intermédiaire. <br /> Les implants
+												peuvent aussi servir à stabiliser une prothèse amovible
+												complète ou partielle. <br />
+												Dans la majorité des cas, la réalisation de prothèse se
+												fait après quelques mois de façon à ne pas pénaliser
+												l’ostéointégration, au risque de perdre l’implant.
+												<br /> Dans de rares cas, il est possible de réaliser
+												une prothèse transitoire placer le jour de la pose de
+												l’implant: c’est la mise en charge immédiate. Ces cas
+												sont le plus souvent ceux des dents visibles. Ce
+												protocole reste contraignant pour le patient qui ne doit
+												pas solliciter cette prothèse en mastiquant. La prothèse
+												transitoire est volontairement plus courte que les dents
+												naturelles pour qu’elle ne soit pas en contact avec les
+												autres dents.
+											</h6>
+										</div>
+									</div>
+								</div>
+								<div className="card">
+									<h1>A quoi s’attendre après la pose d’implants?</h1>
+									<h6>
+										Comme tout acte chirurgical, la pose d’implant peut
+										entrainer quelques effets indésirables en post- opératoires
+										(œdème, hématome, douleur). Ces effets sont transitoires et
+										s’estompent avec le temps. Toutefois si vous êtes inquiet
+										n’hésitez pas à contacter le cabinet dentaire.
+										<br />
+										Il peut arriver que l’implant soit rejeté. Dans ce cas, nous
+										laissons l’os cicatrisé puis réévaluons la possibilité de
+										positionner un nouvel implant. <br /> Les implants, comme
+										les dents naturelles, ont besoin d’un entretien quotidien.
+										Il est recommandé d’utiliser les brossettes et le jet d’eau
+										interdentaire pour pouvoir bien nettoyer les zones entre les
+										dents et l’implant. Nous vous invitons à avoir un suivi
+										régulier chez votre chirurgien-dentiste pour contrôler vos
+										implants. <br />
+										C’est cette maintenance qui permettra de détecter
+										précocement d’éventuelles complications telles qu’une perte
+										osseuse ou de gencive autour de l’implant ou bien la
+										mobilité de l’implant.
+									</h6>
 								</div>
 							</div>
 						</Tab.Panel>

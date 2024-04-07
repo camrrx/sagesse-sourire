@@ -70,6 +70,7 @@
 	text-align: center;
 	gap: 1rem;
 }
+
 .card {
 	transition: 0.2s;
 	border-radius: 8px;
@@ -81,7 +82,12 @@
 	align-items: center;
 	gap: 1rem;
 	border: 1px solid var(--grey-1);
-
+	.bold {
+		font-weight: 900;
+	}
+	.thin {
+		width: 30vw;
+	}
 	.icon-container {
 		display: flex;
 		justify-content: center;
