@@ -1,24 +1,47 @@
+@import "../../../themes.scss";
+
 .assistantes-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	gap: 4rem;
 	align-items: center;
 	height: 100vh;
 	transform: translateX(200%);
 	transition: transform 0.8s ease;
-	.assistantes-title {
-		color: var(--secondary-1);
-		margin: 15px;
-	}
+	.title-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 2rem;
+	
+		.title {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  gap: 1rem;
+		  img {
+			height: 30px;
+		  }
+		}
+		.assistantes-title {
+		  color: var(--night-blue);
+		}
+		.ligne {
+		  background-color: var(--night-blue);
+		  height: 1px;
+		  width: 200px;
+		}
+	  }
+
 	.assistantes-description {
-		margin-left: 15px;
+		width: 70vw;
 	}
 	.assistantes-perso-container {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-
 		width: 100vw;
 	}
 	&.show {

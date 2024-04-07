@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import "./dentistesSlider.scss";
+import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import "./dentistesSlider.scss";
 
 interface Dentiste {
   name: string;
@@ -40,7 +40,7 @@ const DentistesSlider = ({ dentistes }: DentistesSliderProps) => {
   };
 
   return (
-    <div className="slider-container">
+    <div className={`slider-container`}>
       <div className="slider">
         <div className="dentiste-page">
           <button className="pagination-button" onClick={goToPrevious}>

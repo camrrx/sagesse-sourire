@@ -8,6 +8,7 @@ import {
 } from "../../../utils/scrollUtils";
 import { useState, useEffect } from "react";
 import { useTheme } from "../../../ThemeContext";
+import iconeDentiste from "../../../assets/icones/dentist_night.png";
 
 const Dentistes = () => {
   const [showSection, setShowSection] = useState(false);
@@ -27,10 +28,17 @@ const Dentistes = () => {
   }, []);
 
   return (
-    <div className={`dentistes-container ${theme} ${showSection ? "show" : "show"}`}>
-      <div className="title">
+    <div
+      className={`dentistes-container ${theme} ${
+        showSection ? "show" : "show"
+      }`}
+    >
+      <div className="title-wrapper">
         <div className="ligne"></div>
-        <h1 className="dentistes-title">LES DENTISTES</h1>
+        <div className="title">
+          <img src={iconeDentiste}  />
+          <h1 className="dentistes-title">LES DENTISTES</h1>
+        </div>
         <div className="ligne"></div>
       </div>
       {/* <h5 className="dentistes-description">

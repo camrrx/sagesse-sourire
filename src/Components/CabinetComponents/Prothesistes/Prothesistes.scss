@@ -2,7 +2,7 @@
 @import "../../../utils.scss";
 
 .prothesistes-container {
-	display: grid;
+	display: flex;
 	grid-template-columns: 2fr 1fr;
 	height: 90vh;
 
