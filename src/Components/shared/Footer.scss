@@ -1,5 +1,32 @@
 .footer-container {
+  width: 100%;
+  background-color: var(--primary-2);
+  height: 40vh;
+
+  .top {
     width: 100%;
-    background-color: black;
-    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.226);
+
+    .icone-footer {
+        height: 1.5rem;
+    }
+
+    .telephone {
+      font-size: 0.7rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .adresse {
+      display: flex;
+      font-size: 0.7rem;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
 }

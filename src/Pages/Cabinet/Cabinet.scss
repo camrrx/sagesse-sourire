@@ -12,11 +12,23 @@
 		height: 100vh;
 		min-height: 80vh;
 		display: flex;
+		gap: 2rem;
 		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: 500px) {
+			flex-direction: column-reverse;
+			padding-top: 21rem;
+		
+		}
 
 		img {
 			width: 50%;
 			object-fit: contain;
+
+			@media (max-width: 500px) {
+				width: 90%;
+			}
 		}
 	}
 }

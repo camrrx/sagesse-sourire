@@ -1,12 +1,13 @@
-import "./Equipements.scss";
-import { EquipementsData } from "../../../assets/EquipementsData";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
+import { EquipementsData } from "../../../assets/EquipementsData";
+import "./Equipements.scss";
 
-interface Equipement {
-  number: number;
-  equipment: string;
-  description: string;
-}
+// interface Equipement {
+//   number: number;
+//   equipment: string;
+//   description: string;
+// }
 
 const Equipements = () => {
   const [selectedEquipment, setSelectedEquipment] = useState<any>();

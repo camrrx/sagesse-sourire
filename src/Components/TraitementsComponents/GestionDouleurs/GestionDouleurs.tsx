@@ -15,16 +15,16 @@ const GestionDouleurs = () => {
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 					<Tab.List className="custom-tab-list">
 						<Tab
-							className={`custom-tab ${selectedIndex === 0 ? "active" : ""}`}>
+							className={`custom-tab button-1 ${selectedIndex === 0 ? "active" : ""}`}>
 							Sédation et anesthésie
 						</Tab>
 
 						<Tab
-							className={`custom-tab ${selectedIndex === 1 ? "active" : ""}`}>
+							className={`custom-tab button-1 ${selectedIndex === 1 ? "active" : ""}`}>
 							MEOPA
 						</Tab>
 						<Tab
-							className={`custom-tab ${selectedIndex === 2 ? "active" : ""}`}>
+							className={`custom-tab button-1 ${selectedIndex === 2 ? "active" : ""}`}>
 							L'anesthésie ostéocentrale
 						</Tab>
 					</Tab.List>

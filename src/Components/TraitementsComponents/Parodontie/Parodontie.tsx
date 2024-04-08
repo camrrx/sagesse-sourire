@@ -16,16 +16,16 @@ const Parodontie = () => {
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 					<Tab.List className="custom-tab-list">
 						<Tab
-							className={`custom-tab ${selectedIndex === 0 ? "active" : ""}`}>
+							className={`custom-tab button-1 ${selectedIndex === 0 ? "active" : ""}`}>
 							Les soins
 						</Tab>
 
 						<Tab
-							className={`custom-tab ${selectedIndex === 1 ? "active" : ""}`}>
+							className={`custom-tab button-1 ${selectedIndex === 1 ? "active" : ""}`}>
 							Le traitement des gencives
 						</Tab>
 						<Tab
-							className={`custom-tab ${selectedIndex === 2 ? "active" : ""}`}>
+							className={`custom-tab button-1 ${selectedIndex === 2 ? "active" : ""}`}>
 							Les traitements divers
 						</Tab>
 					</Tab.List>
