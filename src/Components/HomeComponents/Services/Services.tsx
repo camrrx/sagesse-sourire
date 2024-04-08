@@ -6,6 +6,7 @@ import implant from "../../../assets/cards/implant.png";
 import paro from "../../../assets/cards/paro.png";
 import logo from "../../../assets/logo-sagesse-noir.png";
 import iconChair from "../../../assets/icones/cabinetimg.png";
+import { Link } from "react-router-dom";
 
 const Services = () => {
 	return (
@@ -20,39 +21,47 @@ const Services = () => {
 						<h1>Une Clinique Complète</h1>
 					</div>
 					<div className="cards">
-						<div className="card">
-							<div className="icon">
-								<img src={soins} alt="" />
+						<Link to={"/sagesse-sourire/traitements#parodontie"}>
+							<div className="card">
+								<div className="icon">
+									<img src={soins} alt="" />
+								</div>
+								<h1>Soins dentaires</h1>
+								<p>
+									Soins conservateurs ou spécifiques à chaque dent sa solution!
+								</p>
 							</div>
-							<h1>Soins dentaires</h1>
-							<p>
-								Soins conservateurs ou spécifiques à chaque dent sa solution!
-							</p>
-						</div>
-						<div className="card">
-							<div className="icon">
-								<img src={ortho} alt="" />
+						</Link>
+						<Link to={"/sagesse-sourire/traitements#orthodontie"}>
+							<div className="card">
+								<div className="icon">
+									<img src={ortho} alt="" />
+								</div>
+								<h1>Orthodontie</h1>
+								<p>
+									L’orthodontie ou comment travailler l’architecture de votre
+									sourire!
+								</p>
 							</div>
-							<h1>Orthodontie</h1>
-							<p>
-								L’orthodontie ou comment travailler l’architecture de votre
-								sourire!
-							</p>
-						</div>
-						<div className="card">
-							<div className="icon">
-								<img src={implant} alt="" />
+						</Link>
+						<Link to={"/sagesse-sourire/traitements#implantsDentaires"}>
+							<div className="card">
+								<div className="icon">
+									<img src={implant} alt="" />
+								</div>
+								<h1>Implantologie</h1>
+								<p>Remplacer durablement une dent perdue!</p>
 							</div>
-							<h1>Implantologie</h1>
-							<p>Remplacer durablement une dent perdue!</p>
-						</div>
-						<div className="card">
-							<div className="icon">
-								<img src={paro} alt="" />
+						</Link>
+						<Link to={"/sagesse-sourire/traitements#dentisterieEsthetique"}>
+							<div className="card">
+								<div className="icon">
+									<img src={paro} alt="" />
+								</div>
+								<h1>Esthétique</h1>
+								<p>J’ose retrouver le sourire!</p>
 							</div>
-							<h1>Esthétique</h1>
-							<p>J’ose retrouver le sourire!</p>
-						</div>
+						</Link>
 					</div>
 				</div>
 				<div className="line-container">
