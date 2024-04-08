@@ -1,12 +1,11 @@
 // import Accueil from "../../Components/CabinetComponents/Accueil/Accueil";
-import Assistantes from "../../Components/CabinetComponents/Assistantes/Assistantes";
 import Dentistes from "../../Components/CabinetComponents/Dentistes/Dentistes";
 import Equipe from "../../Components/CabinetComponents/Equipe/Equipe";
 import Prothesistes from "../../Components/CabinetComponents/Prothesistes/Prothesistes";
-import { useTheme } from "../../ThemeContext";
-import "./Cabinet.scss";
-import equipeComplete from "../../assets/equipeComplet.png";
 import Footer from "../../Components/shared/Footer";
+import { useTheme } from "../../ThemeContext";
+import equipeComplete from "../../assets/equipeComplet.png";
+import "./Cabinet.scss";
 
 const Cabinet = () => {
   const { theme } = useTheme();
