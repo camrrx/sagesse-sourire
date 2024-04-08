@@ -1,5 +1,5 @@
 import "./Presentation.scss";
-import dentiste from "../../../assets/dentiste.jpeg";
+import dentiste from "../../../assets/dentiste.png";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
@@ -9,9 +9,11 @@ import {
   removeScrollListener,
 } from "../../../utils/scrollUtils";
 import dentistIcon from "../../../assets/icones/dentist.png";
-import loupe from "../../../assets/icones/loupe.png";
-import brosse from "../../../assets/icones/brosse.png";
-import cardImg from "../../../assets/icones/dentCard.png";
+import eve from "../../../../public/photosEmployes/eve.png";
+import laurent from "../../../../public/photosEmployes/laurent.png";
+import eric from "../../../../public/photosEmployes/eric.png";
+import thierry from "../../../../public/photosEmployes/thierry.png";
+import karine from "../../../../public/photosEmployes/karine.png";
 
 const Presentation = () => {
   const [showPresentation, setShowPresentation] = useState(false);
@@ -34,13 +36,19 @@ const Presentation = () => {
         <div className={`titre ${showPresentation ? "show" : "noshow"}`}>
           <div className="icones-wrapper">
             <div className="icone-wrapper">
-              <img src={loupe} alt="" />
+              <img src={eve} alt="" />
             </div>
             <div className="icone-wrapper">
-              <img src={brosse} alt="" />
+              <img src={laurent} alt="" />
             </div>
             <div className="icone-wrapper">
-              <img src={cardImg} alt="" />
+              <img src={eric} alt="" />
+            </div>
+            <div className="icone-wrapper">
+              <img src={thierry} alt="" />
+            </div>
+            <div className="icone-wrapper">
+              <img src={karine} alt="" />
             </div>
           </div>
           <h4 className="presentation-texte">

@@ -4,7 +4,7 @@ import soins from "../../../assets/cards/soins.png";
 import ortho from "../../../assets/cards/ortho.png";
 import implant from "../../../assets/cards/implant.png";
 import paro from "../../../assets/cards/paro.png";
-import logo from "../../../assets/logo-sagesse-noir.png";
+import logo from "../../../assets/logo_sagesse-noir.png";
 import iconChair from "../../../assets/icones/cabinetimg.png";
 import { Link } from "react-router-dom";
 

@@ -2,7 +2,7 @@
 @import "../../../utils.scss";
 
 .slider-container {
-  height: 80vh;
+  height: 70vh;
   width: 80vw;
   display: flex;
   justify-content: center;
@@ -14,12 +14,15 @@
 
   .slider {
     display: flex;
+    align-items: center;
+    width: 80vw;
     @media (max-width: 500px) {
       width: 100%;
     }
     .dentiste-page {
       display: flex;
       justify-content: space-between;
+      width: 100%;
       @media (max-width: 500px) {
       }
       .pagination-button {
@@ -38,6 +41,7 @@
         padding: 2rem;
         gap: 2rem;
         display: flex;
+        justify-content: space-between;
         @media (max-width: 500px) {
           padding: 0;
           flex-direction: column-reverse;
@@ -73,10 +77,12 @@
         .photo {
           display: flex;
           align-items: center;
-          max-width: 40%;
+          justify-content: center;
+          width: 40%;
+          height: 100%;
 
           .photo-dentiste {
-            height: 80%;
+            width: 100%;
           }
         }
       }

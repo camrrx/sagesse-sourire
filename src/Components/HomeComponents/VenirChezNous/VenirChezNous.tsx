@@ -1,5 +1,6 @@
 import "./VenirChezNous.scss";
 import batDent from "../../../assets/batiment-dentist .png";
+import iconeLocalisation from "../../../assets/icones/localisation_noir.png"
 import {
   BsFillTelephoneFill,
   BsPinMapFill,
@@ -28,7 +29,10 @@ const VenirChezNous = () => {
 
   return (
     <div className="venircheznous-container light-theme">
-      <h2 className="venircheznous-title">Venir Chez Nous</h2>
+      <div className="title-wrapper">
+        <img src={iconeLocalisation} alt="" />
+        <h2 className="venircheznous-title">Venir Chez Nous</h2>
+      </div>
 
       <div className="flex-container">
         <div className="box-container">
@@ -65,7 +69,10 @@ const VenirChezNous = () => {
             ))}
           </div>
 
-          <button className="button-contact button-1 button-syrendre" onClick={handleOpenGoogleMaps}>
+          <button
+            className="button-contact button-1 button-syrendre"
+            onClick={handleOpenGoogleMaps}
+          >
             S'y rendre <FaArrowRight />
           </button>
         </div>

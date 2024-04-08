@@ -10,9 +10,36 @@
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.226);
+    @media (max-width: 500px) {
+      flex-direction: column;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 1.4rem;
+        }
+      }
+
+      img {
+        height: 2.5rem;
+        @media (max-width: 500px) {
+          height: 1.8rem;
+        }
+      }
+    }
 
     .icone-footer {
-        height: 1.5rem;
+      height: 1.5rem;
+      @media (max-width: 500px) {
+        height: 1rem;
+      }
     }
 
     .telephone {
@@ -27,6 +54,11 @@
       font-size: 0.7rem;
       gap: 1rem;
       align-items: center;
+      @media (max-width: 500px) {
+        width: 80vw;
+        font-size: 0.6rem;
+        text-align: center;
+      }
     }
   }
 }
