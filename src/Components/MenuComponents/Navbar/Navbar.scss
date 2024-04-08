@@ -7,7 +7,7 @@
 	justify-content: space-between;
 	gap: 1.5rem;
 	transition: background-color 0.6s ease;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.123);
+	border-bottom: 1px solid #ffffff1f;
 
 	&.scrolled {
 		background-color: var(--secondary-1);
@@ -200,7 +200,6 @@
 		background-color: #d5d5d5;
 		color: var(--white);
 		border: none;
-		padding: 0.5rem 1rem;
 		margin-bottom: 1rem;
 		cursor: pointer;
 	}

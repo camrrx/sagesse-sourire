@@ -5,7 +5,8 @@ import Equipe from "../../Components/CabinetComponents/Equipe/Equipe";
 import Prothesistes from "../../Components/CabinetComponents/Prothesistes/Prothesistes";
 import { useTheme } from "../../ThemeContext";
 import "./Cabinet.scss";
-import equipeComplete from "../../assets/equipeComplet.png"
+import equipeComplete from "../../assets/equipeComplet.png";
+import Footer from "../../Components/shared/Footer";
 
 const Cabinet = () => {
   const { theme } = useTheme();
@@ -14,7 +15,7 @@ const Cabinet = () => {
     <div className={`lecabinet-container ${theme}`}>
       <div className="top" id="equipes">
         <Equipe />
-		<img src={equipeComplete} alt="" />
+        <img src={equipeComplete} alt="" />
       </div>
       {/* <div className="accueil" id="accueil">
         <Accueil />
@@ -22,12 +23,13 @@ const Cabinet = () => {
       <div id="dentistes">
         <Dentistes />
       </div>
-      <div id="assistantes">
+      {/* <div id="assistantes">
         <Assistantes />
-      </div>
+      </div> */}
       <div id="prothesistes">
         <Prothesistes />
       </div>
+      <Footer></Footer>
     </div>
   );
 };

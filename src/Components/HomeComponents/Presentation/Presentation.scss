@@ -126,6 +126,10 @@
                 transform: translateX(200%);
                 transition: transform 0.8s ease;
 
+                @media (max-width: 500px) {
+                    width: 80vw;
+                }
+
                 img {
                     width: 40px;
 
