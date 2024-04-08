@@ -7,6 +7,10 @@
 	gap: 5vh;
 	overflow: hidden;
 
+	@media (max-width: 500px) {
+		gap: 3rem;
+	}
+
 	.top {
 		background-color: var(--secondary-1);
 		height: 100vh;
@@ -18,7 +22,7 @@
 
 		@media (max-width: 500px) {
 			flex-direction: column-reverse;
-			padding-top: 21rem;
+			padding-top: 18rem;
 		
 		}
 

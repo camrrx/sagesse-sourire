@@ -5,8 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  transform: translateX(-200%);
+  // height: 100vh;
+  // transform: translateX(-200%);
   transition: transform 0.8s ease;
   .title-wrapper {
     display: flex;
@@ -25,11 +25,17 @@
     }
     .dentistes-title {
       color: var(--night-blue);
+      @media (max-width: 500px) {
+        font-size: 1.4rem;
+      }
     }
     .ligne {
       background-color: var(--night-blue);
       height: 1px;
       width: 200px;
+      @media (max-width: 500px) {
+        flex: 1;
+      }
     }
   }
 
