@@ -42,7 +42,7 @@ const Parodontie = () => {
 								<div className="cards">
 									<img className="card" src={soins}></img>
 									<div>
-										<h5>On distingue deux grandes catégories d'actes :</h5>
+										<h6>On distingue deux grandes catégories d'actes :</h6>
 
 										<div className="card">
 											<h2>LA DENTISTERIE RESTAURATRICE</h2>
@@ -70,7 +70,7 @@ const Parodontie = () => {
 						</Tab.Panel>
 						<Tab.Panel className="custom-tab-panel">
 							<div className="-container">
-								<h5 className="card">
+								<h6 className="card">
 									Les maladies parodontales sont des infections bactériennes
 									(microbiennes) qui affectent et détruisent les tissus qui
 									entourent et supportent les dents (la gencive, les fibres
@@ -78,7 +78,7 @@ const Parodontie = () => {
 									important de faire des contrôles reguliers. Notre équipe vous
 									conseillera et si cela est nécessaire vous établira un devis
 									pour votre traitement et votre maintenance
-								</h5>
+								</h6>
 								<div className="cards">
 									<div className="card">
 										<h2>LE DETARTRAGE</h2>
@@ -116,13 +116,12 @@ const Parodontie = () => {
 						</Tab.Panel>
 						<Tab.Panel className="custom-tab-panel">
 							<div className="-container">
-								<h5 className="card">
+								<h6 className="card">
 									Il est important de faire des contrôles reguliers. Notre
 									équipe vous conseillera et si cela est nécessaire vous
 									établira un devis pour votre traitement.
-								</h5>
+								</h6>
 								<div className="cards">
-									{" "}
 									<div className="card">
 										<h2>LE BRUXISME</h2>
 										<h6>
