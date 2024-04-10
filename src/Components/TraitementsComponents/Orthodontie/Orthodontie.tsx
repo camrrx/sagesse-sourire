@@ -19,22 +19,28 @@ const Orthodontie = () => {
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 					<Tab.List className="custom-tab-list">
 						<Tab
-							className={`button-1 custom-tab ${selectedIndex === 0 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${
+								selectedIndex === 0 ? "active" : ""
+							}`}>
 							L'orthodontie traditionnelle
 						</Tab>
 
 						<Tab
-							className={`button-1 custom-tab ${selectedIndex === 1 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${
+								selectedIndex === 1 ? "active" : ""
+							}`}>
 							L'orthodontie Linguale
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${selectedIndex === 2 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${
+								selectedIndex === 2 ? "active" : ""
+							}`}>
 							Invisalign
 						</Tab>
 					</Tab.List>
 					<Tab.Panels>
 						<Tab.Panel className="custom-tab-panel">
-							<div>
+							<div className="cards">
 								<h2>Il existe deux types de brackets :</h2>
 								<div className="bracket-container">
 									<div className="card">

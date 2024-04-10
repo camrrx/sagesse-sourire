@@ -17,22 +17,28 @@ const Esthetique = () => {
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 					<Tab.List className="custom-tab-list">
 						<Tab
-							className={`custom-tab button-1 ${selectedIndex === 0 ? "active" : ""}`}>
+							className={`custom-tab button-1 ${
+								selectedIndex === 0 ? "active" : ""
+							}`}>
 							Les soins cosmétiques
 						</Tab>
 
 						<Tab
-							className={`custom-tab button-1 ${selectedIndex === 1 ? "active" : ""}`}>
+							className={`custom-tab button-1 ${
+								selectedIndex === 1 ? "active" : ""
+							}`}>
 							Le blanchiement dentaire
 						</Tab>
 						<Tab
-							className={`custom-tab button-1 ${selectedIndex === 2 ? "active" : ""}`}>
+							className={`custom-tab button-1 ${
+								selectedIndex === 2 ? "active" : ""
+							}`}>
 							Les prothèses dentaies
 						</Tab>
 					</Tab.List>
 					<Tab.Panels>
 						<Tab.Panel className="custom-tab-panel">
-							<div>
+							<div className="cards">
 								<div className="card">
 									<div className="cosmetique-title">
 										<h2>La dentisterie a évoluée et les soins aussi.</h2>

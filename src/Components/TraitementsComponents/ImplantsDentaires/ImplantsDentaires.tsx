@@ -34,31 +34,45 @@ const ImplantsDentaires = () => {
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 					<Tab.List className="custom-tab-list">
 						<Tab
-							className={`button-1 custom-tab ${selectedIndex === 0 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${
+								selectedIndex === 0 ? "active" : ""
+							}`}>
 							Définition
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${selectedIndex === 1 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${
+								selectedIndex === 1 ? "active" : ""
+							}`}>
 							L'implant unitaire
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${selectedIndex === 2 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${
+								selectedIndex === 2 ? "active" : ""
+							}`}>
 							Le secteur édenté
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${selectedIndex === 3 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${
+								selectedIndex === 3 ? "active" : ""
+							}`}>
 							L'édentation complète
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${selectedIndex === 4 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${
+								selectedIndex === 4 ? "active" : ""
+							}`}>
 							Réhabilitation dentaire
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab  ${selectedIndex === 5 ? "active" : ""}`}>
+							className={`button-1 custom-tab  ${
+								selectedIndex === 5 ? "active" : ""
+							}`}>
 							Sinus Lift
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${selectedIndex === 6 ? "active" : ""}`}>
+							className={`button-1 custom-tab ${
+								selectedIndex === 6 ? "active" : ""
+							}`}>
 							Greffe osseuse
 						</Tab>
 					</Tab.List>
@@ -157,7 +171,7 @@ const ImplantsDentaires = () => {
 											<ReactPlayer
 												url={videoDef}
 												controls={true}
-												width="100%"
+												width="90vw"
 												height="100%"
 											/>
 										</div>
@@ -196,7 +210,7 @@ const ImplantsDentaires = () => {
 											<ReactPlayer
 												url={video1Implant}
 												controls={true}
-												width="100%"
+												width="90vw"
 												height="100%"
 											/>
 										</div>
@@ -219,7 +233,7 @@ const ImplantsDentaires = () => {
 											<ReactPlayer
 												url={videoiu}
 												controls={true}
-												width="100%"
+												width="90vw"
 												height="100%"
 											/>
 										</div>
@@ -256,7 +270,7 @@ const ImplantsDentaires = () => {
 											<ReactPlayer
 												url={videoisecteur}
 												controls={true}
-												width="100%"
+												width="90vw"
 												height="100%"
 											/>
 										</div>
@@ -368,7 +382,7 @@ const ImplantsDentaires = () => {
 												<ReactPlayer
 													url={videoitotal}
 													controls={true}
-													width="100%"
+													width="90vw"
 													height="100%"
 												/>
 											</div>
@@ -410,7 +424,7 @@ const ImplantsDentaires = () => {
 											<ReactPlayer
 												url={videoiposidental}
 												controls={true}
-												width="100%"
+												width="90vw"
 												height="100%"
 											/>
 										</div>
@@ -430,7 +444,7 @@ const ImplantsDentaires = () => {
 											<ReactPlayer
 												url={videoisinus}
 												controls={true}
-												width="100%"
+												width="90vw"
 												height="100%"
 											/>
 										</div>
@@ -472,7 +486,7 @@ const ImplantsDentaires = () => {
 											<ReactPlayer
 												url={videosl}
 												controls={true}
-												width="100%"
+												width="90vw"
 												height="100%"
 											/>
 										</div>
@@ -488,7 +502,7 @@ const ImplantsDentaires = () => {
 											<ReactPlayer
 												url={videointra}
 												controls={true}
-												width="100%"
+												width="90vw"
 												height="100%"
 											/>
 										</div>
@@ -678,7 +692,7 @@ const ImplantsDentaires = () => {
 											<ReactPlayer
 												url={videoig}
 												controls={true}
-												width="100%"
+												width="90vw"
 												height="100%"
 											/>
 										</div>

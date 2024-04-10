@@ -54,25 +54,39 @@ const Navbar = () => {
 								<div key={index} className="navbar-item">
 									{item.submenu ? (
 										<Menu>
-											<Menu.Button className="navbar-link">
-												{item.title}
-											</Menu.Button>
-											<Menu.Items className="submenu">
-												{item.submenu.map((subItem, subIndex) => (
-													<Menu.Item key={subIndex}>
-														{({ active }) => (
-															<a
-																key={subIndex}
-																href={subItem.url}
-																className={`submenu-link ${
-																	active ? "active" : ""
-																}`}>
-																{subItem.title}
-															</a>
-														)}
-													</Menu.Item>
-												))}
-											</Menu.Items>
+											{({ open, close }) => (
+												<div className="menu-container">
+													<Menu.Button
+														className="navbar-link"
+														//onMouseEnter={(
+														//	event: React.MouseEvent<HTMLButtonElement>
+														//	) => (open ? "" : event.currentTarget.click())}
+													>
+														{item.title}
+													</Menu.Button>
+
+													{open && (
+														<Menu.Items
+															className="submenu"
+															onMouseLeave={() => close()}>
+															{item.submenu.map((subItem, subIndex) => (
+																<Menu.Item key={subIndex}>
+																	{({ active }) => (
+																		<a
+																			key={subIndex}
+																			href={subItem.url}
+																			className={`submenu-link ${
+																				active ? "active" : ""
+																			}`}>
+																			{subItem.title}
+																		</a>
+																	)}
+																</Menu.Item>
+															))}
+														</Menu.Items>
+													)}
+												</div>
+											)}
 										</Menu>
 									) : (
 										<Link to={item.url} className="navbar-link">
