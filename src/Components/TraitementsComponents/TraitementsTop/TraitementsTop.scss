@@ -12,7 +12,9 @@
 		margin-top: 100px;
 		color: var(--white);
 	}
-
+	@media (max-width: 650px) {
+		height: auto;
+	}
 	.dent-container {
 		position: relative;
 		z-index: 1;
@@ -73,7 +75,7 @@
 
 	@media (max-width: 650px) {
 		.traitements {
-			margin-top: 250px;
+			margin-top: 60px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
