@@ -3,26 +3,25 @@
 
 .prothesistes-container {
 	display: flex;
-	grid-template-columns: 2fr 1fr;
-	height: 90vh;
+	width: 90vw;
+	gap: 2rem;
 
 	.prothesistes-text {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		padding: 30px;
 		transform: translateX(-200%);
 		transition: transform 0.8s ease;
+		
 		&.show {
 			transform: translateX(0);
 		}
 		.title {
-			color: var(--secondary-1);
+			color: var(--night-blue);
 		}
 		.description1 {
 			color: var(--primary-1);
-			text-align: center;
+			width: 60%;
 			font-weight: 100;
 			font-size: 1.8em;
 		}
@@ -31,9 +30,12 @@
 			display: flex;
 			justify-content: center;
 			text-align: center;
-			gap: 1rem;
-			margin-top: 15px;
-			.card {
+			gap:1rem;
+			@media (max-width: 500px) {
+				flex-direction: column;
+			}
+
+			.card-proth {
 				transition: 0.2s;
 				border-radius: 8px;
 				padding: 2rem;
@@ -42,24 +44,23 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				gap: 1rem;
-				border: 1px solid var(--grey-1);
+				box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			
 				.icon {
 					height: 80px;
 					width: 80px;
 				}
 
 				h1 {
-					color: var(--secondary-1);
 					font-size: 1.5rem;
 				}
 
 				p {
-					color: var(--primary-1);
+					color: var(--primary-2);
 				}
 
 				&:hover {
-					box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+					transform: scale(1.03);
 				}
 			}
 		}
@@ -71,6 +72,9 @@
 		justify-content: center;
 		transform: translateX(200%);
 		transition: transform 0.8s ease;
+		@media (max-width: 500px) {
+			display: none;
+		}
 		.dent-img {
 			width: 400px;
 			height: 400px;

@@ -1,4 +1,5 @@
 .Orthodontie-container {
+	margin-top: 2rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -9,6 +10,11 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		.cards-ortho {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 		.bracket-container {
 			display: flex;
 			justify-content: center;

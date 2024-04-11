@@ -17,20 +17,20 @@ const Esthetique = () => {
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 					<Tab.List className="custom-tab-list">
 						<Tab
-							className={`custom-tab button-1 ${
+							className={`custom-tab   ${
 								selectedIndex === 0 ? "active" : ""
 							}`}>
 							Les soins cosmétiques
 						</Tab>
 
 						<Tab
-							className={`custom-tab button-1 ${
+							className={`custom-tab   ${
 								selectedIndex === 1 ? "active" : ""
 							}`}>
 							Le blanchiement dentaire
 						</Tab>
 						<Tab
-							className={`custom-tab button-1 ${
+							className={`custom-tab   ${
 								selectedIndex === 2 ? "active" : ""
 							}`}>
 							Les prothèses dentaies

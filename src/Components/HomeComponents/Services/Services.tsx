@@ -20,9 +20,9 @@ const Services = () => {
 						<h2>Les traitements</h2>
 						<h1>Une Clinique Complète</h1>
 					</div>
-					<div className="cards">
+					<div className="cards-service">
 						<Link to={"/sagesse-sourire/traitements#parodontie"}>
-							<div className="card">
+							<div className="card-service">
 								<div className="icon">
 									<img src={soins} alt="" />
 								</div>
@@ -33,7 +33,7 @@ const Services = () => {
 							</div>
 						</Link>
 						<Link to={"/sagesse-sourire/traitements#orthodontie"}>
-							<div className="card">
+							<div className="card-service">
 								<div className="icon">
 									<img src={ortho} alt="" />
 								</div>
@@ -45,7 +45,7 @@ const Services = () => {
 							</div>
 						</Link>
 						<Link to={"/sagesse-sourire/traitements#implantsDentaires"}>
-							<div className="card">
+							<div className="card-service">
 								<div className="icon">
 									<img src={implant} alt="" />
 								</div>
@@ -54,7 +54,7 @@ const Services = () => {
 							</div>
 						</Link>
 						<Link to={"/sagesse-sourire/traitements#dentisterieEsthetique"}>
-							<div className="card">
+							<div className="card-service">
 								<div className="icon">
 									<img src={paro} alt="" />
 								</div>
