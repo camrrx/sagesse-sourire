@@ -1,68 +1,80 @@
 .equipements-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 30px;
-	margin: 20px;
-	padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 20px;
+  padding: 2rem;
 
-	.equipements-title {
-		color: var(--primary-1);
-		font-size: 2em;
-		letter-spacing: 5px;
+  .equipements-title {
+    color: var(--primary-1);
+    font-size: 2em;
+    letter-spacing: 5px;
+  }
 
-	}
+  .modal-equipement {
+    position: absolute;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
 
-	.modal-equipement {
-		position: absolute;
-		padding: 2rem;
-		background-color: white;
-		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-		border-radius: 8px;
+    h1 {
+      color: var(--primary-1);
+    }
 
-		h1 {
-			color: var(--primary-1);
-		}
+    .close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
 
-		.close-button {
-			position: absolute;
-			top: 0;
-			right: 0;
-			background: none;
-			border: none;
-			cursor: pointer;
-		}
-	}
+  .equipements-items {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+    .equipement-item {
+      display: flex;
 
-	.equipements-items {
-		padding-top: 20px;
+      justify-content: center;
+      gap: 1rem;
+      align-items: center;
+      background-color: var(--primary-2);
+      padding: 0.5rem;
+      color: var(--white);
+      border-radius: 20px;
+      cursor: pointer;
+      align-items: center;
+
+      .equipement-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .equipement-number-wrapper {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		gap: 2rem;
-		.equipement-item {
-			display: flex;
-			justify-content: center;
-			gap: 1rem;
-			align-items: center;
-			background-color: var(--primary-2);
-			padding: 0.5rem;
-			color: var(--white);
-			border-radius: 20px;
-			cursor: pointer;
+		justify-content: center;
+		align-items: center;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+        background-color: var(--white);
+		color: var(--primary-2);
+      }
 
-			.equipement-name {
-				font-size: 1.2rem;
-				font-weight: bold;
-			}
-
-			.description {
-				font-size: 1rem;
-				text-align: center;
-			}
-		}
-	}
+      .description {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
 }
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
