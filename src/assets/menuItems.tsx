@@ -44,30 +44,16 @@ export const menuItems = [
 				url: "cabinet",
 				hash: "equipes",
 			},
-			{
-				title: "Accueil",
-				url: "cabinet",
-				hash: "accueil",
-			},
+
 			{
 				title: "Les dentistes",
 				url: "cabinet",
 				hash: "dentistes",
 			},
 			{
-				title: "Les assistantes",
-				url: "cabinet",
-				hash: "assistantes",
-			},
-			{
 				title: "Les prothésistes",
 				url: "cabinet",
 				hash: "prothesistes",
-			},
-			{
-				title: "Les correspondants",
-				url: "cabinet",
-				hash: "correspondants",
 			},
 		],
 	},
