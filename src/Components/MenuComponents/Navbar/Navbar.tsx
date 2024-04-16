@@ -72,14 +72,17 @@ const Navbar = () => {
 															{item.submenu.map((subItem, subIndex) => (
 																<Menu.Item key={subIndex}>
 																	{({ active }) => (
-																		<a
+																		<Link
 																			key={subIndex}
-																			href={subItem.url}
+																			to={
+																				subItem.url +
+																				(subItem.hash ? "#" + subItem.hash : "")
+																			}
 																			className={`submenu-link ${
 																				active ? "active" : ""
 																			}`}>
 																			{subItem.title}
-																		</a>
+																		</Link>
 																	)}
 																</Menu.Item>
 															))}

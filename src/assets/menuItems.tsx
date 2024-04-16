@@ -5,27 +5,33 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Presentation",
-				url: "/sagesse-sourire/home#presentation",
+				url: "home",
+				hash: "presentation",
 			},
 			{
 				title: "Actualités",
-				url: "/sagesse-sourire/home#actualites",
+				url: "home",
+				hash: "actualites",
 			},
 			{
 				title: "Equipements",
-				url: "/sagesse-sourire/home#equipements",
+				url: "home",
+				hash: "equipements",
 			},
 			{
 				title: "Venir chez nous",
-				url: "/sagesse-sourire/home#venircheznous",
+				url: "home",
+				hash: "venircheznous",
 			},
 			{
 				title: "Horaires",
-				url: "/sagesse-sourire/home#horaire",
+				url: "home",
+				hash: "horaires",
 			},
 			{
 				title: "Nous contacter",
-				url: "/sagesse-sourire/home#nouscontacter",
+				url: "home",
+				hash: "nouscontacter",
 			},
 		],
 	},
@@ -35,27 +41,33 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Notre équipe",
-				url: "/sagesse-sourire/leCabinet#equipes",
+				url: "cabinet",
+				hash: "equipes",
 			},
 			{
 				title: "Accueil",
-				url: "/sagesse-sourire/leCabinet#accueil",
+				url: "cabinet",
+				hash: "accueil",
 			},
 			{
 				title: "Les dentistes",
-				url: "/sagesse-sourire/leCabinet#dentistes",
+				url: "cabinet",
+				hash: "dentistes",
 			},
 			{
 				title: "Les assistantes",
-				url: "/sagesse-sourire/leCabinet#assistantes",
+				url: "cabinet",
+				hash: "assistantes",
 			},
 			{
 				title: "Les prothésistes",
-				url: "/sagesse-sourire/leCabinet#prothesistes",
+				url: "cabinet",
+				hash: "prothesistes",
 			},
 			{
 				title: "Les correspondants",
-				url: "/sagesse-sourire/leCabinet#correspondants",
+				url: "cabinet",
+				hash: "correspondants",
 			},
 		],
 	},
@@ -65,28 +77,34 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Les implants dentaires",
-				url: "/sagesse-sourire/traitements#implantsDentaires",
+				url: "traitements",
+				hash: "implantsDentaires",
 			},
 			{
 				title: "L'orthodontie",
-				url: "/sagesse-sourire/traitements#orthodontie",
+				url: "traitements",
+				hash: "orthodontie",
 			},
 			{
 				title: "La dentisterie ésthétique",
-				url: "/sagesse-sourire/traitements#dentisterieEsthetique",
+				url: "traitements",
+				hash: "dentisterieEsthetique",
 			},
 			{
 				title: "Parodontie et soins",
-				url: "/sagesse-sourire/traitements#parodontie",
+				url: "traitement",
+				hash: "parodontie",
 			},
 			{
 				title: "Gestion de la douleur",
-				url: "/sagesse-sourire/traitements#gestionDouleur",
+				url: "traitements",
+				hash: "gestionDouleur",
 			},
 		],
 	},
 	{
 		title: "Honoraires",
 		url: "/honoraires",
+		hash: "honoraires",
 	},
 ];
