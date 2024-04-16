@@ -34,43 +34,43 @@ const ImplantsDentaires = () => {
 				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
 					<Tab.List className="custom-tab-list">
 						<Tab
-							className={`button-1 custom-tab ${
+							className={` custom-tab ${
 								selectedIndex === 0 ? "active" : ""
 							}`}>
 							Définition
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${
+							className={` custom-tab ${
 								selectedIndex === 1 ? "active" : ""
 							}`}>
 							L'implant unitaire
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${
+							className={`custom-tab ${
 								selectedIndex === 2 ? "active" : ""
 							}`}>
 							Le secteur édenté
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${
+							className={`custom-tab ${
 								selectedIndex === 3 ? "active" : ""
 							}`}>
 							L'édentation complète
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${
+							className={`custom-tab ${
 								selectedIndex === 4 ? "active" : ""
 							}`}>
 							Réhabilitation dentaire
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab  ${
+							className={`  custom-tab  ${
 								selectedIndex === 5 ? "active" : ""
 							}`}>
 							Sinus Lift
 						</Tab>
 						<Tab
-							className={`button-1 custom-tab ${
+							className={` custom-tab ${
 								selectedIndex === 6 ? "active" : ""
 							}`}>
 							Greffe osseuse

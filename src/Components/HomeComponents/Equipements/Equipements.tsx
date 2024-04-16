@@ -28,8 +28,12 @@ const Equipements = () => {
             key={index}
             className="equipement-item"
           >
-            <div className="equipement-name">{equipement.number}</div>
-            <div className="equipement-name">{equipement.equipment}</div>
+            {equipement.number && (
+              <div className="equipement-number-wrapper">
+                <h3>{equipement.number}</h3>
+              </div>
+            )}
+            <h3 className="equipement-name">{equipement.equipment}</h3>
           </div>
         ))}
       </div>

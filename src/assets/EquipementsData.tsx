@@ -29,7 +29,7 @@ export const EquipementsData = [
 			"pour enregistrer en bouche les empreintes et ainsi optimiser la précision et l’esthétique de vos prothèses.",
 	},
 	{
-		number: ">1",
+		number: "",
 		equipment: "Des générateurs d’ultrasons",
 		description:
 			"spécifiques pour le traitement du déchaussement et dans le cadre de la maladie paradontale.",
@@ -40,7 +40,7 @@ export const EquipementsData = [
 		description: "pour les greffes osseuses avant implant.",
 	},
 	{
-		number: ">1",
+		number: "",
 		equipment: "Des aides optiques ",
 		description: "pour la micro-chirurgie et l’endodontie.",
 	},

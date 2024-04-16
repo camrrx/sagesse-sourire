@@ -30,14 +30,14 @@ const Prothesistes = () => {
   return (
     <div className={`prothesistes-container ${theme}`}>
       <div className={`prothesistes-text ${showSection ? "show" : "show"}`}>
-        <h1 className="title">LES PROTHESISTES,</h1>
+        <h1 className="title">LES PROTHESISTES</h1>
         <p className="description1">
           Nous travaillons avec un laboratoire de prothèses proche de notre
           cabinet dentaire.
         </p>
         <h2>Laboratoire Surel de Moisdon la Rivière</h2>
         <div className="prothesistes-cards">
-          <div className="card">
+          <div className="card-proth">
             <img className="icon" src={technologie} alt="" />
             <h1>Exigence</h1>
             <p>
@@ -45,7 +45,7 @@ const Prothesistes = () => {
               technologiques les plus récentes et les plus éprouvées.
             </p>
           </div>
-          <div className="card">
+          <div className="card-proth">
             <img className="icon" src={materiaux} alt="" />
             <h1>Compétence</h1>
             <p>
@@ -55,7 +55,7 @@ const Prothesistes = () => {
               disponible pour tous nos patients.
             </p>
           </div>
-          <div className="card">
+          <div className="card-proth">
             <img className="icon" src={communication} alt="" />
             <h1>Synérgie</h1>
             <p>

@@ -11,25 +11,29 @@ const Cabinet = () => {
   const { theme } = useTheme();
 
   return (
-    <div className={`lecabinet-container ${theme}`}>
-      <div className="top" id="equipes">
-        <Equipe />
-        <img src={equipeComplete} alt="" />
-      </div>
-      {/* <div className="accueil" id="accueil">
+    <>
+      <div className={`lecabinet-container ${theme}`}>
+        <div className="top" id="equipes">
+          <Equipe />
+          <img src={equipeComplete} alt="" />
+        </div>
+        {/* <div className="accueil" id="accueil">
         <Accueil />
       </div> */}
-      <div id="dentistes">
-        <Dentistes />
-      </div>
-      {/* <div id="assistantes">
+        <div id="dentistes">
+          <Dentistes />
+        </div>
+        {/* <div id="assistantes">
         <Assistantes />
       </div> */}
-      <div id="prothesistes">
-        <Prothesistes />
+        <div id="prothesistes">
+          <Prothesistes />
+        </div>
       </div>
-      <Footer></Footer>
-    </div>
+      <div className={theme}>
+        <Footer></Footer>
+      </div>
+    </>
   );
 };
 

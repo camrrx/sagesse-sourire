@@ -42,6 +42,7 @@
 	gap: 1rem;
 	overflow-y: auto;
 	overflow-x: hidden;
+	justify-content: center;
 }
 
 .custom-tab {
@@ -49,16 +50,16 @@
 	padding: 10px 20px;
 	text-align: center;
 	cursor: pointer;
-	background-color: var(--secondary-2);
-	border: none;
-	color: var(--white);
-
+	border: 2px solid var(--button-1);
+	color: var(--button-1);	
+	background: none;
 	&:hover {
-		background-color: var(--night-blue);
-	}
+		background-color: var(--button-1);
+		color: var(--white);
+		}
 
 	&.active {
-		background-color: var(--night-blue);
+		background-color: var(--button-1);
 		color: #fff;
 	}
 }
@@ -92,7 +93,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-	padding: 10px;
+	padding: 1rem;
 	//border: 1px solid var(--grey-1);
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -126,7 +127,7 @@
 			align-items: center;
 			height: 50px;
 			width: 50px;
-			color: rgb(67, 183, 163);
+			color: var(--button-1);
 		}
 	}
 

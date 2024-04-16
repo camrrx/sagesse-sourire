@@ -8,7 +8,7 @@
   justify-content: center;
 
   @media (max-width: 500px) {
-    height: 60vh;
+    height: 90vh;
     width: 100vw;
   }
 
@@ -52,6 +52,11 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          width: 50%;
+          @media (max-width: 500px) {
+            width: 100%;
+            text-align: center;
+          }
           .name {
             color: var(--night-blue);
             font-size: 3rem;
@@ -65,8 +70,12 @@
           .functions {
             display: flex;
             gap: 0.5rem;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
             .function {
               cursor: pointer;
+              white-space: nowrap;
               &:hover {
                 transition: 0.4s;
                 transform: scale(1.03);

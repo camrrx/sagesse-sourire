@@ -20,7 +20,17 @@ const Footer = () => {
           <h1>16, rue du 11 Novembre. 44110 CHATEAUBRIANT</h1>
         </div>
       </div>
-      <div className="doctors"></div>
+      <div className="doctors">
+        <h1>Dr Thierry Lelièvre</h1>
+        <h1>|</h1>
+        <h1>Dr Eric Merlet</h1>
+        <h1>|</h1>
+        <h1>Dr Laurent Avenard</h1>
+        <h1>|</h1>
+        <h1>Dr Karine Chotard</h1>
+        <h1>|</h1>
+        <h1>Dr Eve Lelièvre</h1>
+      </div>
     </div>
   );
 };
