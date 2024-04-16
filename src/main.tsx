@@ -9,12 +9,12 @@ import { ThemeProvider } from "./ThemeContext";
 const isMobile = window.matchMedia("(max-width: 500px)").matches;
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <ThemeProvider>
-      <BrowserRouter>
-        {isMobile ? <Sidebar /> : <Navbar />}
-        <App />
-      </BrowserRouter>
-    </ThemeProvider>
-  </React.StrictMode>
+	<React.StrictMode>
+		<ThemeProvider>
+			<BrowserRouter basename="/sagesse-sourire">
+				{isMobile ? <Sidebar /> : <Navbar />}
+				<App />
+			</BrowserRouter>
+		</ThemeProvider>
+	</React.StrictMode>
 );

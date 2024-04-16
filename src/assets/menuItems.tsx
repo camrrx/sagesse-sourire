@@ -92,7 +92,7 @@ export const menuItems = [
 			},
 			{
 				title: "Parodontie et soins",
-				url: "traitement",
+				url: "traitements",
 				hash: "parodontie",
 			},
 			{
