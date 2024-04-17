@@ -1,0 +1,44 @@
+@import "../../themes.scss";
+@import "../../utils.scss";
+
+.honoraire-tab-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 20px;
+}
+
+table {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+	width: 80%;
+	border-collapse: collapse;
+}
+table,
+th,
+td {
+	border-radius: 12px;
+}
+th {
+	background-color: var(--primary-2);
+	color: white;
+}
+.borderradius-left {
+	border-radius: 12px 0 0 12px !important;
+}
+
+.borderradius-none {
+	border-radius: 0 !important;
+}
+
+.borderradius-right {
+	border-radius: 0px 12px 12px 0 !important;
+}
+td {
+	text-align: center;
+}
+.highlight {
+	background-color: #add8e6;
+}

@@ -1,0 +1,47 @@
+@import "../../themes.scss";
+@import "../../utils.scss";
+
+.honoraire-container {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	gap: 1rem;
+	.banniere {
+		position: absolute;
+		width: 30vw;
+		height: 80vh;
+		background-color: var(--primary-1);
+		background: linear-gradient(
+			120deg,
+			var(--primary-1) 50%,
+			var(--primary-2) 100%
+		);
+		right: 10vw;
+		border-bottom-left-radius: 100%;
+		border-bottom-right-radius: 100%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__bg {
+		width: 100%;
+		height: 100vh;
+		background: var(--secondary-1);
+	}
+	&__description {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 50%;
+		height: 100vh;
+		margin: 20px;
+
+		&__titre {
+			color: var(--dark-text);
+		}
+		&__texte {
+		}
+	}
+}
