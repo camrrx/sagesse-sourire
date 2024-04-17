@@ -4,9 +4,9 @@ import soins from "../../../assets/cards/soins.png";
 import ortho from "../../../assets/cards/ortho.png";
 import implant from "../../../assets/cards/implant.png";
 import paro from "../../../assets/cards/paro.png";
+import douleur from "../../../assets/cards/douleur.png";
 import logo from "../../../assets/logo_sagesse-noir.png";
 import iconChair from "../../../assets/icones/cabinetimg.png";
-import { Link } from "react-router-dom";
 
 const Services = () => {
 	return (
@@ -21,7 +21,7 @@ const Services = () => {
 						<h1>Une Clinique Complète</h1>
 					</div>
 					<div className="cards-service">
-						<Link to={"/sagesse-sourire/traitements#parodontie"}>
+						<a href={"traitements#parodontie"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={soins} alt="" />
@@ -31,8 +31,8 @@ const Services = () => {
 									Soins conservateurs ou spécifiques à chaque dent sa solution!
 								</p>
 							</div>
-						</Link>
-						<Link to={"/sagesse-sourire/traitements#orthodontie"}>
+						</a>
+						<a href={"traitements#orthodontie"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={ortho} alt="" />
@@ -43,8 +43,8 @@ const Services = () => {
 									sourire!
 								</p>
 							</div>
-						</Link>
-						<Link to={"/sagesse-sourire/traitements#implantsDentaires"}>
+						</a>
+						<a href={"traitements#implantsDentaires"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={implant} alt="" />
@@ -52,8 +52,8 @@ const Services = () => {
 								<h1>Implantologie</h1>
 								<p>Remplacer durablement une dent perdue!</p>
 							</div>
-						</Link>
-						<Link to={"/sagesse-sourire/traitements#dentisterieEsthetique"}>
+						</a>
+						<a href={"traitements#dentisterieEsthetique"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={paro} alt="" />
@@ -61,7 +61,16 @@ const Services = () => {
 								<h1>Esthétique</h1>
 								<p>J’ose retrouver le sourire!</p>
 							</div>
-						</Link>
+						</a>
+						<a href={"traitements#gestionDouleur"}>
+							<div className="card-service">
+								<div className="icon">
+									<img src={douleur} alt="" />
+								</div>
+								<h1>Gestion de la douleur</h1>
+								<p>Les soins sans douleur et dans le confort!</p>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div className="line-container">

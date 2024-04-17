@@ -15,7 +15,7 @@ export const ActualitesData = [
 		img: "refund",
 		title: "Remboursement des soins",
 		description:
-			"Depuis janvier 2020, le 100% santé est mis en place et permet un meilleur remboursement grâce au respect du contrat responsable. Pour en savoir plus, consultez notre page dédiée Honoraires.",
+			"Depuis janvier 2020, le 100% santé est mis en place et permet un meilleur remboursement grâce au respect du contrat responsable.",
 		document: { title: "Honoraires", actions: "/sagesse-sourire/honoraires" },
 	},
 
@@ -24,7 +24,7 @@ export const ActualitesData = [
 		img: "calendar",
 		title: "Date des gardes",
 		description:
-			"Chaque dimanche et jours fériés, de 9h à 12h, un praticien est de garde dans le département. Veuillez trouver le tableau des gardes ici Praticiens de Garde.",
+			"Chaque dimanche et jours fériés, de 9h à 12h, un praticien est de garde dans le département.",
 		document: {
 			title: "Praticiens de garde",
 			actions: "http://www.cdocd44.fr/",

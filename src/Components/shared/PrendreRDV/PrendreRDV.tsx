@@ -29,8 +29,9 @@ const PrendreRDV = ({ showRDV, setRDV }: PrendreRDVProps) => {
 								Le caractère urgent de votre situation sera évalué et nous nous
 								efforcerons d’y répondre le plus rapidement possible.
 								<br /> L’accueil téléphonique est ouvert le matin, du lundi au
-								samedi, de 8h à 11h30 et l’après-midi, du lundi au vendredi, de
-								14h à 18h30.
+								samedi, de <strong>8h à 11h30</strong> et
+								<strong>l’après-midi</strong>, du lundi au vendredi, de
+								<strong>14h à 18h30</strong>.
 							</p>
 							<br />
 							<p>

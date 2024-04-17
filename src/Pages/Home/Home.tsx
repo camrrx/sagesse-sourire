@@ -9,7 +9,6 @@ import dentist from "../../assets/dentist.png";
 import { useTheme } from "../../ThemeContext";
 import Footer from "../../Components/shared/Footer";
 import { useEffect, useState } from "react";
-import NotreHistoire from "../../Components/HomeComponents/Histoire/NotreHistoire";
 
 const Home = () => {
 	const { theme } = useTheme();
@@ -55,9 +54,7 @@ const Home = () => {
 			<div className="equipements" id="equipements">
 				<Equipements></Equipements>
 			</div>
-			<div id="notreHistoire">
-				<NotreHistoire />
-			</div>
+
 			<div className="venircheznous">
 				<div id="venircheznous">
 					<VenirChezNous></VenirChezNous>

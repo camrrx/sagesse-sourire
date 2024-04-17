@@ -112,13 +112,15 @@
 			}
 
 			.card-service {
+				width: 180px;
+				height: 200px;
 				transition: 0.2s;
 				border-radius: 8px;
 				padding: 2rem;
 				cursor: pointer;
 				display: flex;
 				flex-direction: column;
-				justify-content: center;
+				justify-content: space-between;
 				align-items: center;
 				gap: 1rem;
 				box-shadow: rgba(0, 0, 0, 0.065) 0px 5px 15px 0px;

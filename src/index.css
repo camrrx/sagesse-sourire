@@ -40,6 +40,12 @@ h6 {
 	font-weight: 100;
 }
 
+strong {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: var(--night-blue);
+}
+
 /* :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -109,4 +115,3 @@ button:focus-visible {
 		background-color: #f9f9f9;
 	}
 } */
-

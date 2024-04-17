@@ -4,7 +4,7 @@ export const menuItems = [
 		url: "",
 		submenu: [
 			{
-				title: "Presentation",
+				title: "Accueil",
 				url: "home",
 				hash: "presentation",
 			},
@@ -23,16 +23,6 @@ export const menuItems = [
 				url: "home",
 				hash: "venircheznous",
 			},
-			{
-				title: "Horaires",
-				url: "home",
-				hash: "horaires",
-			},
-			{
-				title: "Nous contacter",
-				url: "home",
-				hash: "nouscontacter",
-			},
 		],
 	},
 	{
@@ -44,7 +34,11 @@ export const menuItems = [
 				url: "cabinet",
 				hash: "equipes",
 			},
-
+			{
+				title: "Notre histoire",
+				url: "cabinet",
+				hash: "histoire",
+			},
 			{
 				title: "Les dentistes",
 				url: "cabinet",

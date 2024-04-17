@@ -1,6 +1,5 @@
 import "./Presentation.scss";
 import dentiste from "../../../assets/dentiste.png";
-import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import {
@@ -55,8 +54,7 @@ const Presentation = () => {
 						Au service de votre bien-être et de votre santé.
 					</h4>
 					<h2 className="presentation-titre">
-						Nous sommes les garants <br></br> d'une dentisterie moderne et
-						actualisée.
+						Nous attachons une attention particulière à votre sourire.
 					</h2>
 				</div>
 				<div className="presentation-sagesse">
@@ -74,21 +72,17 @@ const Presentation = () => {
 						<h5>
 							Notre équipe médicale s’est regroupée autour de compétences
 							professionnelles et humaines qui permettent une prise en charge et
-							une qualité de soins de haut niveau, dans tous les domaines de la
-							chirurgie dentaire. Cet exercice de groupe permet de mettre en
-							commun les compétences et qualités de chacun au profit de tous.
+							une qualité de soins.
 						</h5>
 						<h6>
-							Toute notre équipe s’engage à informer les patients sur les
-							avantages et les inconvénients éventuels des traitements réalisés
-							et sur leurs coûts.
+							L’exercice de groupe permet de mettre en commun les compétences et
+							qualités de chacun au profit de tous.
 						</h6>
-						<Link
-							className="button-2 button-contact button-equipe"
-							to="/sagesse-sourire/leCabinet#equipes">
-							L'équipe
-							<FaArrowRight />
-						</Link>
+						<a href="cabinet">
+							<button className="button-2 button-contact button-equipe">
+								L'équipe <FaArrowRight />
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>

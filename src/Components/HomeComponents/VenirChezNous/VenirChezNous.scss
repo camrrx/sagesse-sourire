@@ -2,104 +2,116 @@
 @import "../../../utils.scss";
 
 .venircheznous-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 4rem;
-
-  .title-wrapper {
 	display: flex;
-	gap: 1rem;	
+	flex-direction: column;
 	align-items: center;
-	img {
-		height: 2rem;
-	}
-  }
+	gap: 3rem;
+	margin-top: 4rem;
 
-  .venircheznous-title {
-    color: var(--dark-text);
-    font-size: 2em;
-    letter-spacing: 5px;
-  }
-
-  .flex-container {
-    display: flex;
-    @media (max-width: 500px) {
-      flex-direction: column;
-	  align-items: center;
-    }
-  }
-
-  .box-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    margin: 10px;
-    background-color: white;
-    padding: 1rem;
-    gap: 10px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-	@media (max-width: 500px) {
-		width: 80vw;
+	.title-wrapper {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		img {
+			height: 2rem;
+		}
 	}
 
-    .name {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      .imgbat {
-        height: 60px;
-      }
-    }
+	.venircheznous-title {
+		color: var(--dark-text);
+		font-size: 2em;
+		letter-spacing: 5px;
+	}
 
-    .phonenumber {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      width: 70%;
-    }
+	.flex-container {
+		display: flex;
+		@media (max-width: 500px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 
-    .adresse {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      width: 70%;
-    }
+	.box-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		margin: 10px;
+		background-color: white;
+		padding: 1rem;
+		gap: 10px;
+		border-radius: 10px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		@media (max-width: 500px) {
+			width: 80vw;
+		}
 
-    .busstop {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      .stop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-      }
-    }
+		.name {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			.imgbat {
+				height: 60px;
+			}
+		}
 
-    .button-syrendre {
-      height: 2.4rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      justify-content: center;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+		.phonenumber {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			width: 70%;
+		}
 
-    .map-container {
-      height: 100px;
-    }
-  }
-  .icon {
-    color: var(--primary-1);
-  }
+		.adresse {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			width: 70%;
+		}
+
+		.date {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			width: 100%;
+
+			.opening-time {
+				display: flex;
+				gap: 30px;
+			}
+		}
+
+		.busstop {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			.stop {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+			}
+		}
+
+		.button-syrendre {
+			height: 2.4rem;
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			justify-content: center;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		.map-container {
+			height: 100px;
+		}
+	}
+	.icon {
+		color: var(--primary-1);
+	}
 }
 .lighter-font {
-  font-weight: lighter;
+	font-weight: lighter;
 }
