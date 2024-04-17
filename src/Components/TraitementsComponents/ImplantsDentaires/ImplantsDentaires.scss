@@ -51,12 +51,12 @@
 	text-align: center;
 	cursor: pointer;
 	border: 2px solid var(--button-1);
-	color: var(--button-1);	
+	color: var(--button-1);
 	background: none;
 	&:hover {
 		background-color: var(--button-1);
 		color: var(--white);
-		}
+	}
 
 	&.active {
 		background-color: var(--button-1);
@@ -76,7 +76,6 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	flex-direction: column;
 
 	@media (max-width: 650px) {
 		flex-direction: column;
