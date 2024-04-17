@@ -6,12 +6,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../../ThemeContext";
 import PrendreRDV from "../../shared/PrendreRDV/PrendreRDV";
+import FAQ from "../../shared/FAQ/FAQ";
 
 const Navbar = () => {
 	const [scrolled, setScrolled] = useState(false);
 	const { theme, toggleTheme } = useTheme();
 
 	const [showRDV, setRDV] = useState(false);
+	const [showFAQ, setFAQ] = useState(false);
 
 	const takeRDV = () => {
 		setRDV(true);
@@ -37,6 +39,7 @@ const Navbar = () => {
 	return (
 		<div className={`${theme}`}>
 			<PrendreRDV showRDV={showRDV} setRDV={setRDV} />
+			<FAQ showFAQ={showFAQ} setFAQ={setFAQ} />
 			<div className={`navbar ${theme}`}>
 				<nav>
 					<div className={`navbar ${scrolled ? "scrolled" : ""}`}>
@@ -103,6 +106,11 @@ const Navbar = () => {
 							<Menu>
 								<button onClick={takeRDV} className="button-contact button-3">
 									Prendre RDV
+								</button>
+								<button
+									onClick={() => setFAQ(true)}
+									className="button-contact button-4">
+									FAQ
 								</button>
 								{/* <Menu.Button>
               </Menu.Button> */}
