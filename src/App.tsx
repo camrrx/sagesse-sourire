@@ -10,6 +10,7 @@ const App = () => {
 		<>
 			<Routes>
 				<Route path="*" element={<Home />} />
+				<Route path="/equipe.php" element={<Home />} />
 				<Route path="/home" element={<Home />} />
 				<Route path="/cabinet" element={<Cabinet />} />
 				<Route path="/traitements" element={<Traitements />} />

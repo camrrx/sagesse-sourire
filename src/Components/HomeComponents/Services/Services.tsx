@@ -21,7 +21,7 @@ const Services = () => {
 						<h1>Une Clinique Complète</h1>
 					</div>
 					<div className="cards-service">
-						<a href={"traitements#parodontie"}>
+						<a href={"#/traitements#parodontie"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={soins} alt="" />
@@ -32,7 +32,7 @@ const Services = () => {
 								</p>
 							</div>
 						</a>
-						<a href={"traitements#orthodontie"}>
+						<a href={"#/traitements#orthodontie"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={ortho} alt="" />
@@ -44,7 +44,7 @@ const Services = () => {
 								</p>
 							</div>
 						</a>
-						<a href={"traitements#implantsDentaires"}>
+						<a href={"#/traitements#implantsDentaires"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={implant} alt="" />
@@ -53,7 +53,7 @@ const Services = () => {
 								<p>Remplacer durablement une dent perdue!</p>
 							</div>
 						</a>
-						<a href={"traitements#dentisterieEsthetique"}>
+						<a href={"#/traitements#dentisterieEsthetique"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={paro} alt="" />
@@ -62,7 +62,7 @@ const Services = () => {
 								<p>J’ose retrouver le sourire!</p>
 							</div>
 						</a>
-						<a href={"traitements#gestionDouleur"}>
+						<a href={"#/traitements#gestionDouleur"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={douleur} alt="" />
