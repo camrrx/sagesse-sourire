@@ -5,22 +5,22 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Accueil",
-				url: "home",
+				url: "#/home",
 				hash: "presentation",
 			},
 			{
 				title: "Actualités",
-				url: "home",
+				url: "#/home",
 				hash: "actualites",
 			},
 			{
 				title: "Equipements",
-				url: "home",
+				url: "#/home",
 				hash: "equipements",
 			},
 			{
 				title: "Venir chez nous",
-				url: "home",
+				url: "#/home",
 				hash: "venircheznous",
 			},
 		],
@@ -31,22 +31,22 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Notre équipe",
-				url: "cabinet",
+				url: "#/cabinet",
 				hash: "equipes",
 			},
 			{
 				title: "Notre histoire",
-				url: "cabinet",
+				url: "#/cabinet",
 				hash: "histoire",
 			},
 			{
 				title: "Les dentistes",
-				url: "cabinet",
+				url: "#/cabinet",
 				hash: "dentistes",
 			},
 			{
 				title: "Les prothésistes",
-				url: "cabinet",
+				url: "#/cabinet",
 				hash: "prothesistes",
 			},
 		],
@@ -57,27 +57,27 @@ export const menuItems = [
 		submenu: [
 			{
 				title: "Les implants dentaires",
-				url: "traitements",
+				url: "#/traitements",
 				hash: "implantsDentaires",
 			},
 			{
 				title: "L'orthodontie",
-				url: "traitements",
+				url: "#/traitements",
 				hash: "orthodontie",
 			},
 			{
 				title: "La dentisterie ésthétique",
-				url: "traitements",
+				url: "#/traitements",
 				hash: "dentisterieEsthetique",
 			},
 			{
 				title: "Parodontie et soins",
-				url: "traitements",
+				url: "#/traitements",
 				hash: "parodontie",
 			},
 			{
 				title: "Gestion de la douleur",
-				url: "traitements",
+				url: "#/traitements",
 				hash: "gestionDouleur",
 			},
 		],
