@@ -13,7 +13,9 @@ const TraitementsTop = () => {
 	return (
 		<div className={`TraitementsTop-container ${theme}`}>
 			<div className="traitements">
-				<a href="#implantsDentaires" className="traitement traitement-1">
+				<a
+					href="/#/traitements#implantsDentaires"
+					className="traitement traitement-1">
 					<img className="implant-icon" src={implantIcon} />
 					<h2>Les implants dentaires</h2>
 					<h3>
@@ -21,7 +23,9 @@ const TraitementsTop = () => {
 						ou d'appareils dentaires (dentiers)
 					</h3>
 				</a>
-				<a href="#orthodontie" className="traitement traitement-2">
+				<a
+					href="/#/traitements#orthodontie"
+					className="traitement traitement-2">
 					<img className="implant-icon" src={braceIcon} />
 
 					<h2> L’Orthodontie</h2>
@@ -30,7 +34,9 @@ const TraitementsTop = () => {
 						d’obtenir un sourire harmonieux
 					</h3>
 				</a>
-				<a href="#dentisterieEsthetique" className="traitement traitement-3">
+				<a
+					href="/#/traitements#dentisterieEsthetique"
+					className="traitement traitement-3">
 					<img className="implant-icon" src={dentIcon} />
 
 					<h2>La Dentisterie Esthétique</h2>
@@ -39,7 +45,7 @@ const TraitementsTop = () => {
 						santé. Le visage est la partie la plus visible.
 					</h3>
 				</a>
-				<a href="#parodontie" className="traitement traitement-4">
+				<a href="/#/traitements#parodontie" className="traitement traitement-4">
 					<img className="implant-icon" src={paroIcon} />
 
 					<h2>Parodontie et soins</h2>
@@ -50,7 +56,9 @@ const TraitementsTop = () => {
 						parodontales
 					</h3>
 				</a>
-				<a href="#gestionDouleur" className="traitement traitement-5">
+				<a
+					href="/#/traitements#gestionDouleur"
+					className="traitement traitement-5">
 					<img className="implant-icon" src={soinIcon} />
 
 					<h2>Gestion de la douleur</h2>

@@ -62,7 +62,7 @@ const DentistesSlider = ({ dentistes }: DentistesSliderProps) => {
 							<div className="photo">
 								<img
 									className="photo-dentiste"
-									src={`../../../src/assets/photosEmployes/${currentDentiste.photo}`}
+									src={`photosEmployes/${currentDentiste.photo}`}
 									alt={currentDentiste.name}
 								/>
 							</div>
