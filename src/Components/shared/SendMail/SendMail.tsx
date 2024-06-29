@@ -18,7 +18,7 @@ const SendMail = ({ showPopup, setShowPopup }: SendMailProps) => {
     const subject = encodeURIComponent(objet);
     const body = encodeURIComponent(corp);
 
-    const mailtoUrl = `mailto:eve-Lelievre@hotmail.fr?subject=${subject}&body=${body}`;
+    const mailtoUrl = `mailto:contact@dentistes-sagesse-sourire.fr?subject=${subject}&body=${body}`;
     window.open(mailtoUrl);
     setShowPopup(false);
   };
