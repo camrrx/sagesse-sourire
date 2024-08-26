@@ -75,7 +75,6 @@
 .cards {
 	display: flex;
 	justify-content: center;
-	text-align: center;
 
 	@media (max-width: 650px) {
 		flex-direction: column;
@@ -85,7 +84,7 @@
 .card {
 	margin: 1rem;
 	transition: 0.2s;
-	border-radius: 8px;
+	border-radius: 15px;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -94,7 +93,8 @@
 	gap: 1rem;
 	padding: 1rem;
 	//border: 1px solid var(--grey-1);
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	border: 1px solid rgba(128, 128, 128, 0.109);
 
 	@media (max-width: 650px) {
 		width: 90vw;

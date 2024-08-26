@@ -63,11 +63,6 @@ const VenirChezNous = () => {
 								Lundi à Vendredi <br />
 								<span className="lighter-font">8h30 - 12h / 14h - 19h</span>
 							</div>
-
-							<div>
-								Dimanche <br />
-								<span className="lighter-font">8h30 - 12h </span>
-							</div>
 						</div>
 					</div>
 				</div>

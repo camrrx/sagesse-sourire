@@ -21,8 +21,6 @@ const Footer = () => {
         </div>
       </div>
       <div className="doctors">
-        <h1>Dr Thierry Lelièvre</h1>
-        <h1>|</h1>
         <h1>Dr Eric Merlet</h1>
         <h1>|</h1>
         <h1>Dr Laurent Avenard</h1>

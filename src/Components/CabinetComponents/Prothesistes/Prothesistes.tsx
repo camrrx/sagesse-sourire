@@ -35,7 +35,6 @@ const Prothesistes = () => {
           Nous travaillons avec un laboratoire de prothèses proche de notre
           cabinet dentaire.
         </p>
-        <h2>Laboratoire Surel de Moisdon la Rivière</h2>
         <div className="prothesistes-cards">
           <div className="card-proth">
             <img className="icon" src={technologie} alt="" />

@@ -1,0 +1,62 @@
+@import "../../themes.scss";
+@import "../../utils.scss";
+
+.honoraire-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 1rem;
+
+  .honoraire-container__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 4rem;
+  }
+  .banniere {
+    position: absolute;
+    width: 30vw;
+    height: 80vh;
+    background-color: var(--primary-1);
+    background: linear-gradient(
+      120deg,
+      var(--primary-1) 50%,
+      var(--primary-2) 100%
+    );
+    right: 10vw;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100vh;
+    background: var(--secondary-1);
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    margin: 20px;
+
+    &__texte {
+      color: var(--primary-2);
+    }
+
+    &__titre {
+      color: var(--black);
+      font-size: 5vw;
+      line-height: 5vw;
+      text-align: center;
+      margin-bottom: 4vh;
+      @media (max-width: 500px) {
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -2,9 +2,9 @@ import React, { useState, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "./Actualite.scss";
 import { ActualitesData } from "../../../assets/ActualiteData";
-import virus from "../../../assets/actu/virus.jpeg";
-import calendar from "../../../assets/actu/calendar.jpeg";
-import refund from "../../../assets/actu/refund.jpeg";
+import virus from "../../../assets/actu/virus.png";
+import calendar from "../../../assets/actu/calendar.png";
+import refund from "../../../assets/actu/refund.png";
 import medical from "../../../assets/actu/medical.jpeg";
 
 export interface ActualiteItem {

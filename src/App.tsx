@@ -3,7 +3,7 @@ import Cabinet from "./Pages/Cabinet/Cabinet";
 import Home from "./Pages/Home/Home";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Traitements from "./Pages/Traitements/Traitements";
-import Honoraire from "./Pages/Honoraire/Honoraire";
+import Honoraire from "./Pages/Urgences/Urgences";
 import { useEffect } from "react";
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
 				<Route path="/home" element={<Home />} />
 				<Route path="/cabinet" element={<Cabinet />} />
 				<Route path="/traitements" element={<Traitements />} />
-				<Route path="/honoraires" element={<Honoraire />} />
+				<Route path="/urgences" element={<Honoraire />} />
 			</Routes>
 		</>
 	);

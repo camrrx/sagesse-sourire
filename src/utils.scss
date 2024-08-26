@@ -12,7 +12,11 @@
 	margin-left: $margin-value;
 }
 
-@for $i from 1 through 10 {
+@mixin w-($width-value) {
+	width: $width-value;
+}
+
+@for $i from 1 through 100 {
 	.gap-#{$i} {
 		@include gap($i * 10px);
 	}
@@ -22,11 +26,34 @@
 	.margin-l-#{$i} {
 		@include margin-l($i * 10px);
 	}
+	.w-#{$i} {
+		@include w-($i * 1%)
+	}
 }
+
+
 
 .flex-center {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.align-center {
 	align-items: center;
 }
 

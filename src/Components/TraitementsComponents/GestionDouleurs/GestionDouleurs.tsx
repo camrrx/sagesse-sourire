@@ -3,115 +3,180 @@ import "./GestionDouleurs.scss";
 import { Tab } from "@headlessui/react";
 import { useState } from "react";
 import { useTheme } from "../../../ThemeContext";
+import cabinetDessin from "../../../assets/cabinet-dessin.png";
 
 const GestionDouleurs = () => {
-	const [selectedIndex, setSelectedIndex] = useState(0);
-	const { theme } = useTheme();
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const { theme } = useTheme();
 
-	return (
-		<div className={`GestionDouleurs-container  ${theme}`}>
-			<h2>La Gestion Douleurs</h2>
-			<div className="GestionDouleurs-container">
-				<Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
-					<Tab.List className="custom-tab-list">
-						<Tab
-							className={`custom-tab    ${selectedIndex === 0 ? "active" : ""}`}>
-							Sédation et anesthésie
-						</Tab>
+  return (
+    <div className={`GestionDouleurs-container  ${theme}`}>
+      <h2>Les soins dentaires</h2>
+      <div className="GestionDouleurs-container">
+        <Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex}>
+          <Tab.List className="custom-tab-list">
+            <Tab
+              className={`custom-tab    ${selectedIndex === 0 ? "active" : ""}`}
+            >
+              Soins conservateurs
+            </Tab>
 
-						<Tab
-							className={`custom-tab    ${selectedIndex === 1 ? "active" : ""}`}>
-							MEOPA
-						</Tab>
-						<Tab
-							className={`custom-tab    ${selectedIndex === 2 ? "active" : ""}`}>
-							L'anesthésie ostéocentrale
-						</Tab>
-					</Tab.List>
-					<Tab.Panels>
-						<Tab.Panel className="custom-tab-panel">
-							<div>
-								<h6 className="card">
-									La gestion de la douleur et de l’anxiété des patients a
-									toujours constitué l’un des plus grands défis de notre
-									profession. Nous vous présentons ici une technique de sédation
-									consciente : l’utilisation du MEOPA, pour luter contre
-									l’anxiété liée aux soins. Et une technique d’anesthésie
-									mécanique innovante pour pallier à la douleur
-								</h6>
-							</div>
-						</Tab.Panel>
-						<Tab.Panel className="custom-tab-panel">
-							<div>
-								<h6 className="card">
-									Le MÉOPA (Mélange Equimolaire d’Oxygène et de Protoxyde
-									d’Azote) est un gaz incolore, inodore et sans saveur, qui agit
-									par inhalation. Il est destiné à faciliter les soins dentaires
-									chez les patients anxieux ou phobiques, petits ou grands ou
-									encore chez les personnes handicapées. Le MÉOPA permet ainsi
-									la prise en charge de la douleur engendrée par des soins
-									d’intensité légère à modérée et de courte durée, sans
-									toutefois dispenser de l’utilisation des autres méthodes
-									analgésiques. Le MÉOPA agit rapidement, est facile
-									d’administration et sa durée d’action est brève après l’arrêt
-									de l’inhalation, il est donc un agent analgésique de choix
-									avec peu d’effets indésirables. Employé depuis plusieurs
-									années en milieu hospitalier, son utilisation a été élargie
-									aux cabinets dentaires privés depuis 2010.
-								</h6>
-							</div>
-						</Tab.Panel>
-						<Tab.Panel className="custom-tab-panel">
-							<div>
-								<h6 className="card">
-									En appliquant une anesthésie ostéocentrale (anesthésie de l’os
-									spongieux près de l’apex), l’anesthésie fonctionne
-									immédiatement sans laisser de sensation d’engourdissement des
-									lèvres, des joues et de la langue. D’autres avantages sont à
-									noter : une efficacité élevée même avec des molaires atteintes
-									d’une pulpite et l’absence de douleur durant la procédure.
-									L’anesthésie ostéocentrale mécanique consiste en 3 étapes:
-								</h6>
-
-								<div className="cards">
-									<div className="card">
-										<h1>1</h1>
-										<h6>
-											Pour que l’anesthésie soit indolore, il est nécessaire
-											dans un premier temps d’anesthésier la muqueuse au niveau
-											de la papille interdentaire. L’injection est gérée
-											électroniquement.
-										</h6>
-									</div>
-									<div className="card">
-										<h1>2</h1>
-										<h6>
-											L’entrée dans l’os trabéculaire se fait par perforation
-											rotative progressive, pour atteindre l’espace interapical.
-											L’os trabéculaire (spongieux) n’étant pas sensible, la
-											pénétration en ostéocentrale est totalement indolore pour
-											le patient.
-										</h6>
-									</div>
-									<div className="card">
-										<h1>3</h1>
-										<h6>
-											Une fois l’aiguille enfoncée au trois quarts de sa
-											longueur, nous sommes proche du bout de la racine et
-											pouvons déclencher l’injection électroniquement. Lorsque
-											l’injection est terminée, nous retirons l’aiguille sans
-											rotation. L’anesthésie est faite et le soin peut
-											commencer.
-										</h6>
-									</div>
-								</div>
-							</div>
-						</Tab.Panel>
-					</Tab.Panels>
-				</Tab.Group>
-			</div>
-		</div>
-	);
+            <Tab
+              className={`custom-tab    ${selectedIndex === 1 ? "active" : ""}`}
+            >
+              MIH
+            </Tab>
+            <Tab
+              className={`custom-tab    ${selectedIndex === 2 ? "active" : ""}`}
+            >
+              SAOS
+            </Tab>
+            <Tab
+              className={`custom-tab    ${selectedIndex === 3 ? "active" : ""}`}
+            >
+              Hyposialie
+            </Tab>
+            <Tab
+              className={`custom-tab    ${selectedIndex === 4 ? "active" : ""}`}
+            >
+              Bruxisme
+            </Tab>
+          </Tab.List>
+          <Tab.Panels>
+            <Tab.Panel className="custom-tab-panel column">
+              <div className="cards">
+                <img className="card" src={cabinetDessin}></img>
+                <div className="card">
+                  <h1>Les soins conservateurs</h1>
+                  <h6>
+                    Lors de la <strong>visite de prévention annuelle</strong>{" "}
+                    votre dentiste établi selon vos préoccupations la nécessité
+                    de réaliser un soin.
+                    <br />
+                    <br />
+                    Les soins <strong>conservateurs</strong> englobent les
+                    premières interventions proposées par le chirurgien-dentiste
+                    qui visent à maintenir la bonne santé de votre bouche. Le{" "}
+                    <strong>détartrage</strong> permet de maintenir une bonne
+                    hygiène et de renforcer la santé des dents et de la gencive.
+                    Chez les enfants et adolescents, le{" "}
+                    <strong>scellement de sillons</strong> réduit l’apparition
+                    de caries sur les dents. La carie est une infection touchant
+                    la dent qui se caractérise par l’apparition d’une cavité à
+                    sa surface, l’idéal est de la traiter le plus vite possible
+                    après son apparition. Lorsque la carie s’est étendue de
+                    façon trop importante vers le nerf, il peut être nécessaire
+                    de retirer la pulpe de la dent. La{" "}
+                    <strong>dévitalisation</strong> permet de maintenir la dent
+                    en bouche en la restaurant par la suite. Malheureusement,
+                    dans certains cas, l’atteinte de la dent est trop grave pour
+                    qu’elle puisse être restaurée ; il faut alors{" "}
+                    <strong>l’extraire</strong>.
+                  </h6>{" "}
+                </div>
+              </div>
+              <div className="cards">
+                <div className="card">
+                  <h6>
+                    Des bilans bucco-dentaires sont proposés par la Sécurité
+                    Sociale, vous les retrouverez sur votre espace d’assuré. Il
+                    s’agit d’une visite de prévention a effectuer tous les 3ans.
+                    Ce dispositif s’adresse aux jeunes de 3ans à 25ans mais
+                    également aux femmes enceintes et aux séniors.
+                  </h6>
+                </div>
+              </div>
+            </Tab.Panel>
+            <Tab.Panel className="custom-tab-panel">
+              <div>
+                <div className="card">
+                  <h1>L’hypominéralisation des incisives et molaires (MIH)</h1>
+                  <h6>
+                    Souvent cette hypominéralisation est constatée chez le sujet
+                    jeune, elle peut être plus ou moins sévère. Il s’agit d’un
+                    défaut dans la structure de la couche protectrice de la dent
+                    : l’émail. On remarque des taches blanchâtres ou
+                    jaunes-marrons sur les dents. Les dents sont plus fragiles
+                    et facilement sujettes aux sensibilités. Une hygiène
+                    rigoureuse est capitale : brosse à dent à poils souples,
+                    dentifrice adapté et rinçage à l’eau tiède. Il est important
+                    de proscrire les aliments trop acides ou trop sucrés. Votre
+                    dentiste vous accompagnera dans la gestion de cette
+                    pathologie. Des visites de contrôle régulières permettront
+                    d’adopter les traitements dans les meilleurs délais : soins
+                    sur les lésions les plus marquées, application de vernis de
+                    fluor sur les dents, scellements de sillons.
+                  </h6>
+                </div>
+              </div>
+            </Tab.Panel>
+            <Tab.Panel className="custom-tab-panel">
+              <div>
+                <div className="card">
+                  <h1>Le syndrome d’apnées obstructive du sommeil (SAOS)</h1>
+                  <h6>
+                    Ce syndrome touche entre 5 et 15% de la population. Si vous
+                    souffrez de ronflements ; que vous peinez à regagner de
+                    l’énergie même après une nuit de sommeil, que vous souffrez
+                    d’hypertension ou de diabète ; il est possible que vous
+                    soyez sujet à développer ce syndrome. Ce syndrome se
+                    caractérise par des micro-réveils, remarqués ou non par le
+                    dormeur. Une étude du sommeil détermine la nécessité de
+                    réaliser une gouttière d’avancée mandibulaire (OAM). Ce
+                    dispositif se place en bouche juste avant d’aller dormir, il
+                    permet de positionner la mâchoire inférieure plus en avant
+                    que la mâchoire supérieure et donc de limiter l’obstruction
+                    du passage d’air : la ventilation est facilitée. Une période
+                    de quelques semaines est nécessaire pour s’habituer au port
+                    de la gouttière et plusieurs rendez-vous d’ajustements sont
+                    à prévoir.
+                  </h6>
+                </div>
+              </div>
+            </Tab.Panel>
+            <Tab.Panel className="custom-tab-panel">
+              <div>
+                <div className="card">
+                  <h1>Hyposialie : le manque de salive</h1>
+                  <h6>
+                    La salive a un rôle capital dans notre bouche : elle
+                    neutralise les acides. C’est la protectrice de nos dents !
+                    Un manque de salive peut se repérer par une sensation de
+                    langue pâteuse ou de difficultés à avaler peut s’avérer
+                    néfaste pour notre santé orale et notre digestion.
+                    L’hyposialie peut être provoquée par certains médicaments
+                    tels que les antidépresseurs ou les antihistaminiques (entre
+                    autres), ou par certains protocoles contre le cancer. On
+                    peut aider à un retour a la normale en consommant des
+                    chewing-gums sans sucres ou en utilisant des substituts
+                    salivaires. N’hésitez pas à parler de vos symptômes à votre
+                    dentiste ou à votre médecin.
+                  </h6>
+                </div>
+              </div>
+            </Tab.Panel>
+            <Tab.Panel className="custom-tab-panel">
+              <div>
+                <div className="card">
+                  <h1>Le bruxisme</h1>
+                  <h6>
+                    Le bruxisme mène à une usure prononcée des dents. Les causes
+                    sont diverses : troubles du sommeil, stress, anxiété… Il est
+                    possible de réaliser des gouttières de prévention qui limite
+                    les frottements des dents les unes contre les autres et
+                    ainsi, ralentit leur usure. Il est parfois nécessaire que la
+                    prise en charge soit faite en équipe avec l’intervention
+                    d’autres professionnels de santé, ORL, kinésithérapeute,
+                    ostéopathe etc.
+                  </h6>
+                </div>
+              </div>
+            </Tab.Panel>
+          </Tab.Panels>
+        </Tab.Group>
+      </div>
+    </div>
+  );
 };
 
 export default GestionDouleurs;

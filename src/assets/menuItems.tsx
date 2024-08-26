@@ -56,35 +56,35 @@ export const menuItems = [
 		url: "/traitements",
 		submenu: [
 			{
-				title: "Les implants dentaires",
+				title: "Implantologie",
 				url: "#/traitements",
 				hash: "implantsDentaires",
 			},
+			// {
+			// 	title: "L'orthodontie",
+			// 	url: "#/traitements",
+			// 	hash: "orthodontie",
+			// },
 			{
-				title: "L'orthodontie",
-				url: "#/traitements",
-				hash: "orthodontie",
-			},
-			{
-				title: "La dentisterie ésthétique",
+				title: "Esthétique",
 				url: "#/traitements",
 				hash: "dentisterieEsthetique",
 			},
+			// {
+			// 	title: "Parodontie et soins",
+			// 	url: "#/traitements",
+			// 	hash: "parodontie",
+			// },
 			{
-				title: "Parodontie et soins",
+				title: "Soins dentaires",
 				url: "#/traitements",
-				hash: "parodontie",
-			},
-			{
-				title: "Gestion de la douleur",
-				url: "#/traitements",
-				hash: "gestionDouleur",
+				hash: "soinsDentaires",
 			},
 		],
 	},
 	{
-		title: "Honoraires",
-		url: "/honoraires",
-		hash: "honoraires",
+		title: "Urgences",
+		url: "/urgences",
+		hash: "urgences",
 	},
 ];
