@@ -4,7 +4,9 @@ import Home from "./Pages/Home/Home";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Traitements from "./Pages/Traitements/Traitements";
 import Honoraire from "./Pages/Urgences/Urgences";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Sidebar from "./Components/MenuComponents/Sidebar/Sidebar";
+import Navbar from "./Components/MenuComponents/Navbar/Navbar";
 
 const App = () => {
 	const { hash } = useLocation();
@@ -17,9 +19,28 @@ const App = () => {
 			}
 		}
 	}, [hash]);
+	// const isMobile = window.matchMedia("(max-width: 500px)").matches;
+
+	const [isMobile, setIsMobile] = useState(
+		window.matchMedia("(max-width: 500px)").matches
+	);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.matchMedia("(max-width: 500px)").matches);
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	return (
 		<>
+			{isMobile ? <Sidebar /> : <Navbar />}
+
 			<Routes>
 				<Route path="*" element={<Home />} />
 				<Route path="/equipe.php" element={<Home />} />

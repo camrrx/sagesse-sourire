@@ -13,7 +13,7 @@
 		justify-content: center;
 		transform: translateX(-200%);
 		transition: transform 0.8s ease;
-		
+
 		&.show {
 			transform: translateX(0);
 		}
@@ -31,7 +31,7 @@
 			display: flex;
 			justify-content: center;
 			text-align: center;
-			gap:1rem;
+			gap: 1rem;
 			@media (max-width: 500px) {
 				flex-direction: column;
 			}
@@ -46,7 +46,7 @@
 				justify-content: center;
 				align-items: center;
 				box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-			
+
 				.icon {
 					height: 80px;
 					width: 80px;
@@ -77,8 +77,7 @@
 			display: none;
 		}
 		.dent-img {
-			width: 400px;
-			height: 400px;
+			width: 100%;
 		}
 		&.show {
 			transform: translateX(0);

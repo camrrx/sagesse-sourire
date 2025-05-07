@@ -1,10 +1,8 @@
-// import { ServiceCards } from "../../../assets/ServiceCards";
 import "./Services.scss";
 import soins from "../../../assets/cards/soins.png";
 import ortho from "../../../assets/cards/ortho.png";
 import implant from "../../../assets/cards/implant.png";
 import paro from "../../../assets/cards/paro.png";
-import douleur from "../../../assets/cards/douleur.png";
 import logo from "../../../assets/logo_sagesse-noir.png";
 import iconChair from "../../../assets/icones/cabinetimg.png";
 
@@ -62,7 +60,7 @@ const Services = () => {
 								<p>J’ose retrouver le sourire!</p>
 							</div>
 						</a>
-						<a href={"#/traitements#gestionDouleur"}>
+						{/*<a href={"#/traitements#gestionDouleur"}>
 							<div className="card-service">
 								<div className="icon">
 									<img src={douleur} alt="" />
@@ -70,7 +68,7 @@ const Services = () => {
 								<h1>Gestion de la douleur</h1>
 								<p>Les soins sans douleur et dans le confort!</p>
 							</div>
-						</a>
+						</a>*/}
 					</div>
 				</div>
 				<div className="line-container">

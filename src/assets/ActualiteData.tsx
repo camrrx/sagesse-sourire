@@ -38,14 +38,4 @@ export const ActualitesData = [
 			"Il y a du nouveau dans la prise de rendez-vous ! Vous pouvez désormais prendre vos rendez-vous avec les Docteurs MERLET et CHOTARD via Doctolib.",
 		document: { title: "", actions: "" },
 	},
-
-	{
-		id: 5,
-		img: "medical",
-
-		title: "Nouvelle fiche technique sur le site",
-		description:
-			"Découvrez notre nouveau contenu : Sédation et Anesthésie. Nous y présentons l'utilisation du MEOPA et de L'anesthésie ostéocentrale .",
-		document: { title: "MEOPA", actions: "/sagesse-sourire/meopa" },
-	},
 ];

@@ -47,7 +47,6 @@ const Sidebar = () => {
 		window.addEventListener("scroll", handleScroll);
 		document.addEventListener("mousedown", handleClickOutside);
 
-		console.log(scrolled);
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 			document.removeEventListener("mousedown", handleClickOutside);
@@ -56,8 +55,7 @@ const Sidebar = () => {
 
 	return (
 		<div>
-			<div
-				className={`sidebar-closed ${scrolled ? "scrolled" : ""} ${theme}`}>
+			<div className={`sidebar-closed ${scrolled ? "scrolled" : ""} ${theme}`}>
 				<FaBars className="toggle-icon" onClick={toggleSidebar} />
 				<img src={logo} className="logo" />
 			</div>
@@ -84,7 +82,9 @@ const Sidebar = () => {
 											{item.submenu.map((subItem, subIndex) => (
 												<Link
 													key={subIndex}
-													to={subItem.url}
+													to={`${subItem.url}${
+														subItem.hash ? `#${subItem.hash}` : ""
+													}`}
 													className="submenu-item"
 													onClick={() => setIsOpen(false)}>
 													{subItem.title}

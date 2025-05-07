@@ -18,14 +18,15 @@ const Home = () => {
 	useEffect(() => {
 		const mediaQuery = window.matchMedia("(max-width: 768px)");
 
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		const handleResize = (e: any) => {
+		const handleResize = (e: MediaQueryListEvent) => {
 			setIsMobile(e.matches);
 		};
-		handleResize(mediaQuery);
-		mediaQuery.addListener(handleResize);
+
+		setIsMobile(mediaQuery.matches);
+
+		mediaQuery.addEventListener("change", handleResize);
 		return () => {
-			mediaQuery.removeListener(handleResize);
+			mediaQuery.removeEventListener("change", handleResize);
 		};
 	}, []);
 

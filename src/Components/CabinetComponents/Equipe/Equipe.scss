@@ -2,42 +2,41 @@
 @import "../../../utils.scss";
 
 .notrecabinet-container {
- display: flex;
- justify-content: center;
-  width: 50vw;
-
-  @media (max-width: 500px) {
-    width: 90vw;
-   
-  }
-
-  .cabinet-wrapper {
 	display: flex;
-	flex-direction: column;
-  @media (max-width: 500px) {
-    align-items: center;
-    justify-content: space-evenly;
-    padding-bottom: 3rem;
-  }
-    .title {
-      color: var(--black);
-      font-size: 5vw;
-      line-height: 5vw;
-      margin-bottom: 4vh;
-      @media (max-width: 500px) {
-        font-size: 2rem;
-      }
-    }
+	justify-content: center;
+	width: 50vw;
 
-    p {
-      color: var(--black);
-      font-size: 1.3rem;
-      margin-bottom: 3rem;
-      width: 35vw;
+	@media (max-width: 800px) {
+		width: 90vw;
+	}
 
-      @media (max-width: 500px) {
-        width: 100%;
-      }
-    }
-  }
+	.cabinet-wrapper {
+		display: flex;
+		flex-direction: column;
+		@media (max-width: 800px) {
+			align-items: center;
+			justify-content: space-evenly;
+			padding-bottom: 3rem;
+		}
+		.title {
+			color: var(--black);
+			font-size: 5vw;
+			line-height: 5vw;
+			margin-bottom: 4vh;
+			@media (max-width: 500px) {
+				font-size: 2rem;
+			}
+		}
+
+		p {
+			color: var(--black);
+			font-size: 1.3rem;
+			margin-bottom: 3rem;
+			width: 35vw;
+
+			@media (max-width: 500px) {
+				width: 100%;
+			}
+		}
+	}
 }
